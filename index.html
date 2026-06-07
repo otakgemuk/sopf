@@ -1,201 +1,447 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Compare Top Futures Prop Firms for 2026 | Save On Prop Firms</title><meta name="description" content="Compare top futures prop firms by pricing, payouts, and rules. Updated weekly with SOPF exclusive discounts.">
-<meta property="og:title" content="Compare Top Futures Prop Firms for 2026 | Save On Prop Firms"><meta name="theme-color" content="#22c55e">
+<title>Compare Top Futures Prop Firms for 2026 | Save On Prop Firms</title>
+<meta name="description" content="Side-by-side comparison of top futures prop trading accounts. Compare all-in pricing, profit targets, drawdown rules, P/D ratios, and payout timelines.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared.css">
-</head><body><nav class="nav"><div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="https://saveonpropfirms.com/_next/image?url=%2Fmainlogo.png&w=128&q=75" alt="Save On Prop Firms">Save On Prop Firms</a>
-    <ul class="nav-links"><li><a href="index.html" class="active">Compare</a></li><li><a href="promos/index.html" class="">Promos</a></li><li><a href="prop-firms/index.html" class="">Firms</a></li><li><a href="trading-tools/index.html" class="">Tools</a></li></ul>
-    <a href="promos/index.html" class="code-pill">Code: SOPF</a>
-    <button class="nav-hamburger" onclick="document.getElementById('nm').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#09090b;color:#f4f4f5;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{display:block}button{cursor:pointer;font-family:inherit}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(9,9,11,.96);backdrop-filter:blur(12px);border-bottom:1px solid #27272a}
+.nav-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:60px}
+.nav-logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;color:#f4f4f5}
+.nav-logo img{width:36px;height:36px;border-radius:8px}
+.nav-links{display:flex;gap:4px;list-style:none}
+.nav-links a{display:block;padding:6px 14px;font-size:14px;font-weight:500;color:#a1a1aa;border-radius:6px;transition:color .15s,background .15s}
+.nav-links a:hover{color:#f4f4f5;background:#18181b}
+.nav-links a.active{color:#f4f4f5}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px}
+.nav-hamburger span{display:block;width:22px;height:2px;background:#a1a1aa;border-radius:2px}
+.nav-mobile{display:none;position:fixed;top:60px;left:0;right:0;background:#09090b;border-bottom:1px solid #27272a;z-index:99;padding:12px 24px 16px;flex-direction:column;gap:4px}
+.nav-mobile.open{display:flex}
+.nav-mobile a{display:block;padding:10px 12px;font-size:14px;color:#a1a1aa;border-radius:6px}
+.nav-mobile a:hover,.nav-mobile a.active{color:#22c55e;background:#18181b}
+@media(max-width:768px){.nav-links{display:none}.nav-hamburger{display:flex}}
+
+/* HERO */
+.hero{background:linear-gradient(180deg,#0a1f0a 0%,#0d160d 40%,#09090b 80%);padding:80px 32px 40px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse at 50% 0%,rgba(34,197,94,.18) 0%,transparent 65%);pointer-events:none}
+.hero h1{font-size:clamp(30px,4.5vw,56px);font-weight:800;line-height:1.1;color:#f4f4f5;max-width:960px;margin:0 auto 32px;letter-spacing:-0.025em;position:relative}
+.hero h1 .green{color:#22c55e}
+
+/* SOPF code banner */
+.code-wrap{max-width:860px;margin:0 auto 28px;background:rgba(9,30,9,.8);border:1px solid #1a3d1a;border-radius:16px;padding:22px 28px}
+.code-wrap-label{font-size:14px;color:#a1a1aa;margin-bottom:14px;text-align:left;font-weight:500}
+.code-btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;background:linear-gradient(90deg,#15803d,#22c55e,#4ade80,#22c55e,#15803d);background-size:300% 100%;animation:shine 4s linear infinite;border:none;border-radius:10px;padding:18px 24px;font-size:20px;font-weight:800;color:#000;letter-spacing:.05em;cursor:pointer;transition:filter .15s}
+.code-btn:hover{filter:brightness(1.08)}
+@keyframes shine{0%{background-position:100% 0}100%{background-position:-200% 0}}
+.copy-icon{font-size:18px;opacity:.7}
+
+/* hero description */
+.hero-desc{font-size:15px;color:#a1a1aa;max-width:760px;margin:0 auto 28px;line-height:1.75;text-align:center}
+
+/* stat pills */
+.stat-pills{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.stat-pill{display:inline-flex;align-items:center;gap:6px;background:#18181b;border:1px solid #27272a;color:#d4d4d8;font-size:13px;font-weight:500;padding:7px 16px;border-radius:24px}
+.stat-pill .val{color:#22c55e;font-weight:700}
+
+/* FILTERS */
+.filters{max-width:1400px;margin:0 auto;padding:28px 32px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.f-sel{appearance:none;background:#18181b;border:1px solid #27272a;color:#f4f4f5;font-family:inherit;font-size:13px;font-weight:500;padding:9px 36px 9px 14px;border-radius:8px;cursor:pointer;transition:border-color .15s;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%2371717a' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+.f-sel:hover,.f-sel:focus{border-color:#3f3f46;outline:none}
+.f-sel.on{border-color:#22c55e;color:#22c55e}
+.btn-rst{display:flex;align-items:center;gap:6px;background:#18181b;border:1px solid #27272a;color:#a1a1aa;font-family:inherit;font-size:13px;font-weight:500;padding:9px 16px;border-radius:8px;transition:.15s}
+.btn-rst:hover{border-color:#3f3f46;color:#f4f4f5}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{display:inline-flex;align-items:center;gap:4px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);color:#22c55e;font-size:11px;font-weight:500;padding:3px 8px 3px 10px;border-radius:20px;cursor:pointer}
+.pill:hover{background:rgba(34,197,94,.2)}
+.f-cnt{font-size:12px;color:#52525b;margin-left:auto}
+
+/* TABLE */
+.tbl-wrap{max-width:1400px;margin:0 auto;padding:0 32px 64px}
+.tbl-scroll{overflow-x:auto;border:1px solid #27272a;border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:1060px}
+thead{position:sticky;top:60px;z-index:10;background:#09090b}
+thead::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:#27272a}
+th{padding:11px 16px;text-align:left;font-size:11px;font-weight:600;color:#71717a;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;background:#09090b}
+th.s{cursor:pointer;user-select:none}
+th.s:hover{color:#a1a1aa}
+th .si{margin-left:3px;opacity:.4;font-size:10px}
+th .si::after{content:'↕'}
+th.asc .si{opacity:1}
+th.asc .si::after{content:'↑'}
+th.desc .si{opacity:1}
+th.desc .si::after{content:'↓'}
+td{padding:0 16px;border-bottom:1px solid #27272a;vertical-align:middle;height:90px;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tbody tr{transition:background .1s}
+tbody tr:hover{background:#18181b}
+
+/* firm cell */
+.firm-cell{display:flex;align-items:center;gap:12px}
+.firm-logo{width:44px;height:44px;border-radius:8px;object-fit:contain;background:#fff;padding:4px;flex-shrink:0;border:1px solid #3f3f46}
+.firm-logo-fb{width:44px;height:44px;border-radius:8px;background:#27272a;display:none;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#71717a;flex-shrink:0}
+.firm-name{font-weight:700;font-size:14px;color:#f4f4f5}
+.firm-sub{font-size:12px;color:#71717a;margin-top:1px}
+
+/* account info */
+.ai-size{font-weight:700;font-size:14px;color:#f4f4f5}
+.ai-type{font-size:11px;color:#71717a;font-weight:400}
+.ai-badge{display:inline-block;background:#27272a;color:#a1a1aa;font-size:11px;font-weight:500;padding:2px 8px;border-radius:4px;margin-top:4px}
+.ai-contracts{font-size:11px;color:#52525b;margin-top:3px}
+
+/* price */
+.p-orig{font-size:11px;color:#52525b;text-decoration:line-through}
+.p-disc{font-size:16px;font-weight:700;color:#22c55e;margin:1px 0}
+.p-act{font-size:11px;color:#71717a}
+.p-total{display:inline-block;background:#166534;color:#dcfce7;font-size:12px;font-weight:700;padding:3px 10px;border-radius:5px;margin-top:4px}
+
+/* promo green card */
+.promo-card{background:#14532d;border:1px solid #166534;border-radius:8px;padding:8px 12px;min-width:130px}
+.promo-off{display:block;font-size:15px;font-weight:800;color:#4ade80;line-height:1.2}
+.promo-exp{display:block;font-size:11px;color:#86efac;margin:2px 0 6px}
+.promo-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.promo-code-txt{font-size:13px;font-weight:700;color:#f4f4f5;letter-spacing:.04em}
+.promo-copy-btn{background:none;border:none;color:#86efac;font-size:13px;padding:0;cursor:pointer;opacity:.7}
+.promo-copy-btn:hover{opacity:1}
+
+/* P/D donut */
+.pd-cell{display:flex;align-items:center;justify-content:center}
+.pd-svg{width:44px;height:44px}
+
+/* drawdown */
+.dd-amount{font-size:14px;font-weight:600;color:#f4f4f5}
+.dd-type{font-size:11px;margin-top:2px}
+.eod{color:#a1a1aa}.intra{color:#f59e0b}.static{color:#3b82f6}
+
+/* daily loss */
+.dl{font-size:13px;color:#a1a1aa}
+
+/* days pill */
+.dpill{display:inline-flex;align-items:center;justify-content:center;background:#27272a;color:#f4f4f5;font-size:12px;font-weight:600;padding:5px 12px;border-radius:6px}
+
+/* action */
+.btns{display:flex;gap:6px}
+.btn-d{display:inline-flex;align-items:center;justify-content:center;height:32px;padding:0 12px;background:transparent;border:1px solid #3f3f46;color:#a1a1aa;font-family:inherit;font-size:12px;font-weight:500;border-radius:6px;text-decoration:none;transition:.15s;white-space:nowrap}
+.btn-d:hover{border-color:#71717a;color:#f4f4f5}
+.btn-b{display:inline-flex;align-items:center;justify-content:center;height:32px;padding:0 14px;background:#22c55e;border:none;color:#000;font-family:inherit;font-size:12px;font-weight:700;border-radius:6px;text-decoration:none;transition:.15s;white-space:nowrap}
+.btn-b:hover{background:#16a34a}
+.btn-b:active{transform:scale(.97)}
+
+/* tooltips */
+.th-tip{position:relative;display:inline-flex;align-items:center;gap:4px}
+.tip-i{width:14px;height:14px;border-radius:50%;background:#27272a;border:1px solid #3f3f46;color:#71717a;font-size:9px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:help;flex-shrink:0}
+.tip-b{display:none;position:absolute;bottom:calc(100% + 8px);left:0;background:#18181b;border:1px solid #3f3f46;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:400;color:#a1a1aa;line-height:1.6;width:220px;z-index:200;white-space:normal;box-shadow:0 8px 24px rgba(0,0,0,.6);text-transform:none;letter-spacing:0}
+.th-tip:hover .tip-b{display:block}
+
+/* empty state */
+.empty{text-align:center;padding:64px 24px;color:#52525b}
+.empty h3{font-size:16px;color:#71717a;margin-bottom:8px}
+
+/* toast */
+.toast{display:none;position:fixed;bottom:24px;right:24px;background:#22c55e;color:#000;font-weight:700;font-size:13px;padding:10px 18px;border-radius:8px;z-index:999;box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.toast.show{display:block}
+
+/* FOOTER */
+.footer{border-top:1px solid #27272a;background:#09090b}
+.footer-inner{max-width:1400px;margin:0 auto;padding:48px 32px 32px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
+.footer-brand p{font-size:12px;color:#52525b;line-height:1.7;max-width:280px;margin-top:10px}
+.footer-brand strong{font-size:15px;font-weight:700}
+.footer-col h4{font-size:11px;font-weight:600;color:#52525b;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col a{font-size:13px;color:#71717a;transition:color .15s}
+.footer-col a:hover{color:#f4f4f5}
+.footer-bottom{max-width:1400px;margin:0 auto;padding:20px 32px;border-top:1px solid #27272a;display:flex;justify-content:space-between;font-size:12px;color:#52525b}
+.disclaimer{max-width:1400px;margin:0 auto;padding:0 32px 32px}
+.disclaimer-inner{background:#18181b;border:1px solid #27272a;border-radius:8px;padding:14px 18px;font-size:12px;color:#52525b;line-height:1.6}
+@media(max-width:1024px){.footer-inner{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.hero{padding:48px 20px 32px}.filters,.tbl-wrap{padding-left:16px;padding-right:16px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://saveonpropfirms.com/_next/image?url=%2Fmainlogo.png&w=128&q=75" alt="SOPF" onerror="this.style.display='none'">
+      Save On Prop Firms
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Compare</a></li>
+      <li><a href="promos/index.html">Promos</a></li>
+      <li><a href="prop-firms/index.html">Firms</a></li>
+      <li><a href="trading-tools/index.html">Tools</a></li>
+      <li><a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a></li>
+      <li><a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a></li>
+    </ul>
+    <button class="nav-hamburger" onclick="document.getElementById('nm').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
   <div class="nav-mobile" id="nm">
     <a href="index.html" class="active">Compare</a>
-    <a href="promos/index.html" class="">Promos</a>
-    <a href="prop-firms/index.html" class="">Firms</a>
-    <a href="trading-tools/index.html" class="">Tools</a>
+    <a href="promos/index.html">Promos</a>
+    <a href="prop-firms/index.html">Firms</a>
+    <a href="trading-tools/index.html">Tools</a>
+    <a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a>
     <a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a>
   </div>
 </nav>
 
 <div class="hero">
-  <div class="hero-eyebrow">Featured June Prop Firm Promos &mdash; Use code <strong>SOPF</strong></div>
-  <h1>Futures Prop Firm Comparison Built for Real Traders</h1>
-  <p class="hero-sub">Side-by-side comparison of top futures prop trading accounts. Compare all-in pricing, profit targets, drawdown rules, P/D ratios, and payout timelines. Updated weekly with real data and SOPF exclusive discounts.</p>
-  <div class="stats-bar">
-    <div class="stat"><span class="stat-n">18</span><span class="stat-l">Prop Firms</span></div>
-    <div class="stat"><span class="stat-n">167</span><span class="stat-l">Accounts</span></div>
-    <div class="stat"><span class="stat-n" style="color:var(--color-brand)">SOPF</span><span class="stat-l">Discount Code</span></div>
+  <h1>Futures Prop Firm <span class="green">Comparison</span> Built for <span class="green">Real Traders</span></h1>
+  <div class="code-wrap">
+    <div class="code-wrap-label">Featured June Prop Firm Promos</div>
+    <button class="code-btn" onclick="copyCode()">
+      USE CODE&nbsp;<span style="font-size:22px;letter-spacing:.06em">SOPF</span>
+      <span class="copy-icon">⧉</span>
+    </button>
+  </div>
+  <p class="hero-desc">Save On Prop Firms gives you a side-by-side comparison of the top futures prop trading accounts so you can see everything that actually matters before getting funded. Compare all-in pricing, account size, profit targets, drawdown rules, profit to drawdown ratios, daily loss limits, and how long it takes to pass. This table is built to help real traders make smart, fast decisions and unlock exclusive discounts so you can keep more of your profits.</p>
+  <div class="stat-pills">
+    <div class="stat-pill"><span class="val">18</span> Prop Firms</div>
+    <div class="stat-pill"><span class="val">167</span> Accounts</div>
+    <div class="stat-pill">Code: <span class="val">SOPF</span></div>
   </div>
 </div>
 
-<!-- FIX: filter with active pills + count -->
+<div class="toast" id="toast">&#10003; Copied: SOPF</div>
+
 <div class="filters">
-  <span class="f-label">Filter</span>
-  <select class="f-select" id="ft" onchange="applyFilters()">
+  <select class="f-sel" id="ff" onchange="applyFilters()">
+    <option value="">All Firms</option>
+    <option>Lucid Trading</option><option>Tradeify</option>
+    <option>Apex Trader Funding</option><option>Alpha Futures</option>
+    <option>FundedNext Futures</option><option>MyFundedFutures</option>
+    <option>Funded Futures Network</option><option>TradeDay</option>
+    <option>Bulenox</option><option>BluSky Trading</option>
+    <option>DayTraders</option><option>E8 Markets</option>
+    <option>Legends Trading</option><option>Purdia Capital</option>
+  </select>
+  <select class="f-sel" id="ft" onchange="applyFilters()">
     <option value="">All Account Types</option>
     <option value="Eval">Evaluation</option>
     <option value="Instant">Instant Funded</option>
   </select>
-  <select class="f-select" id="fd" onchange="applyFilters()">
+  <select class="f-sel" id="fd" onchange="applyFilters()">
     <option value="">All Drawdown Types</option>
     <option value="End-of-Day">End-of-Day</option>
     <option value="Intraday">Intraday</option>
     <option value="Static">Static</option>
   </select>
-  <select class="f-select" id="fs" onchange="applyFilters()">
+  <select class="f-sel" id="fs" onchange="applyFilters()">
     <option value="">All Account Sizes</option>
     <option value="25000">$25K</option>
     <option value="50000">$50K</option>
     <option value="100000">$100K</option>
     <option value="150000">$150K</option>
   </select>
-  <div class="active-pills" id="pills"></div>
-  <button class="btn-reset" onclick="resetFilters()">Reset</button>
-  <span class="f-count" id="fcount"></span>
+  <button class="btn-rst" onclick="resetFilters()">&#8635; Reset</button>
+  <div class="pills" id="pills"></div>
+  <span class="f-cnt" id="fcnt"></span>
 </div>
 
 <div class="tbl-wrap"><div class="tbl-scroll">
-<table class="cmp-table" id="tbl">
+<table>
   <thead><tr>
-    <th>Prop Firm</th>
-    <th>Account Info</th>
-    <th class="s" data-col="price" onclick="sortBy('price')">All-In Price <span class="si"></span></th>
-    <th>Promo</th>
-    <th class="s" data-col="target" onclick="sortBy('target')">Profit Target <span class="si"></span></th>
-    <th><span class="th-tip">Drawdown<span class="tip-icon">?</span><span class="tip-box"><strong>End-of-Day</strong> &mdash; resets after market close.<br><strong>Intraday</strong> &mdash; trails unrealized P&L live. Most aggressive.<br><strong>Static</strong> &mdash; fixed forever, never moves.</span></span></th>
-    <th class="s" data-col="pd" onclick="sortBy('pd')"><span class="th-tip">P/D Ratio <span class="si"></span><span class="tip-icon">?</span><span class="tip-box">Profit Target &divide; Drawdown. Lower = easier eval. 1.0 means target equals drawdown.</span></span></th>
-    <th><span class="th-tip">Daily Loss<span class="tip-icon">?</span><span class="tip-box">Max loss per session. $0 = no limit. Soft breach = locked for the day. Hard breach = account failed.</span></span></th>
-    <th class="s" data-col="dtp" onclick="sortBy('dtp')">Days to Pass <span class="si"></span></th>
-    <th class="s" data-col="dtm" onclick="sortBy('dtm')">Days to $ <span class="si"></span></th>
-    <th>Profit Split</th>
-    <th>Contracts</th>
-    <th>Max Funded</th>
-    <th>Action</th>
+    <th class="s" data-col="firm" onclick="sortBy('firm')">PROP FIRM <span class="si"></span></th>
+    <th class="s" data-col="size" onclick="sortBy('size')">ACCOUNT INFO <span class="si"></span></th>
+    <th class="s" data-col="price" onclick="sortBy('price')">ALL-IN PRICE <span class="si"></span></th>
+    <th>PROMO</th>
+    <th class="s" data-col="target" onclick="sortBy('target')">PROFIT TARGET <span class="si"></span></th>
+    <th class="s" data-col="dd" onclick="sortBy('dd')">
+      <span class="th-tip">DRAWDOWN <span class="si"></span><span class="tip-i">?</span>
+        <span class="tip-b"><strong>End-of-Day</strong> — resets after market close.<br><strong>Intraday</strong> — trails unrealized P&amp;L live. Most aggressive.<br><strong>Static</strong> — fixed, never moves.</span>
+      </span>
+    </th>
+    <th class="s" data-col="pd" onclick="sortBy('pd')">
+      <span class="th-tip">P/D RATIO <span class="si"></span><span class="tip-i">?</span>
+        <span class="tip-b">Profit Target &divide; Drawdown. Lower = easier eval. &le;1.0 (green) is easiest. Shown as a donut chart.</span>
+      </span>
+    </th>
+    <th><span class="th-tip">DAILY LOSS<span class="tip-i">?</span>
+        <span class="tip-b">Max loss per session. 0 = no limit. Soft breach = locked for the day. Hard breach = account failed.</span>
+    </span></th>
+    <th class="s" data-col="dtp" onclick="sortBy('dtp')">DAYS TO PASS <span class="si"></span></th>
+    <th class="s" data-col="dtm" onclick="sortBy('dtm')">DAYS TO $ <span class="si"></span></th>
+    <th>PROFIT SPLIT</th>
+    <th>ACTION</th>
   </tr></thead>
   <tbody id="tbody"></tbody>
 </table>
 </div></div>
 
-<style>
-.glossary{max-width:1280px;margin:0 auto;padding:0 24px 64px}
-.glossary h2{font-size:18px;font-weight:700;margin-bottom:20px;padding-bottom:12px;border-bottom:.5px solid var(--border-default)}
-.gl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
-.gl-item{background:var(--surface-card);border:.5px solid var(--border-default);border-radius:var(--r-md);padding:14px 16px}
-.gl-item h3{font-size:13px;font-weight:600;color:var(--color-brand);margin-bottom:6px}
-.gl-item p{font-size:12px;color:var(--text-secondary);line-height:1.6}
-</style>
-<div class="glossary">
-  <h2>Understanding the Futures Prop Firm Comparison Table</h2>
-  <div class="gl-grid">
-    <div class="gl-item"><h3>All-In Price</h3><p>Total cost — eval fee plus any activation fee. Reflects the discounted price when using code SOPF.</p></div>
-    <div class="gl-item"><h3>Profit Target</h3><p>Amount you must earn during evaluation to qualify for a funded account.</p></div>
-    <div class="gl-item"><h3>Drawdown</h3><p>End-of-Day updates after close. Intraday trails unrealized P&L live. Static never moves.</p></div>
-    <div class="gl-item"><h3>P/D Ratio</h3><p>Profit Target &divide; Drawdown. Lower = easier eval. Green &le;1.0, gray &le;1.5, amber &gt;1.5.</p></div>
-    <div class="gl-item"><h3>Daily Loss Limit</h3><p>Max per session. Soft breach locks you out. Hard breach fails the account. $0 = no limit.</p></div>
-    <div class="gl-item"><h3>Days to Pass</h3><p>Minimum trading days required before your eval can be approved.</p></div>
-    <div class="gl-item"><h3>Days to $</h3><p>How quickly you can request your first payout. Ranges from 1 to 10+ days.</p></div>
-    <div class="gl-item"><h3>Profit Split</h3><p>Your share of profits on each payout. Most firms offer 80–90%. Some give 100% on the first tier.</p></div>
-    <div class="gl-item"><h3>Max Funded</h3><p>Simultaneous funded accounts allowed. Higher = more scaling potential.</p></div>
+<div class="disclaimer"><div class="disclaimer-inner"><strong>Disclaimer:</strong> We do our best to keep account prices, activation fees, and promo codes accurate and up to date. Prop firms can change their offers at any time. Always double-check before purchasing.</div></div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><strong>Save On Prop Firms</strong><p>The independent comparison tool for futures prop traders. No fluff — just real data, real discounts, and decisions you can trust.</p></div>
+    <div class="footer-col"><h4>Explore</h4><ul>
+      <li><a href="index.html">Compare</a></li><li><a href="promos/index.html">Promos</a></li>
+      <li><a href="prop-firms/index.html">Prop Firms</a></li><li><a href="trading-tools/index.html">Tools</a></li>
+      <li><a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a></li>
+      <li><a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Prop Firms</h4><ul>
+      <li><a href="prop-firms/lucid-trading.html">Lucid Trading</a></li>
+      <li><a href="prop-firms/tradeify.html">Tradeify</a></li>
+      <li><a href="prop-firms/apex-trader-funding.html">Apex Trader Funding</a></li>
+      <li><a href="prop-firms/tradeday.html">TradeDay</a></li>
+      <li><a href="prop-firms/bulenox.html">Bulenox</a></li>
+      <li><a href="prop-firms/e8-markets.html">E8 Markets</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul>
+      <li><a href="https://twitter.com/saveonpropfirms" target="_blank">Twitter / X</a></li>
+      <li><a href="https://www.instagram.com/saveonpropfirms" target="_blank">Instagram</a></li>
+      <li><a href="https://sopf.link/joindiscord" target="_blank">Discord</a></li>
+      <li><a href="https://www.trustpilot.com/review/saveonpropfirms.com" target="_blank">Trustpilot</a></li>
+      <li><a href="https://saveonpropfirms.com/newsletter" target="_blank">Newsletter</a></li>
+      <li><a href="https://saveonpropfirms.com/contact" target="_blank">Contact</a></li>
+    </ul></div>
   </div>
-</div>
-<div class="newsletter"><p><strong>Subscribe</strong> to Save Money, Stay Informed, and Win Big!</p>
-  <input class="newsletter-input" type="email" placeholder="Your email address">
-  <button class="btn-green">Sign Up</button></div>
-<div class="disclaimer"><div class="disclaimer-inner"><strong>Disclaimer:</strong> We do our best to keep pricing and codes accurate. Always verify on the firm's site before purchasing.</div></div>
-<footer class="footer"><div class="footer-inner">
-  <div class="footer-brand"><strong>Save On Prop Firms</strong><p>The independent comparison tool for futures prop traders.</p></div>
-  <div class="footer-col"><h4>Explore</h4><ul>
-    <li><a href="index.html">Compare</a></li><li><a href="promos/index.html">Promos</a></li>
-    <li><a href="prop-firms/index.html">Prop Firms</a></li><li><a href="trading-tools/index.html">Tools</a></li>
-    <li><a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a></li><li><a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a></li>
-  </ul></div>
-  <div class="footer-col"><h4>Prop Firms</h4><ul>
-    <li><a href="prop-firms/lucid-trading.html">Lucid Trading</a></li><li><a href="prop-firms/tradeify.html">Tradeify</a></li>
-    <li><a href="prop-firms/apex-trader-funding.html">Apex Trader Funding</a></li><li><a href="prop-firms/alpha-futures.html">Alpha Futures</a></li>
-    <li><a href="prop-firms/tradeday.html">TradeDay</a></li><li><a href="prop-firms/bulenox.html">Bulenox</a></li>
-  </ul></div>
-  <div class="footer-col"><h4>Connect</h4><ul>
-    <li><a href="https://twitter.com/saveonpropfirms" target="_blank">Twitter/X</a></li>
-    <li><a href="https://sopf.link/joindiscord" target="_blank">Discord</a></li>
-    <li><a href="https://www.trustpilot.com/review/saveonpropfirms.com" target="_blank">Trustpilot</a></li>
-    <li><a href="https://saveonpropfirms.com/contact" target="_blank">Contact</a></li>
-  </ul></div>
-</div><div class="footer-bottom"><span>&copy; 2026 Save On Prop Firms. All rights reserved.</span><span>Static clone &middot; June 2026</span></div></footer>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Save On Prop Firms. All rights reserved.</span>
+    <span>Static clone &middot; June 2026</span>
+  </div>
+</footer>
+
 <script>
 const FIRMS=[
-  {firm:"Lucid Trading",acct:"25K LucidFlex",info:"$25K·Eval·LucidFlex·2 Minis/20 Micros",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:100,pf:50,act:0,off:"50% OFF",exp:"Ends Jul 2",target:1250,dd:1000,ddt:"End-of-Day",pd:1.25,dl:0,dtp:2,dtm:5,split:90,contracts:"2 Minis/20 Micros",max:5,detail:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
-  {firm:"Lucid Trading",acct:"50K LucidFlex",info:"$50K·Eval·LucidFlex·4 Minis/40 Micros",size:50000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:130,pf:65,act:0,off:"50% OFF",exp:"Ends Jul 2",target:3000,dd:2000,ddt:"End-of-Day",pd:1.50,dl:0,dtp:2,dtm:5,split:90,contracts:"4 Minis/40 Micros",max:5,detail:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
-  {firm:"Lucid Trading",acct:"25K LucidPro",info:"$25K·Eval·LucidPro·2 Minis/20 Micros",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:135,pf:68,act:0,off:"50% OFF",exp:"Ends Jul 2",target:1250,dd:1000,ddt:"End-of-Day",pd:1.25,dl:0,dtp:1,dtm:3,split:90,contracts:"2 Minis/20 Micros",max:5,detail:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
-  {firm:"Tradeify",acct:"25K Growth",info:"$25K·Eval·Growth·1 Mini/10 Micros",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif",init:"TF",po:99,pf:69,act:0,off:"30% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:600,dtp:1,dtm:5,split:90,contracts:"1 Mini/10 Micros",max:5,detail:"prop-firms/tradeify.html",buy:"https://sopf.link/tradeify"},
-  {firm:"Tradeify",acct:"25K Select",info:"$25K·Eval·Select·1 Mini/10 Micros",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif",init:"TF",po:109,pf:76,act:0,off:"30% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:0,dtp:3,dtm:1,split:90,contracts:"1 Mini/10 Micros",max:5,detail:"prop-firms/tradeify.html",buy:"https://sopf.link/tradeify"},
-  {firm:"Alpha Futures",acct:"25K Zero",info:"$25K·Eval·Zero·1 Mini/10 Micros",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/TrQTeszKtHAMTMp8HaHxe/b2b03e769d42d2a7d58d38d0838c50a8/alpha-futures-logo.avif",init:"AF",po:79,pf:71,act:0,off:"10% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:500,dtp:1,dtm:5,split:90,contracts:"1 Mini/10 Micros",max:5,detail:"prop-firms/alpha-futures.html",buy:"https://sopf.link/alpha"},
-  {firm:"FundedNext Futures",acct:"25K Legacy",info:"$25K·Eval·Legacy·2 Minis/20 Micros",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/5FBtTkN85IReua872uFkVB/e0af07c58f778dd24c8da298585abdb4/fundednext-futures-logo.avif",init:"FN",po:80,pf:76,act:0,off:"5% OFF",exp:"Ends Soon",target:1250,dd:1250,ddt:"End-of-Day",pd:1.00,dl:0,dtp:3,dtm:5,split:80,contracts:"2 Minis/20 Micros",max:12,detail:"prop-firms/fundednext-futures.html",buy:"https://sopf.link/fundednext"},
-  {firm:"MyFundedFutures",acct:"25K Flex",info:"$25K·Eval·Flex·2 Minis/20 Micros",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/5qO8FWJDkwByOmKRNFinRG/e3e22b1bca47010594fa602a43f25579/myfundedfutures-logo.avif",init:"MF",po:95,pf:90,act:0,off:"5% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:0,dtp:2,dtm:5,split:80,contracts:"2 Minis/20 Micros",max:5,detail:"prop-firms/myfundedfutures.html",buy:"https://sopf.link/myfundedfutures"},
-  {firm:"Funded Futures Network",acct:"25K Standard",info:"$25K·Eval·Standard·3 Minis/30 Micros",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/7pwQjL53uKN7Il8PUcuon7/79d308bbc5ce7fd9e455304fe0c39b35/funded-futures-network-logo.avif",init:"FF",po:125,pf:94,act:0,off:"25% OFF",exp:"Ends Soon",target:2000,dd:1500,ddt:"Intraday",pd:1.33,dl:0,dtp:7,dtm:3,split:80,contracts:"3 Minis/30 Micros",max:5,detail:"prop-firms/funded-futures-network.html",buy:"https://sopf.link/ffn"},
-  {firm:"Apex Trader Funding",acct:"25K Full",info:"$25K·Eval·Full·2 Micros",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/7FrNm7EQLmGs73nemVn6cW/cfb8c5617fbbfb2006f8ed632d286b25/apex-trading-funding-logo.avif",init:"AP",po:97,pf:56,act:0,off:"40% OFF",exp:"Ends Soon",target:1500,dd:1500,ddt:"End-of-Day",pd:1.00,dl:0,dtp:7,dtm:8,split:90,contracts:"2 Micros",max:20,detail:"prop-firms/apex-trader-funding.html",buy:"https://sopf.link/apex"},
-  {firm:"Apex Trader Funding",acct:"50K Full",info:"$50K·Eval·Full·10 Micros",size:50000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/7FrNm7EQLmGs73nemVn6cW/cfb8c5617fbbfb2006f8ed632d286b25/apex-trading-funding-logo.avif",init:"AP",po:167,pf:97,act:0,off:"40% OFF",exp:"Ends Soon",target:3000,dd:2500,ddt:"End-of-Day",pd:1.20,dl:0,dtp:7,dtm:8,split:90,contracts:"10 Micros",max:20,detail:"prop-firms/apex-trader-funding.html",buy:"https://sopf.link/apex"},
-  {firm:"TradeDay",acct:"30K Standard",info:"$30K·Eval·Standard·3 Minis",size:30000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/6nKMLA6edQFsthxUeMSvto/88fbfa2a8a6551ae5e796cc7dd9dff53/tradeday-logo.avif",init:"TD",po:150,pf:120,act:0,off:"20% OFF",exp:"Ends Soon",target:1800,dd:1500,ddt:"End-of-Day",pd:1.20,dl:0,dtp:1,dtm:1,split:90,contracts:"3 Minis",max:10,detail:"prop-firms/tradeday.html",buy:"https://sopf.link/tradeday"},
-  {firm:"Bulenox",acct:"25K Option 1",info:"$25K·Eval·Option 1·2 Minis",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/7tlRNVLI5nVeg0edvDPVbd/0cf36c71eccc01a70152f42ad505c7f5/bulenox-logo.avif",init:"BX",po:119,pf:65,act:0,off:"45% OFF",exp:"Ends Soon",target:1500,dd:1500,ddt:"Static",pd:1.00,dl:500,dtp:5,dtm:7,split:80,contracts:"2 Minis",max:11,detail:"prop-firms/bulenox.html",buy:"https://sopf.link/bulenox"},
-  {firm:"BluSky Trading",acct:"25K Launch",info:"$25K·Eval·Launch",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/2Vxyskg85GKFerpmDWapgZ/d4711a12e7529532701b451f92335486/blusky-trading-company-logo.avif",init:"BS",po:199,pf:139,act:0,off:"30% OFF",exp:"Ends Soon",target:2000,dd:2000,ddt:"End-of-Day",pd:1.00,dl:0,dtp:5,dtm:1,split:90,contracts:"2 Minis",max:2,detail:"prop-firms/blusky-trading-company.html",buy:"https://sopf.link/blusky"},
-  {firm:"DayTraders",acct:"50K CORE",info:"$50K·Eval·CORE·5 Minis",size:50000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/1UmmELUWgCucYgAb328apK/9a88884f1020563974496cf4322cd867/daytraders-logo.avif",init:"DT",po:369,pf:185,act:0,off:"50% OFF",exp:"Ends Soon",target:3000,dd:2000,ddt:"Intraday",pd:1.50,dl:1000,dtp:8,dtm:5,split:80,contracts:"5 Minis",max:5,detail:"prop-firms/daytraders.html",buy:"https://sopf.link/daytraders"},
-  {firm:"E8 Markets",acct:"50K Signature",info:"$50K·Eval·Signature·5 Minis",size:50000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/6GUfpKZ5JoudaBLNhzcvHG/c62386f63236fbe88cc25a0b86fd368b/e8-markets-logo.avif",init:"E8",po:228,pf:205,act:0,off:"10% OFF",exp:"Ends Soon",target:4000,dd:4000,ddt:"End-of-Day",pd:1.00,dl:0,dtp:4,dtm:7,split:80,contracts:"5 Minis",max:5,detail:"prop-firms/e8-markets.html",buy:"https://sopf.link/e8"},
-  {firm:"Legends Trading",acct:"25K Apprentice",info:"$25K·Eval·Apprentice",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/6MVyyXE6UMIkBQEQ6RNuhr/543ee8bb962555a76be895fa3c13f1cf/legends-trading-logo.avif",init:"LG",po:199,pf:159,act:0,off:"20% OFF",exp:"Ends Soon",target:2000,dd:2000,ddt:"End-of-Day",pd:1.00,dl:0,dtp:5,dtm:7,split:90,contracts:"2 Minis",max:5,detail:"prop-firms/legends-trading.html",buy:"https://sopf.link/legends"},
-  {firm:"Purdia Capital",acct:"25K Standard",info:"$25K·Eval·Standard",size:25000,type:"Eval",logo:"https://images.ctfassets.net/nzj71to26bbi/45soFOEoUGtNNiHu8nBavj/4b6fbb51514593513933c86cadd385d6/purdia-logo.avif",init:"PC",po:149,pf:104,act:0,off:"30% OFF",exp:"Ends Soon",target:1500,dd:1500,ddt:"End-of-Day",pd:1.00,dl:0,dtp:1,dtm:1,split:90,contracts:"2 Minis",max:5,detail:"prop-firms/purdia-capital.html",buy:"https://sopf.link/purdia"},
+  {firm:"Lucid Trading",acct:"25K LucidFlex",size:25000,type:"Eval",aname:"LucidFlex",con:"2 Minis / 20 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:100,pf:50,act:0,off:"50% OFF",exp:"Ends Jul 2",target:1250,dd:1000,ddt:"End-of-Day",pd:1.25,dl:0,dtp:2,dtm:5,split:90,det:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
+  {firm:"Lucid Trading",acct:"50K LucidFlex",size:50000,type:"Eval",aname:"LucidFlex",con:"4 Minis / 40 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:130,pf:65,act:0,off:"50% OFF",exp:"Ends Jul 2",target:3000,dd:2000,ddt:"End-of-Day",pd:1.50,dl:0,dtp:2,dtm:5,split:90,det:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
+  {firm:"Lucid Trading",acct:"25K LucidPro",size:25000,type:"Eval",aname:"LucidPro",con:"2 Minis / 20 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:135,pf:68,act:0,off:"50% OFF",exp:"Ends Jul 2",target:1250,dd:1000,ddt:"End-of-Day",pd:1.25,dl:0,dtp:1,dtm:3,split:90,det:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
+  {firm:"Lucid Trading",acct:"50K LucidPro",size:50000,type:"Eval",aname:"LucidPro",con:"4 Minis / 40 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:185,pf:93,act:0,off:"50% OFF",exp:"Ends Jul 2",target:3000,dd:2000,ddt:"End-of-Day",pd:1.50,dl:1200,dtp:1,dtm:3,split:90,det:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
+  {firm:"Tradeify",acct:"25K Growth",size:25000,type:"Eval",aname:"Growth",con:"1 Mini / 10 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif",init:"TF",po:99,pf:69,act:0,off:"30% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:600,dtp:1,dtm:5,split:90,det:"prop-firms/tradeify.html",buy:"https://sopf.link/tradeify"},
+  {firm:"Tradeify",acct:"25K Select",size:25000,type:"Eval",aname:"Select",con:"1 Mini / 10 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif",init:"TF",po:109,pf:76,act:0,off:"30% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:0,dtp:3,dtm:1,split:90,det:"prop-firms/tradeify.html",buy:"https://sopf.link/tradeify"},
+  {firm:"Alpha Futures",acct:"25K Zero",size:25000,type:"Eval",aname:"Zero",con:"1 Mini / 10 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/TrQTeszKtHAMTMp8HaHxe/b2b03e769d42d2a7d58d38d0838c50a8/alpha-futures-logo.avif",init:"AF",po:79,pf:71,act:0,off:"10% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:500,dtp:1,dtm:5,split:90,det:"prop-firms/alpha-futures.html",buy:"https://sopf.link/alpha"},
+  {firm:"FundedNext Futures",acct:"25K Legacy",size:25000,type:"Eval",aname:"Legacy",con:"2 Minis / 20 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/5FBtTkN85IReua872uFkVB/e0af07c58f778dd24c8da298585abdb4/fundednext-futures-logo.avif",init:"FN",po:80,pf:76,act:0,off:"5% OFF",exp:"Ends Soon",target:1250,dd:1250,ddt:"End-of-Day",pd:1.00,dl:0,dtp:3,dtm:5,split:80,det:"prop-firms/fundednext-futures.html",buy:"https://sopf.link/fundednext"},
+  {firm:"MyFundedFutures",acct:"25K Flex",size:25000,type:"Eval",aname:"Flex",con:"2 Minis / 20 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/5qO8FWJDkwByOmKRNFinRG/e3e22b1bca47010594fa602a43f25579/myfundedfutures-logo.avif",init:"MF",po:95,pf:90,act:0,off:"5% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:0,dtp:2,dtm:5,split:80,det:"prop-firms/myfundedfutures.html",buy:"https://sopf.link/myfundedfutures"},
+  {firm:"Funded Futures Network",acct:"25K Standard",size:25000,type:"Eval",aname:"Standard",con:"3 Minis / 30 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/7pwQjL53uKN7Il8PUcuon7/79d308bbc5ce7fd9e455304fe0c39b35/funded-futures-network-logo.avif",init:"FF",po:125,pf:94,act:0,off:"25% OFF",exp:"Ends Soon",target:2000,dd:1500,ddt:"Intraday",pd:1.33,dl:0,dtp:7,dtm:3,split:80,det:"prop-firms/funded-futures-network.html",buy:"https://sopf.link/ffn"},
+  {firm:"Apex Trader Funding",acct:"25K Full",size:25000,type:"Eval",aname:"Full",con:"2 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/7FrNm7EQLmGs73nemVn6cW/cfb8c5617fbbfb2006f8ed632d286b25/apex-trading-funding-logo.avif",init:"AP",po:97,pf:56,act:0,off:"40% OFF",exp:"Ends Soon",target:1500,dd:1500,ddt:"End-of-Day",pd:1.00,dl:0,dtp:7,dtm:8,split:90,det:"prop-firms/apex-trader-funding.html",buy:"https://sopf.link/apex"},
+  {firm:"Apex Trader Funding",acct:"50K Full",size:50000,type:"Eval",aname:"Full",con:"10 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/7FrNm7EQLmGs73nemVn6cW/cfb8c5617fbbfb2006f8ed632d286b25/apex-trading-funding-logo.avif",init:"AP",po:167,pf:97,act:0,off:"40% OFF",exp:"Ends Soon",target:3000,dd:2500,ddt:"End-of-Day",pd:1.20,dl:0,dtp:7,dtm:8,split:90,det:"prop-firms/apex-trader-funding.html",buy:"https://sopf.link/apex"},
+  {firm:"TradeDay",acct:"30K Standard",size:30000,type:"Eval",aname:"Standard",con:"3 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/6nKMLA6edQFsthxUeMSvto/88fbfa2a8a6551ae5e796cc7dd9dff53/tradeday-logo.avif",init:"TD",po:150,pf:120,act:0,off:"20% OFF",exp:"Ends Soon",target:1800,dd:1500,ddt:"End-of-Day",pd:1.20,dl:0,dtp:1,dtm:1,split:90,det:"prop-firms/tradeday.html",buy:"https://sopf.link/tradeday"},
+  {firm:"Bulenox",acct:"25K Option 1",size:25000,type:"Eval",aname:"Option 1",con:"2 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/7tlRNVLI5nVeg0edvDPVbd/0cf36c71eccc01a70152f42ad505c7f5/bulenox-logo.avif",init:"BX",po:119,pf:65,act:0,off:"45% OFF",exp:"Ends Soon",target:1500,dd:1500,ddt:"Static",pd:1.00,dl:500,dtp:5,dtm:7,split:80,det:"prop-firms/bulenox.html",buy:"https://sopf.link/bulenox"},
+  {firm:"BluSky Trading",acct:"25K Launch",size:25000,type:"Eval",aname:"Launch",con:"2 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/2Vxyskg85GKFerpmDWapgZ/d4711a12e7529532701b451f92335486/blusky-trading-company-logo.avif",init:"BS",po:199,pf:139,act:0,off:"30% OFF",exp:"Ends Soon",target:2000,dd:2000,ddt:"End-of-Day",pd:1.00,dl:0,dtp:5,dtm:1,split:90,det:"prop-firms/blusky-trading-company.html",buy:"https://sopf.link/blusky"},
+  {firm:"DayTraders",acct:"50K CORE",size:50000,type:"Eval",aname:"CORE",con:"5 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/1UmmELUWgCucYgAb328apK/9a88884f1020563974496cf4322cd867/daytraders-logo.avif",init:"DT",po:369,pf:185,act:0,off:"50% OFF",exp:"Ends Soon",target:3000,dd:2000,ddt:"Intraday",pd:1.50,dl:1000,dtp:8,dtm:5,split:80,det:"prop-firms/daytraders.html",buy:"https://sopf.link/daytraders"},
+  {firm:"E8 Markets",acct:"50K Signature",size:50000,type:"Eval",aname:"Signature",con:"5 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/6GUfpKZ5JoudaBLNhzcvHG/c62386f63236fbe88cc25a0b86fd368b/e8-markets-logo.avif",init:"E8",po:228,pf:205,act:0,off:"10% OFF",exp:"Ends Soon",target:4000,dd:4000,ddt:"End-of-Day",pd:1.00,dl:0,dtp:4,dtm:3,split:80,det:"prop-firms/e8-markets.html",buy:"https://sopf.link/e8"},
+  {firm:"Legends Trading",acct:"25K Apprentice",size:25000,type:"Eval",aname:"Apprentice",con:"2 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/6MVyyXE6UMIkBQEQ6RNuhr/543ee8bb962555a76be895fa3c13f1cf/legends-trading-logo.avif",init:"LG",po:199,pf:159,act:0,off:"20% OFF",exp:"Ends Soon",target:2000,dd:2000,ddt:"End-of-Day",pd:1.00,dl:0,dtp:5,dtm:7,split:90,det:"prop-firms/legends-trading.html",buy:"https://sopf.link/legends"},
+  {firm:"Purdia Capital",acct:"25K Standard",size:25000,type:"Eval",aname:"Standard",con:"2 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/45soFOEoUGtNNiHu8nBavj/4b6fbb51514593513933c86cadd385d6/purdia-logo.avif",init:"PC",po:149,pf:104,act:0,off:"30% OFF",exp:"Ends Soon",target:1500,dd:1500,ddt:"End-of-Day",pd:1.00,dl:0,dtp:1,dtm:1,split:90,det:"prop-firms/purdia-capital.html",buy:"https://sopf.link/purdia"},
 ];
+
 let sc=null,sd=1,filt=[...FIRMS];
-const pdC=p=>p<=1?"pd-easy":p<=1.5?"pd-medium":"pd-hard";
-const ddC=t=>t==="Intraday"?"dd-int":t==="Static"?"dd-st":"dd-eod";
-const fmtDL=v=>v===0?`<span style="color:var(--text-tertiary)">None</span>`:"$"+v.toLocaleString();
-const logoH=f=>`<img class="firm-logo" src="${f.logo}" alt="${f.firm}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="firm-logo-fb">${f.init}</div>`;
-function render(){
-  const tb=document.getElementById("tbody");
-  if(!filt.length){tb.innerHTML=`<tr><td colspan="14"><div class="empty-state"><h3>No accounts match your filters</h3><p>Try removing a filter or clicking Reset.</p></div></td></tr>`;return;}
-  tb.innerHTML=filt.map(f=>`<tr>
-    <td><div class="firm-cell">${logoH(f)}<div><div class="firm-name">${f.firm}</div><div class="firm-acct">${f.acct}</div></div></div></td>
-    <td><div style="font-weight:500">$${f.size.toLocaleString()}</div><div style="font-size:11px;color:var(--text-tertiary)">${f.type}</div></td>
-    <td><div class="price-orig">$${f.po}</div><div class="price-final">$${f.pf}</div><div class="price-act">+$${f.act} Activation</div></td>
-    <td><div style="display:flex;flex-direction:column;gap:3px"><span class="badge-off">${f.off}</span><span class="badge-exp">${f.exp}</span><span class="badge-code">SOPF</span></div></td>
-    <td style="font-weight:500">$${f.target.toLocaleString()}</td>
-    <td><div>$${f.dd.toLocaleString()}</div><div class="${ddC(f.ddt)}" style="font-size:11px">${f.ddt}</div></td>
-    <td class="${pdC(f.pd)}">${f.pd.toFixed(2)}</td>
-    <td>${fmtDL(f.dl)}</td>
-    <td>${f.dtp} day${f.dtp!==1?"s":""}</td>
-    <td>${f.dtm} day${f.dtm!==1?"s":""}</td>
-    <td style="font-weight:500">${f.split}%</td>
-    <td style="color:var(--text-secondary);font-size:12px">${f.contracts}</td>
-    <td>Max ${f.max}</td>
-    <td><div class="btn-row"><a class="btn-details" href="${f.detail}">Details</a><a class="btn-buy" href="${f.buy}" target="_blank">Buy &#8599;</a></div></td>
-  </tr>`).join("");
+
+function donut(pd){
+  const r=14,cx=18,cy=18,circ=2*Math.PI*r;
+  const pct=Math.min(pd/2,1);
+  const d=pct*circ,g=circ-d;
+  const col=pd<=1?'#22c55e':pd<=1.5?'#a1a1aa':'#f59e0b';
+  return`<svg class="pd-svg" viewBox="0 0 36 36">
+    <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#27272a" stroke-width="4.5"/>
+    <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${col}" stroke-width="4.5"
+      stroke-dasharray="${d} ${g}" stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
+    <text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central"
+      font-size="7.5" font-weight="700" fill="${col}" font-family="Inter,system-ui,sans-serif">${pd.toFixed(2)}</text>
+  </svg>`;
 }
+
+function ddCls(t){return t==='Intraday'?'intra':t==='Static'?'static':'eod';}
+function fmtDL(v){return v===0?'<span style="color:#52525b">0</span>':'$'+v.toLocaleString();}
+function logoH(f){return`<img class="firm-logo" src="${f.logo}" alt="${f.firm}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="firm-logo-fb">${f.init}</div>`;}
+
+function render(){
+  const tb=document.getElementById('tbody');
+  if(!filt.length){
+    tb.innerHTML=`<tr><td colspan="12"><div class="empty"><h3>No accounts match your filters</h3><p>Try removing a filter or clicking Reset.</p></div></td></tr>`;
+    return;
+  }
+  tb.innerHTML=filt.map(f=>`<tr>
+    <td><div class="firm-cell">${logoH(f)}<div>
+      <div class="firm-name">${f.firm}</div>
+      <div class="firm-sub">${f.acct}</div>
+    </div></div></td>
+    <td>
+      <div class="ai-size">$${f.size.toLocaleString()} <span class="ai-type">${f.type}</span></div>
+      <div class="ai-badge">${f.aname}</div>
+      <div class="ai-contracts">${f.con}</div>
+    </td>
+    <td>
+      <div class="p-orig">$${f.po}</div>
+      <div class="p-disc">$${f.pf}</div>
+      <div class="p-act">+$${f.act} Activation</div>
+      <div class="p-total">$${f.pf} Total</div>
+    </td>
+    <td>
+      <div class="promo-card">
+        <span class="promo-off">${f.off}</span>
+        <span class="promo-exp">${f.exp}</span>
+        <div class="promo-bottom">
+          <span class="promo-code-txt">SOPF</span>
+          <button class="promo-copy-btn" onclick="copyCode()" title="Copy">⧉</button>
+        </div>
+      </div>
+    </td>
+    <td><strong style="font-size:15px">$${f.target.toLocaleString()}</strong></td>
+    <td>
+      <div class="dd-amount">$${f.dd.toLocaleString()}</div>
+      <div class="dd-type ${ddCls(f.ddt)}">${f.ddt}</div>
+    </td>
+    <td><div class="pd-cell">${donut(f.pd)}</div></td>
+    <td><span class="dl">${fmtDL(f.dl)}</span></td>
+    <td><div class="dpill">${f.dtp} day${f.dtp!==1?'s':''}</div></td>
+    <td><div class="dpill">${f.dtm} day${f.dtm!==1?'s':''}</div></td>
+    <td><strong>${f.split}%</strong></td>
+    <td><div class="btns">
+      <a class="btn-d" href="${f.det}">Details</a>
+      <a class="btn-b" href="${f.buy}" target="_blank">Buy &#8599;</a>
+    </div></td>
+  </tr>`).join('');
+}
+
 function applyFilters(){
-  const t=document.getElementById("ft").value,d=document.getElementById("fd").value,s=document.getElementById("fs").value;
-  ["ft","fd","fs"].forEach(id=>{const e=document.getElementById(id);e.classList.toggle("active",e.value!=="");});
-  filt=FIRMS.filter(f=>(!t||f.type===t)&&(!d||f.ddt===d)&&(!s||f.size===parseInt(s)));
+  const firm=document.getElementById('ff').value,t=document.getElementById('ft').value,
+    d=document.getElementById('fd').value,s=document.getElementById('fs').value;
+  ['ff','ft','fd','fs'].forEach(id=>document.getElementById(id).classList.toggle('on',document.getElementById(id).value!==''));
+  filt=FIRMS.filter(f=>(!firm||f.firm===firm)&&(!t||f.type===t)&&(!d||f.ddt===d)&&(!s||f.size===parseInt(s)));
   if(sc)doSort();updatePills();render();
-  document.getElementById("fcount").textContent=filt.length<FIRMS.length?`Showing ${filt.length} of ${FIRMS.length} accounts`:"";
+  document.getElementById('fcnt').textContent=filt.length<FIRMS.length?`Showing ${filt.length} of ${FIRMS.length} accounts`:'';
 }
 function updatePills(){
-  const p=document.getElementById("pills");
-  p.innerHTML=["ft","fd","fs"].filter(id=>document.getElementById(id).value!=="").map(id=>{
-    const e=document.getElementById(id);return`<span class="active-pill" onclick="clrF('${id}')">${e.options[e.selectedIndex].text} <span>&#215;</span></span>`;
-  }).join("");
+  document.getElementById('pills').innerHTML=['ff','ft','fd','fs'].filter(id=>document.getElementById(id).value!=='').map(id=>{
+    const e=document.getElementById(id);
+    return`<span class="pill" onclick="clrF('${id}')">${e.options[e.selectedIndex].text} &times;</span>`;
+  }).join('');
 }
-function clrF(id){document.getElementById(id).value="";applyFilters();}
+function clrF(id){document.getElementById(id).value='';applyFilters();}
 function resetFilters(){
-  ["ft","fd","fs"].forEach(id=>{document.getElementById(id).value="";document.getElementById(id).classList.remove("active");});
+  ['ff','ft','fd','fs'].forEach(id=>{document.getElementById(id).value='';document.getElementById(id).classList.remove('on');});
   filt=[...FIRMS];sc=null;sd=1;
-  document.querySelectorAll("th").forEach(t=>t.classList.remove("asc","desc"));
-  document.getElementById("pills").innerHTML="";document.getElementById("fcount").textContent="";render();
+  document.querySelectorAll('th').forEach(t=>t.classList.remove('asc','desc'));
+  document.getElementById('pills').innerHTML='';document.getElementById('fcnt').textContent='';
+  render();
 }
 function sortBy(col){
   const th=document.querySelector(`th[data-col="${col}"]`);
   sc===col?sd*=-1:(sc=col,sd=1);
-  document.querySelectorAll("th").forEach(t=>t.classList.remove("asc","desc"));
-  th.classList.add(sd===1?"asc":"desc");doSort();render();
+  document.querySelectorAll('th').forEach(t=>t.classList.remove('asc','desc'));
+  th.classList.add(sd===1?'asc':'desc');doSort();render();
 }
-function doSort(){const m={price:"pf",target:"target",pd:"pd",dtp:"dtp",dtm:"dtm"};filt.sort((a,b)=>(a[m[sc]]-b[m[sc]])*sd);}
+function doSort(){
+  const m={firm:'firm',size:'size',price:'pf',target:'target',dd:'dd',pd:'pd',dtp:'dtp',dtm:'dtm'};
+  filt.sort((a,b)=>{
+    const av=a[m[sc]],bv=b[m[sc]];
+    return(typeof av==='string'?av.localeCompare(bv):av-bv)*sd;
+  });
+}
+function copyCode(){
+  navigator.clipboard.writeText('SOPF').catch(()=>{});
+  const t=document.getElementById('toast');
+  t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000);
+}
 render();
-</script></body></html>
+</script>
+</body></html>

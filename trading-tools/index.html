@@ -1,234 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Trading Tools | Save On Prop Firms</title>
-<meta name="description" content="Discover the best trading tools and software for futures prop firm traders. Bookmap, Quantower, Replikanto, TradeZella, Tradytics — with exclusive SOPF discounts.">
+<title>Trading Tools for Futures Traders | Save On Prop Firms</title><meta name="description" content="Best trading tools and software for futures prop firm traders. Bookmap, Quantower, Replikanto, TradeZella, Tradytics with SOPF discounts."><meta name="theme-color" content="#22c55e">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared.css">
-<style>
-.page-hero{max-width:1280px;margin:0 auto;padding:48px 24px 32px}
-.page-hero h1{font-size:clamp(20px,3vw,30px);font-weight:700;margin-bottom:12px}
-.tools-wrap{max-width:1280px;margin:0 auto;padding:0 24px 64px;display:flex;flex-direction:column;gap:48px}
-.tool-card{background:var(--card);border:.5px solid var(--border);border-radius:var(--r-lg);overflow:hidden}
-.tool-header{display:flex;align-items:center;gap:20px;padding:24px 28px 20px;border-bottom:.5px solid var(--border);flex-wrap:wrap}
-.tool-logo{width:56px;height:56px;border-radius:var(--r-md);object-fit:contain;background:#fff;padding:6px;border:.5px solid var(--border);flex-shrink:0}
-.tool-header-info{flex:1;min-width:200px}
-.tool-name{font-size:18px;font-weight:700;color:var(--tx);margin-bottom:4px}
-.tool-url{font-size:12px;color:var(--tx3)}
-.tool-badges{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.tbadge-off{background:var(--discount-bg);border:.5px solid rgba(124,58,237,.35);color:var(--tx-discount);font-size:12px;font-weight:700;padding:4px 10px;border-radius:var(--r-sm)}
-.tbadge-code{background:var(--brand-glow);border:.5px solid var(--border-brand);color:var(--tx-brand);font-family:var(--mono);font-size:12px;font-weight:600;padding:4px 10px;border-radius:var(--r-sm)}
-.tbadge-scope{background:var(--input);border:.5px solid var(--border);color:var(--tx2);font-size:11px;padding:4px 10px;border-radius:var(--r-sm)}
-.tbadge-exp{font-size:11px;color:var(--tx3);padding:4px 0}
-.tool-body{display:grid;grid-template-columns:1fr 340px;gap:0}
-.tool-content{padding:24px 28px}
-.tool-content h3{font-size:15px;font-weight:700;color:var(--tx);margin-bottom:10px}
-.tool-content p{font-size:13px;color:var(--tx2);line-height:1.75;margin-bottom:12px}
-.tool-content p:last-child{margin-bottom:0}
-.tool-content strong{color:var(--tx)}
-.tool-screenshot{border-left:.5px solid var(--border)}
-.tool-screenshot img{width:100%;height:100%;object-fit:cover;display:block;max-height:260px}
-.btn-claim-tool{display:inline-flex;align-items:center;gap:6px;background:var(--brand);color:#000;font-weight:700;font-size:13px;padding:9px 18px;border-radius:var(--r-sm);transition:background .15s;text-decoration:none;margin-top:16px}
-.btn-claim-tool:hover{background:var(--brand-dim)}
-@media(max-width:768px){.tool-body{grid-template-columns:1fr}.tool-screenshot{display:none}}
-</style>
-</head>
-<body>
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <img src="https://saveonpropfirms.com/_next/image?url=%2Fmainlogo.png&w=128&q=75" alt="Save On Prop Firms">
-      Save On Prop Firms
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Compare</a></li>
-      <li><a href="promos/index.html">Promos</a></li>
-      <li><a href="prop-firms/index.html">Firms</a></li>
-      <li><a href="trading-tools/index.html" class="active">Tools</a></li>
-      <li><a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a></li>
-    </ul>
-    <span class="code-pill">Code: SOPF</span>
+<link rel="stylesheet" href="../shared.css">
+</head><body><nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><img src="https://saveonpropfirms.com/_next/image?url=%2Fmainlogo.png&w=128&q=75" alt="SOPF">Save On Prop Firms</a>
+    <ul class="nav-links"><li><a href="../index.html" class="">Compare</a></li><li><a href="../promos/index.html" class="">Promos</a></li><li><a href="../prop-firms/index.html" class="">Firms</a></li><li><a href="../trading-tools/index.html" class="active">Tools</a></li></ul>
+    <a href="../promos/index.html" class="code-pill">Code: SOPF</a>
+    <button class="nav-hamburger" onclick="document.getElementById('nm').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
-</nav>
-
+  <div class="nav-mobile" id="nm">
+    <a href="../index.html">Compare</a><a href="../promos/index.html">Promos</a>
+    <a href="../prop-firms/index.html">Firms</a><a href="../trading-tools/index.html">Tools</a>
+    <a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a>
+  </div></nav>
+<style>
+.tools-wrap{max-width:1280px;margin:0 auto;padding:0 24px 64px;display:flex;flex-direction:column;gap:40px}
+.tool-card{background:var(--surface-card);border:.5px solid var(--border-default);border-radius:var(--r-lg);overflow:hidden}
+.tool-header{display:flex;align-items:center;gap:16px;padding:20px 24px 16px;border-bottom:.5px solid var(--border-default);flex-wrap:wrap;background:var(--surface-card)}
+.tool-logo{width:52px;height:52px;border-radius:var(--r-md);object-fit:contain;background:#fff;padding:6px;border:.5px solid var(--border-default);flex-shrink:0}
+.tool-hinfo{flex:1;min-width:140px}
+.tool-name{font-size:17px;font-weight:700;color:var(--text-primary);margin-bottom:2px}
+.tool-url{font-size:12px;color:var(--text-tertiary)}
+.tool-badges{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tc-off{background:var(--color-discount-bg);border:.5px solid var(--color-discount-border);color:var(--text-discount);font-size:12px;font-weight:700;padding:4px 10px;border-radius:var(--r-sm)}
+.tc-scope{background:var(--surface-input);border:.5px solid var(--border-default);color:var(--text-secondary);font-size:11px;padding:4px 10px;border-radius:var(--r-sm)}
+.tc-code{background:var(--color-brand-glow);border:.5px solid var(--color-brand-border);color:var(--text-brand);font-family:var(--mono);font-size:12px;font-weight:600;padding:4px 10px;border-radius:var(--r-sm)}
+.tc-nocode{font-size:11px;color:var(--text-tertiary)}
+.tool-body{display:grid;grid-template-columns:1fr 380px}
+.tool-content{padding:20px 24px}
+.tool-content p{font-size:13px;color:var(--text-secondary);line-height:1.75;margin-bottom:14px}
+.tc-cta{display:inline-flex;align-items:center;background:var(--color-brand);color:#000;font-weight:700;font-size:13px;padding:8px 16px;border-radius:var(--r-sm);transition:background .15s;text-decoration:none}
+.tc-cta:hover{background:var(--color-brand-dim)}
+.tool-shot{border-left:.5px solid var(--border-default)}
+.tool-shot img{width:100%;height:100%;object-fit:cover;display:block;max-height:240px}
+@media(max-width:900px){.tool-body{grid-template-columns:1fr}.tool-shot{display:none}}
+</style>
 <div class="page-hero">
   <h1>Top Trading Tools and Software for Futures Traders</h1>
+  <p>Exclusive SOPF discounts on the best order flow, copy trading, journaling, and analytics tools used by funded futures traders.</p>
 </div>
-
-<div class="tools-wrap">
-
-  <!-- BOOKMAP -->
-  <div class="tool-card">
-    <div class="tool-header">
-      <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/jUOjiie8aFOR9F6v1vj2t/104793cb22a9203a6ea316c554bab7d9/bookmap.png" alt="Bookmap">
-      <div class="tool-header-info">
-        <div class="tool-name">Bookmap</div>
-        <div class="tool-url">bookmap.com</div>
-      </div>
-      <div class="tool-badges">
-        <span class="tbadge-off">50% OFF</span>
-        <span class="tbadge-scope">Global Plus Quarterly — first 3 months</span>
-        <span class="tbadge-code">NO CODE NEEDED</span>
-        <span class="tbadge-exp">No Expiry</span>
-      </div>
-    </div>
-    <div class="tool-body">
-      <div class="tool-content">
-        <h3>Bookmap: Your Edge in Futures and Prop Firm Trading</h3>
-        <p>Bookmap is a revolutionary trading platform designed to give traders unmatched market clarity. With its cutting-edge heatmap technology and real-time order flow analysis, Bookmap transforms raw data into actionable insights.</p>
-        <p>Spot hidden liquidity, track institutional activity, and identify key support and resistance levels with precision. For futures and prop firm traders aiming for consistent results and higher payouts, Bookmap is the ultimate tool to stay ahead of the market.</p>
-        <a class="btn-claim-tool" href="https://sopf.link/bookmap" target="_blank">Get Bookmap ↗</a>
-      </div>
-      <div class="tool-screenshot">
-        <img src="https://images.ctfassets.net/nzj71to26bbi/3dAksGxGQnmvgmfrvzgyVB/f17cf8c40d152cd3d801c7755ea19c5d/bookmap-trading-tools-big-image-950x534.jpg" alt="Bookmap trading tool screenshot">
-      </div>
+<div class="tools-wrap"><div class="tool-card">
+  <div class="tool-header">
+    <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/jUOjiie8aFOR9F6v1vj2t/104793cb22a9203a6ea316c554bab7d9/bookmap.png" alt="Bookmap">
+    <div class="tool-hinfo"><div class="tool-name">Bookmap</div><div class="tool-url">bookmap.com</div></div>
+    <div class="tool-badges">
+      <span class="tc-off">50% OFF</span>
+      <span class="tc-scope">Global Plus Quarterly — first 3 months</span>
+      <span class="tc-nocode">No code needed</span>
     </div>
   </div>
-
-  <!-- QUANTOWER -->
-  <div class="tool-card">
-    <div class="tool-header">
-      <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/7DOU7gFgdU9nTDaHe4ek03/cf4516773e80ef1a74ef8dacd6926d21/quantower.jpg" alt="Quantower">
-      <div class="tool-header-info">
-        <div class="tool-name">Quantower</div>
-        <div class="tool-url">quantower.com</div>
-      </div>
-      <div class="tool-badges">
-        <span class="tbadge-off">5% OFF</span>
-        <span class="tbadge-scope">All Licenses</span>
-        <span class="tbadge-code">SOPF</span>
-        <span class="tbadge-exp">No Expiry</span>
-      </div>
+  <div class="tool-body">
+    <div class="tool-content">
+      <p>Bookmap is a revolutionary trading platform giving traders unmatched market clarity. With cutting-edge heatmap technology and real-time order flow analysis, Bookmap transforms raw data into actionable insights. Spot hidden liquidity, track institutional activity, and identify key support and resistance levels with precision. For futures and prop firm traders aiming for consistent results, Bookmap is the ultimate tool to stay ahead.</p>
+      <a class="tc-cta" href="https://sopf.link/bookmap" target="_blank">Get Bookmap &#8599;</a>
     </div>
-    <div class="tool-body">
-      <div class="tool-content">
-        <h3>Quantower: Unlock Unlimited Potential for Prop Firm Traders</h3>
-        <p>Quantower is a game-changing trading platform that redefines what's possible for prop firm traders. With its <strong>multi-connection capabilities</strong>, you can link to multiple prop firms simultaneously, creating a centralized hub for all your trading accounts.</p>
-        <p>The groundbreaking <strong>Copy Trader</strong> feature lets you replicate trades across all connected prop firms in real time. Supporting <strong>Rithmic</strong> and <strong>dxFeed</strong> — with <strong>ProjectX</strong> compatibility on the way.</p>
-        <a class="btn-claim-tool" href="https://sopf.link/quantower" target="_blank">Get Quantower ↗</a>
-      </div>
-      <div class="tool-screenshot">
-        <img src="https://images.ctfassets.net/nzj71to26bbi/68ISLdYMBd3UgOGLPx02eY/4ad64d35f631e5dac97a34135a9de0e9/quantower-trading-tools-big-image-950x534.jpg" alt="Quantower trading tool screenshot">
-      </div>
+    <div class="tool-shot"><img src="https://images.ctfassets.net/nzj71to26bbi/3dAksGxGQnmvgmfrvzgyVB/f17cf8c40d152cd3d801c7755ea19c5d/bookmap-trading-tools-big-image-950x534.jpg" alt="Bookmap screenshot" loading="lazy"></div>
+  </div>
+</div><div class="tool-card">
+  <div class="tool-header">
+    <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/7DOU7gFgdU9nTDaHe4ek03/cf4516773e80ef1a74ef8dacd6926d21/quantower.jpg" alt="Quantower">
+    <div class="tool-hinfo"><div class="tool-name">Quantower</div><div class="tool-url">quantower.com</div></div>
+    <div class="tool-badges">
+      <span class="tc-off">5% OFF</span>
+      <span class="tc-scope">All Licenses</span>
+      <span class="tc-code">SOPF</span>
     </div>
   </div>
-
-  <!-- REPLIKANTO -->
-  <div class="tool-card">
-    <div class="tool-header">
-      <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/6VuhnegidgrdDpeUkVBoDf/be8ce850074ddcd84e9e659608019e4d/replikanto.jpg" alt="Replikanto">
-      <div class="tool-header-info">
-        <div class="tool-name">Replikanto</div>
-        <div class="tool-url">flowbots.ninja</div>
-      </div>
-      <div class="tool-badges">
-        <span class="tbadge-off">20% OFF</span>
-        <span class="tbadge-scope">Replikanto Trade Copier</span>
-        <span class="tbadge-code">SOPF20</span>
-        <span class="tbadge-exp">No Expiry</span>
-      </div>
+  <div class="tool-body">
+    <div class="tool-content">
+      <p>Quantower redefines what&rsquo;s possible for prop firm traders. With multi-connection capabilities you can link to multiple prop firms simultaneously. The Copy Trader feature replicates trades across all connected accounts in real time. Supports Rithmic and dxFeed &mdash; with ProjectX compatibility on the way.</p>
+      <a class="tc-cta" href="https://sopf.link/quantower" target="_blank">Get Quantower &#8599;</a>
     </div>
-    <div class="tool-body">
-      <div class="tool-content">
-        <h3>Replikanto by FlowBots: Scale Your Prop Firm Trading with Ease</h3>
-        <p>Replikanto by FlowBots is a powerful copy trading tool designed for <strong>NinjaTrader</strong> users, enabling seamless trade replication across multiple prop firms. Supports <strong>one Rithmic connection</strong> and <strong>unlimited Tradovate connections</strong>.</p>
-        <p>Traders can execute orders directly on <strong>TradingView</strong>, and as long as NinjaTrader is running, Replikanto automatically copies those trades to all connected prop firm accounts. Built for scalability and maximum payout potential.</p>
-        <a class="btn-claim-tool" href="https://sopf.link/replikanto" target="_blank">Get Replikanto ↗</a>
-      </div>
-      <div class="tool-screenshot">
-        <img src="https://images.ctfassets.net/nzj71to26bbi/L553faSul4NHUWz1HOJFS/5e6e13c82f9934f6e254912ef6a8fec6/flowbots-replikanto-trading-tools-big-image-950x534.jpg" alt="Replikanto trading tool screenshot">
-      </div>
+    <div class="tool-shot"><img src="https://images.ctfassets.net/nzj71to26bbi/68ISLdYMBd3UgOGLPx02eY/4ad64d35f631e5dac97a34135a9de0e9/quantower-trading-tools-big-image-950x534.jpg" alt="Quantower screenshot" loading="lazy"></div>
+  </div>
+</div><div class="tool-card">
+  <div class="tool-header">
+    <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/6VuhnegidgrdDpeUkVBoDf/be8ce850074ddcd84e9e659608019e4d/replikanto.jpg" alt="Replikanto">
+    <div class="tool-hinfo"><div class="tool-name">Replikanto</div><div class="tool-url">flowbots.ninja</div></div>
+    <div class="tool-badges">
+      <span class="tc-off">20% OFF</span>
+      <span class="tc-scope">Replikanto Trade Copier</span>
+      <span class="tc-code">SOPF20</span>
     </div>
   </div>
-
-  <!-- TRADEZELLA -->
-  <div class="tool-card">
-    <div class="tool-header">
-      <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/6OHifxZqvJhJ92CiaZBmvt/69b4c1cf49e7554bbd7ece28b7d4c742/tradezella-logo.jpg" alt="TradeZella">
-      <div class="tool-header-info">
-        <div class="tool-name">TradeZella</div>
-        <div class="tool-url">tradezella.com</div>
-      </div>
-      <div class="tool-badges">
-        <span class="tbadge-off">20% OFF</span>
-        <span class="tbadge-scope">All Licenses</span>
-        <span class="tbadge-code">SOPF</span>
-        <span class="tbadge-exp">No Expiry</span>
-      </div>
+  <div class="tool-body">
+    <div class="tool-content">
+      <p>Replikanto by FlowBots enables seamless trade replication across multiple prop firms for NinjaTrader users. Supports one Rithmic connection and unlimited Tradovate connections. Execute orders on TradingView and Replikanto copies them automatically to all connected accounts.</p>
+      <a class="tc-cta" href="https://sopf.link/replikanto" target="_blank">Get Replikanto &#8599;</a>
     </div>
-    <div class="tool-body">
-      <div class="tool-content">
-        <h3>TradeZella: The Ultimate Trading Journal to Track &amp; Improve Your Performance</h3>
-        <p>TradeZella is a powerful trading journal designed to help traders analyze their performance, refine their strategies, and maximize profitability. Built for traders of all levels, TradeZella automates trade tracking, provides in-depth analytics, and offers features like trade replay and playbook creation.</p>
-        <p>By logging your trades with precision, you can identify strengths, uncover weaknesses, and develop data-driven strategies. Seamless integration with major brokers and platforms makes it easy to track and optimize every trade.</p>
-        <a class="btn-claim-tool" href="https://sopf.link/tradezella" target="_blank">Get TradeZella ↗</a>
-      </div>
-      <div class="tool-screenshot">
-        <img src="https://images.ctfassets.net/nzj71to26bbi/4NUhtErW8yydxqtnCUEbK9/52210b73a9f93b82dde18e8a0fc0e3a8/tradezella-trading-tool.jpg" alt="TradeZella trading tool screenshot">
-      </div>
+    <div class="tool-shot"><img src="https://images.ctfassets.net/nzj71to26bbi/L553faSul4NHUWz1HOJFS/5e6e13c82f9934f6e254912ef6a8fec6/flowbots-replikanto-trading-tools-big-image-950x534.jpg" alt="Replikanto screenshot" loading="lazy"></div>
+  </div>
+</div><div class="tool-card">
+  <div class="tool-header">
+    <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/6OHifxZqvJhJ92CiaZBmvt/69b4c1cf49e7554bbd7ece28b7d4c742/tradezella-logo.jpg" alt="TradeZella">
+    <div class="tool-hinfo"><div class="tool-name">TradeZella</div><div class="tool-url">tradezella.com</div></div>
+    <div class="tool-badges">
+      <span class="tc-off">20% OFF</span>
+      <span class="tc-scope">All Licenses</span>
+      <span class="tc-code">SOPF</span>
     </div>
   </div>
-
-  <!-- TRADYTICS -->
-  <div class="tool-card">
-    <div class="tool-header">
-      <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/2p3OXlkiVBm6vAzPR4cdEa/7796095ccc815b3a957bbe0ec799892e/tradytics.jpg" alt="Tradytics">
-      <div class="tool-header-info">
-        <div class="tool-name">Tradytics</div>
-        <div class="tool-url">tradytics.com</div>
-      </div>
-      <div class="tool-badges">
-        <span class="tbadge-off">10% OFF</span>
-        <span class="tbadge-scope">Full Pro Access</span>
-        <span class="tbadge-code">NO CODE NEEDED</span>
-        <span class="tbadge-exp">No Expiry</span>
-      </div>
+  <div class="tool-body">
+    <div class="tool-content">
+      <p>TradeZella is a powerful trading journal that automates trade tracking, provides in-depth analytics, and offers trade replay and playbook creation. Identify strengths, uncover weaknesses, and develop data-driven strategies to improve consistency. Seamless integration with major brokers.</p>
+      <a class="tc-cta" href="https://sopf.link/tradezella" target="_blank">Get TradeZella &#8599;</a>
     </div>
-    <div class="tool-body">
-      <div class="tool-content">
-        <h3>Tradytics: The Future of AI-Powered Trading</h3>
-        <p>Tradytics is an innovative analytics platform that leverages <strong>artificial intelligence</strong> to transform how traders analyze and navigate the markets. Designed for stocks, options, and futures traders, it delivers powerful tools such as real-time data visualization, AI-generated trade setups, and predictive modeling.</p>
-        <p>Features include <strong>market sentiment analysis</strong>, automated alerts, and dynamic heatmaps. Customizable dashboards and cutting-edge AI models empower traders to stay ahead of market trends and fine-tune strategies for maximum profitability.</p>
-        <a class="btn-claim-tool" href="https://sopf.link/tradytics" target="_blank">Get Tradytics ↗</a>
-      </div>
-      <div class="tool-screenshot">
-        <img src="https://images.ctfassets.net/nzj71to26bbi/3y4bYJ1elXLmwkwDuE1PrV/3f00ae35f7adefb21290ecd923b014d0/tradytics-trading-tools-big-image-950x534.jpg" alt="Tradytics trading tool screenshot">
-      </div>
+    <div class="tool-shot"><img src="https://images.ctfassets.net/nzj71to26bbi/4NUhtErW8yydxqtnCUEbK9/52210b73a9f93b82dde18e8a0fc0e3a8/tradezella-trading-tool.jpg" alt="TradeZella screenshot" loading="lazy"></div>
+  </div>
+</div><div class="tool-card">
+  <div class="tool-header">
+    <img class="tool-logo" src="https://images.ctfassets.net/nzj71to26bbi/2p3OXlkiVBm6vAzPR4cdEa/7796095ccc815b3a957bbe0ec799892e/tradytics.jpg" alt="Tradytics">
+    <div class="tool-hinfo"><div class="tool-name">Tradytics</div><div class="tool-url">tradytics.com</div></div>
+    <div class="tool-badges">
+      <span class="tc-off">10% OFF</span>
+      <span class="tc-scope">Full Pro Access</span>
+      <span class="tc-nocode">No code needed</span>
     </div>
   </div>
-
-</div>
-
-<div class="newsletter" style="max-width:1280px;margin:0 auto;padding:32px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-  <p style="font-size:14px;color:var(--tx2)"><strong>Subscribe</strong> to Save Money, Stay Informed, and Win Big!</p>
-  <input style="background:var(--input);border:.5px solid var(--border);color:var(--tx);font-family:var(--font);font-size:13px;padding:8px 14px;border-radius:var(--r-sm);outline:none;width:240px" type="email" placeholder="Your email address">
-  <button class="btn-green" style="background:var(--brand);border:none;color:#000;font-family:var(--font);font-size:13px;font-weight:700;padding:8px 18px;border-radius:var(--r-sm);cursor:pointer">Sign Up</button>
-</div>
-
-<div class="disclaimer"><div class="disclaimer-inner"><strong>Disclaimer:</strong> Tool pricing and discounts may change. Always verify on the tool's official site before purchasing.</div></div>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand"><strong>Save On Prop Firms</strong><p>The independent comparison tool for futures prop traders. No fluff — just real data, real discounts.</p></div>
-    <div class="footer-col"><h4>Explore</h4><ul>
-      <li><a href="index.html">Compare</a></li>
-      <li><a href="promos/index.html">Promos</a></li>
-      <li><a href="prop-firms/index.html">Prop Firms</a></li>
-      <li><a href="trading-tools/index.html">Trading Tools</a></li>
-    </ul></div>
-    <div class="footer-col"><h4>Connect</h4><ul>
-      <li><a href="https://twitter.com/saveonpropfirms" target="_blank">Twitter/X</a></li>
-      <li><a href="https://www.instagram.com/saveonpropfirms" target="_blank">Instagram</a></li>
-      <li><a href="https://sopf.link/joindiscord" target="_blank">Discord</a></li>
-      <li><a href="https://www.trustpilot.com/review/saveonpropfirms.com" target="_blank">Trustpilot</a></li>
-    </ul></div>
-    <div class="footer-col"><h4>Legal</h4><ul>
-      <li><a href="https://saveonpropfirms.com/disclaimer" target="_blank">Disclaimer</a></li>
-      <li><a href="https://saveonpropfirms.com/contact" target="_blank">Contact</a></li>
-    </ul></div>
+  <div class="tool-body">
+    <div class="tool-content">
+      <p>Tradytics leverages AI to transform market analysis. Designed for stocks, options, and futures traders &mdash; delivers real-time data visualization, AI-generated trade setups, and predictive modeling. Market sentiment analysis, automated alerts, dynamic heatmaps, and customizable dashboards.</p>
+      <a class="tc-cta" href="https://sopf.link/tradytics" target="_blank">Get Tradytics &#8599;</a>
+    </div>
+    <div class="tool-shot"><img src="https://images.ctfassets.net/nzj71to26bbi/3y4bYJ1elXLmwkwDuE1PrV/3f00ae35f7adefb21290ecd923b014d0/tradytics-trading-tools-big-image-950x534.jpg" alt="Tradytics screenshot" loading="lazy"></div>
   </div>
-  <div class="footer-bottom"><span>&#169; 2026 Save On Prop Firms. All rights reserved.</span><span>Static clone</span></div>
-</footer>
-</body></html>
+</div></div>
+<div class="newsletter"><p><strong>Subscribe</strong> to Save Money, Stay Informed, and Win Big!</p>
+  <input class="newsletter-input" type="email" placeholder="Your email address">
+  <button class="btn-green">Sign Up</button></div>
+<div class="disclaimer"><div class="disclaimer-inner"><strong>Disclaimer:</strong> Prices and codes can change. Always verify on the firm's site before purchasing.</div></div>
+<footer class="footer"><div class="footer-inner">
+  <div class="footer-brand"><strong>Save On Prop Firms</strong><p>The independent comparison tool for futures prop traders.</p></div>
+  <div class="footer-col"><h4>Explore</h4><ul>
+    <li><a href="../index.html">Compare</a></li><li><a href="../promos/index.html">Promos</a></li>
+    <li><a href="../prop-firms/index.html">Prop Firms</a></li><li><a href="../trading-tools/index.html">Tools</a></li>
+    <li><a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4><ul>
+    <li><a href="https://twitter.com/saveonpropfirms" target="_blank">Twitter/X</a></li>
+    <li><a href="https://sopf.link/joindiscord" target="_blank">Discord</a></li>
+    <li><a href="https://www.trustpilot.com/review/saveonpropfirms.com" target="_blank">Trustpilot</a></li>
+    <li><a href="https://saveonpropfirms.com/contact" target="_blank">Contact</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Legal</h4><ul>
+    <li><a href="https://saveonpropfirms.com/disclaimer" target="_blank">Disclaimer</a></li>
+  </ul></div>
+</div><div class="footer-bottom"><span>&copy; 2026 Save On Prop Firms. All rights reserved.</span><span>Static clone &middot; June 2026</span></div></footer></body></html>

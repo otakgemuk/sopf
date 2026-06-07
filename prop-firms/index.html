@@ -1,75 +1,362 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Prop Firm Directory | Save On Prop Firms</title>
-<meta name="description" content="Browse all futures prop firms with SOPF discount codes. Compare rules, pricing, and payout structures.">
+<title>Top Proprietary Trading Firms for Futures | Save On Prop Firms</title><meta name="description" content="Browse all 18 futures prop firms. Compare rules, pricing, platforms and payout structures with SOPF discount codes."><meta name="theme-color" content="#22c55e">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../shared.css">
+</head><body><nav class="nav"><div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><img src="https://saveonpropfirms.com/_next/image?url=%2Fmainlogo.png&w=128&q=75" alt="SOPF">Save On Prop Firms</a>
+    <ul class="nav-links"><li><a href="../index.html" class="">Compare</a></li><li><a href="../promos/index.html" class="">Promos</a></li><li><a href="../prop-firms/index.html" class="active">Firms</a></li><li><a href="../trading-tools/index.html" class="">Tools</a></li></ul>
+    <a href="../promos/index.html" class="code-pill">Code: SOPF</a>
+    <button class="nav-hamburger" onclick="document.getElementById('nm').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-mobile" id="nm">
+    <a href="../index.html">Compare</a><a href="../promos/index.html">Promos</a>
+    <a href="../prop-firms/index.html">Firms</a><a href="../trading-tools/index.html">Tools</a>
+    <a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a>
+  </div></nav>
 <style>
-.page-hero{max-width:1280px;margin:0 auto;padding:48px 24px 32px}
-.page-hero h1{font-size:clamp(20px,3vw,30px);font-weight:700;margin-bottom:12px}
-.page-hero p{font-size:14px;color:var(--tx2);max-width:640px;line-height:1.7}
-.firms-grid{max-width:1280px;margin:0 auto;padding:0 24px 64px;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
-.firm-card{background:var(--card);border:.5px solid var(--border);border-radius:var(--r-lg);padding:20px;display:flex;flex-direction:column;gap:12px;transition:border-color .15s,transform .15s;text-decoration:none}
-.firm-card:hover{border-color:var(--border-brand);transform:translateY(-2px)}
-.fc-top{display:flex;align-items:center;gap:10px}
-.fc-logo{width:40px;height:40px;border-radius:var(--r-sm);object-fit:contain;background:#fff;padding:4px;border:.5px solid var(--border)}
-.fc-name{font-weight:700;font-size:14px;color:var(--tx)}
-.fc-badge{display:inline-block;background:var(--discount-bg);border:.5px solid rgba(124,58,237,.35);color:var(--tx-discount);font-size:11px;font-weight:700;padding:3px 8px;border-radius:var(--r-sm)}
-.fc-arrow{margin-top:auto;font-size:12px;color:var(--tx-brand);font-weight:600}
+.firms-grid{max-width:1280px;margin:0 auto;padding:0 24px 64px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.firm-dir-card{background:var(--surface-card);border:.5px solid var(--border-default);border-radius:var(--r-lg);padding:18px;display:flex;flex-direction:column;gap:12px;transition:border-color .15s,transform .15s;text-decoration:none;color:inherit}
+.firm-dir-card:hover{border-color:var(--color-brand-border);transform:translateY(-2px)}
+.fdc-top{display:flex;align-items:center;gap:10px}
+.fdc-logo{width:40px;height:40px;border-radius:var(--r-sm);object-fit:contain;background:#fff;padding:4px;border:.5px solid var(--border-default)}
+.fdc-name{font-weight:700;font-size:14px;color:var(--text-primary)}
+.fdc-types{font-size:11px;color:var(--text-tertiary)}
+.fdc-rows{display:flex;flex-direction:column;gap:5px}
+.fdc-row{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--text-primary)}
+.fdc-l{color:var(--text-tertiary);font-size:11px}
+.fdc-cta{font-size:12px;font-weight:600;color:var(--color-brand);margin-top:4px}
 </style>
-</head>
-<body>
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="../index.html" class="nav-logo">
-      <img src="https://saveonpropfirms.com/_next/image?url=%2Fmainlogo.png&w=128&q=75" alt="Save On Prop Firms">
-      Save On Prop Firms
-    </a>
-    <ul class="nav-links">
-      <li><a href="../index.html">Compare</a></li>
-      <li><a href="../promos/index.html">Promos</a></li>
-      <li><a href="index.html" class="active">Firms</a></li>
-      <li><a href="https://saveonpropfirms.com/trading-tools" target="_blank">Tools</a></li>
-      <li><a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a></li>
-    </ul>
-    <span class="code-pill">Code: SOPF</span>
-  </div>
-</nav>
 <div class="page-hero">
-  <h1>Futures Prop Firm Directory</h1>
-  <p>Browse all 18 futures prop firms with exclusive SOPF discount codes. Click any firm for a detailed breakdown of rules, pricing, and payout structure.</p>
+  <h1>Discover Top Prop Trading Firms for Futures Traders</h1>
+  <p>Browse all 18 proprietary trading firms with SOPF exclusive discount codes. Click any firm for a full breakdown of accounts, rules, pricing, and payout details.</p>
 </div>
-<div class="firms-grid">
-<a class="firm-card" href="lucid-trading.html"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif" alt="Lucid Trading"><span class="fc-name">Lucid Trading</span></div><span class="fc-badge">50% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="tradeify.html"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif" alt="Tradeify"><span class="fc-name">Tradeify</span></div><span class="fc-badge">30% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="apex-trader-funding.html"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/7FrNm7EQLmGs73nemVn6cW/cfb8c5617fbbfb2006f8ed632d286b25/apex-trading-funding-logo.avif" alt="Apex Trader Funding"><span class="fc-name">Apex Trader Funding</span></div><span class="fc-badge">50% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="alpha-futures.html"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/TrQTeszKtHAMTMp8HaHxe/b2b03e769d42d2a7d58d38d0838c50a8/alpha-futures-logo.avif" alt="Alpha Futures"><span class="fc-name">Alpha Futures</span></div><span class="fc-badge">10% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="fundednext-futures.html"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/5FBtTkN85IReua872uFkVB/e0af07c58f778dd24c8da298585abdb4/fundednext-futures-logo.avif" alt="FundedNext Futures"><span class="fc-name">FundedNext Futures</span></div><span class="fc-badge">5% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="myfundedfutures.html"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/5qO8FWJDkwByOmKRNFinRG/e3e22b1bca47010594fa602a43f25579/myfundedfutures-logo.avif" alt="MyFundedFutures"><span class="fc-name">MyFundedFutures</span></div><span class="fc-badge">5% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="funded-futures-network.html"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/7pwQjL53uKN7Il8PUcuon7/79d308bbc5ce7fd9e455304fe0c39b35/funded-futures-network-logo.avif" alt="Funded Futures Network"><span class="fc-name">Funded Futures Network</span></div><span class="fc-badge">25% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="tradeday.html"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/6nKMLA6edQFsthxUeMSvto/88fbfa2a8a6551ae5e796cc7dd9dff53/tradeday-logo.avif" alt="TradeDay"><span class="fc-name">TradeDay</span></div><span class="fc-badge">20% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="bulenox.html"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/7tlRNVLI5nVeg0edvDPVbd/0cf36c71eccc01a70152f42ad505c7f5/bulenox-logo.avif" alt="Bulenox"><span class="fc-name">Bulenox</span></div><span class="fc-badge">45% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="https://saveonpropfirms.com/prop-firms/daytraders" target="_blank"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/1UmmELUWgCucYgAb328apK/9a88884f1020563974496cf4322cd867/daytraders-logo.avif" alt="DayTraders"><span class="fc-name">DayTraders</span></div><span class="fc-badge">50% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="https://saveonpropfirms.com/prop-firms/e8-markets" target="_blank"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/6GUfpKZ5JoudaBLNhzcvHG/c62386f63236fbe88cc25a0b86fd368b/e8-markets-logo.avif" alt="E8 Markets"><span class="fc-name">E8 Markets</span></div><span class="fc-badge">10% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="https://saveonpropfirms.com/prop-firms/blusky-trading-company" target="_blank"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/2Vxyskg85GKFerpmDWapgZ/d4711a12e7529532701b451f92335486/blusky-trading-company-logo.avif" alt="BluSky Trading"><span class="fc-name">BluSky Trading</span></div><span class="fc-badge">30% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="https://saveonpropfirms.com/prop-firms/legends-trading" target="_blank"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/6MVyyXE6UMIkBQEQ6RNuhr/543ee8bb962555a76be895fa3c13f1cf/legends-trading-logo.avif" alt="Legends Trading"><span class="fc-name">Legends Trading</span></div><span class="fc-badge">20% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="https://saveonpropfirms.com/prop-firms/nexgen-protrader-funding" target="_blank"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/3emLZWWFVPTbnsmDorw3R9/d7cf7d2250df900f07a86edcbd9736ec/nexgen-protrader-funding-logo.webp" alt="Nexgen ProTrader"><span class="fc-name">Nexgen ProTrader</span></div><span class="fc-badge">65% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="https://saveonpropfirms.com/prop-firms/phidias-prop-firm" target="_blank"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/4fdEISlbxpWD3FGSr2LEzk/3b16434211fd3dd159b400a53f3489aa/phidias-prop-firm-logo.avif" alt="Phidias Prop Firm"><span class="fc-name">Phidias Prop Firm</span></div><span class="fc-badge">10% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="https://saveonpropfirms.com/prop-firms/purdia-capital" target="_blank"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/45soFOEoUGtNNiHu8nBavj/4b6fbb51514593513933c86cadd385d6/purdia-logo.avif" alt="Purdia Capital"><span class="fc-name">Purdia Capital</span></div><span class="fc-badge">30% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="https://saveonpropfirms.com/prop-firms/take-profit-trader" target="_blank"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/7sYCsvbT3lyiejZ8Gmhptg/0e2d7baa2c5e860b23c9b4126cdb0e3e/take-profit-trader-logo.avif" alt="Take Profit Trader"><span class="fc-name">Take Profit Trader</span></div><span class="fc-badge">0% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-<a class="firm-card" href="https://saveonpropfirms.com/prop-firms/the-futures-desk" target="_blank"><div class="fc-top"><img class="fc-logo" src="https://images.ctfassets.net/nzj71to26bbi/4sxfvNsSnY3VKCyDSxw7Ek/370640c22065f42efbe8490dd5cafc98/the-futures-desk-logo.avif" alt="The Futures Desk"><span class="fc-name">The Futures Desk</span></div><span class="fc-badge">0% OFF with SOPF</span><span class="fc-arrow">View details →</span></a>
-</div>
-<div class="disclaimer"><div class="disclaimer-inner"><strong>Disclaimer:</strong> Data as of June 2026. Always verify pricing on each firm's official site.</div></div>
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand"><strong>Save On Prop Firms</strong><p>The independent comparison tool for futures prop traders.</p></div>
-    <div class="footer-col"><h4>Explore</h4><ul><li><a href="../index.html">Compare</a></li><li><a href="../promos/index.html">Promos</a></li><li><a href="index.html">Firms</a></li></ul></div>
-    <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://twitter.com/saveonpropfirms" target="_blank">Twitter/X</a></li><li><a href="https://sopf.link/joindiscord" target="_blank">Discord</a></li></ul></div>
-    <div class="footer-col"><h4>Legal</h4><ul><li><a href="https://saveonpropfirms.com/disclaimer" target="_blank">Disclaimer</a></li></ul></div>
+<div class="firms-grid"><a class="firm-dir-card" href="lucid-trading.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif" alt="Lucid Trading" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Lucid Trading</div>
+      <div class="fdc-types">Eval, Direct</div>
+    </div>
   </div>
-  <div class="footer-bottom"><span>&#169; 2026 Save On Prop Firms. All rights reserved.</span><span>Static clone</span></div>
-</footer>
-</body></html>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">50% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>90%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic, Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>3 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="tradeify.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif" alt="Tradeify" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Tradeify</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">30% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>90%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">NinjaTrader, Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>1–5 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="apex-trader-funding.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/7FrNm7EQLmGs73nemVn6cW/cfb8c5617fbbfb2006f8ed632d286b25/apex-trading-funding-logo.avif" alt="Apex Trader Funding" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Apex Trader Funding</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">50% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$300K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>90%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic, Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>5–8 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="alpha-futures.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/TrQTeszKtHAMTMp8HaHxe/b2b03e769d42d2a7d58d38d0838c50a8/alpha-futures-logo.avif" alt="Alpha Futures" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Alpha Futures</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">10% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>90%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>Every 5 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="fundednext-futures.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/5FBtTkN85IReua872uFkVB/e0af07c58f778dd24c8da298585abdb4/fundednext-futures-logo.avif" alt="FundedNext Futures" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">FundedNext Futures</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">5% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$100K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>3–5 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="myfundedfutures.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/5qO8FWJDkwByOmKRNFinRG/e3e22b1bca47010594fa602a43f25579/myfundedfutures-logo.avif" alt="MyFundedFutures" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">MyFundedFutures</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">5% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">NinjaTrader, Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>Every 5 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="funded-futures-network.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/7pwQjL53uKN7Il8PUcuon7/79d308bbc5ce7fd9e455304fe0c39b35/funded-futures-network-logo.avif" alt="Funded Futures Network" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Funded Futures Network</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">25% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$250K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-int">Intraday</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>Every 3 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="tradeday.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/6nKMLA6edQFsthxUeMSvto/88fbfa2a8a6551ae5e796cc7dd9dff53/tradeday-logo.avif" alt="TradeDay" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">TradeDay</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">20% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$10K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>90%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">NinjaTrader, Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>Daily</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="bulenox.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/7tlRNVLI5nVeg0edvDPVbd/0cf36c71eccc01a70152f42ad505c7f5/bulenox-logo.avif" alt="Bulenox" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Bulenox</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">45% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$250K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-st">Static</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic, ProjectX</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>Every 10 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="blusky-trading-company.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/2Vxyskg85GKFerpmDWapgZ/d4711a12e7529532701b451f92335486/blusky-trading-company-logo.avif" alt="BluSky Trading Company" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">BluSky Trading Company</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">30% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$300K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>90%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic, Tradovate, ProjectX</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>Daily</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="daytraders.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/1UmmELUWgCucYgAb328apK/9a88884f1020563974496cf4322cd867/daytraders-logo.avif" alt="DayTraders" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">DayTraders</div>
+      <div class="fdc-types">Eval, Direct</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">50% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$300K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-int">Intraday</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic, ProjectX</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>8–10 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="e8-markets.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/6GUfpKZ5JoudaBLNhzcvHG/c62386f63236fbe88cc25a0b86fd368b/e8-markets-logo.avif" alt="E8 Markets" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">E8 Markets</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">10% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$50K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>3–5 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="legends-trading.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/6MVyyXE6UMIkBQEQ6RNuhr/543ee8bb962555a76be895fa3c13f1cf/legends-trading-logo.avif" alt="Legends Trading" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Legends Trading</div>
+      <div class="fdc-types">Eval, Direct</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">20% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>90%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic, Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>5–7 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="purdia-capital.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/45soFOEoUGtNNiHu8nBavj/4b6fbb51514593513933c86cadd385d6/purdia-logo.avif" alt="Purdia Capital" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Purdia Capital</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">30% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$100K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>90%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic, Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>Daily</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="nexgen-protrader-funding.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/3emLZWWFVPTbnsmDorw3R9/d7cf7d2250df900f07a86edcbd9736ec/nexgen-protrader-funding-logo.webp" alt="Nexgen ProTrader Funding" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Nexgen ProTrader Funding</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">65% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>5–7 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="phidias-prop-firm.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/4fdEISlbxpWD3FGSr2LEzk/3b16434211fd3dd159b400a53f3489aa/phidias-prop-firm-logo.avif" alt="Phidias Prop Firm" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Phidias Prop Firm</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--text-discount)">10% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$100K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">Rithmic, Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>5–7 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="take-profit-trader.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/7sYCsvbT3lyiejZ8Gmhptg/0e2d7baa2c5e860b23c9b4126cdb0e3e/take-profit-trader-logo.avif" alt="Take Profit Trader" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">Take Profit Trader</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--color-brand)">0% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">NinjaTrader, Tradovate</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>Every 5 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a><a class="firm-dir-card" href="the-futures-desk.html">
+  <div class="fdc-top">
+    <img class="fdc-logo" src="https://images.ctfassets.net/nzj71to26bbi/4sxfvNsSnY3VKCyDSxw7Ek/370640c22065f42efbe8490dd5cafc98/the-futures-desk-logo.avif" alt="The Futures Desk" onerror="this.style.display='none'">
+    <div>
+      <div class="fdc-name">The Futures Desk</div>
+      <div class="fdc-types">Eval</div>
+    </div>
+  </div>
+  <div class="fdc-rows">
+    <div class="fdc-row"><span class="fdc-l">Discount</span><span style="font-weight:600;color:var(--color-brand)">0% OFF · SOPF</span></div>
+    <div class="fdc-row"><span class="fdc-l">Sizes</span><span>$25K–$150K</span></div>
+    <div class="fdc-row"><span class="fdc-l">Drawdown</span><span class="dd-eod">End-of-Day</span></div>
+    <div class="fdc-row"><span class="fdc-l">Split</span><span>80%</span></div>
+    <div class="fdc-row"><span class="fdc-l">Platforms</span><span style="color:var(--text-secondary);font-size:11px">NinjaTrader</span></div>
+    <div class="fdc-row"><span class="fdc-l">Payouts</span><span>Every 5 Days</span></div>
+  </div>
+  <div class="fdc-cta">View details &rarr;</div>
+</a></div>
+<div class="newsletter"><p><strong>Subscribe</strong> to Save Money, Stay Informed, and Win Big!</p>
+  <input class="newsletter-input" type="email" placeholder="Your email address">
+  <button class="btn-green">Sign Up</button></div>
+<div class="disclaimer"><div class="disclaimer-inner"><strong>Disclaimer:</strong> Prices and codes can change. Always verify on the firm's site before purchasing.</div></div>
+<footer class="footer"><div class="footer-inner">
+  <div class="footer-brand"><strong>Save On Prop Firms</strong><p>The independent comparison tool for futures prop traders.</p></div>
+  <div class="footer-col"><h4>Explore</h4><ul>
+    <li><a href="../index.html">Compare</a></li><li><a href="../promos/index.html">Promos</a></li>
+    <li><a href="../prop-firms/index.html">Prop Firms</a></li><li><a href="../trading-tools/index.html">Tools</a></li>
+    <li><a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4><ul>
+    <li><a href="https://twitter.com/saveonpropfirms" target="_blank">Twitter/X</a></li>
+    <li><a href="https://sopf.link/joindiscord" target="_blank">Discord</a></li>
+    <li><a href="https://www.trustpilot.com/review/saveonpropfirms.com" target="_blank">Trustpilot</a></li>
+    <li><a href="https://saveonpropfirms.com/contact" target="_blank">Contact</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Legal</h4><ul>
+    <li><a href="https://saveonpropfirms.com/disclaimer" target="_blank">Disclaimer</a></li>
+  </ul></div>
+</div><div class="footer-bottom"><span>&copy; 2026 Save On Prop Firms. All rights reserved.</span><span>Static clone &middot; June 2026</span></div></footer></body></html>

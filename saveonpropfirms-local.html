@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compare Top Futures Prop Firms for 2026 | Save On Prop Firms</title>
+<meta name="description" content="Compare top futures prop firms by pricing, payouts, and rules. Updated weekly with real data and SOPF exclusive discounts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ── DESIGN TOKENS ─────────────────────────────────────────── */
+:root {
+  --color-brand:        #22c55e;
+  --color-brand-dim:    #16a34a;
+  --color-brand-glow:   rgba(34,197,94,.12);
+  --color-discount:     #7c3aed;
+  --color-discount-bg:  rgba(124,58,237,.15);
+  --color-warning:      #f59e0b;
+  --color-danger:       #ef4444;
+  --color-info:         #3b82f6;
+
+  --surface-page:       #0b0f14;
+  --surface-nav:        rgba(11,15,20,.9);
+  --surface-card:       #111827;
+  --surface-card-alt:   #161e2e;
+  --surface-hover:      #1a2335;
+  --surface-input:      #1f2937;
+
+  --border-default:     rgba(255,255,255,.07);
+  --border-strong:      rgba(255,255,255,.13);
+  --border-brand:       rgba(34,197,94,.3);
+
+  --text-primary:       #f9fafb;
+  --text-secondary:     #9ca3af;
+  --text-tertiary:      #6b7280;
+  --text-brand:         #22c55e;
+  --text-discount:      #a78bfa;
+
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+
+  --font-sans:  'DM Sans', system-ui, sans-serif;
+  --font-mono:  'DM Mono', monospace;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,.4), 0 0 0 0.5px var(--border-default);
+}
+
+/* ── RESET ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; }
+
+/* ── NAV ───────────────────────────────────────────────────── */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--surface-nav);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 0.5px solid var(--border-default);
+}
+.nav-inner {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; align-items: center; gap: 32px;
+  padding: 0 24px; height: 56px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 8px;
+  font-weight: 700; font-size: 15px; color: var(--text-primary);
+  flex-shrink: 0;
+}
+.nav-logo-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--color-brand);
+  box-shadow: 0 0 8px var(--color-brand);
+}
+.nav-links {
+  display: flex; gap: 4px; list-style: none;
+  flex: 1;
+}
+.nav-links a {
+  display: block; padding: 6px 12px;
+  font-size: 13px; font-weight: 500; color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: color .15s, background .15s;
+}
+.nav-links a:hover { color: var(--text-primary); background: var(--surface-hover); }
+.nav-links a.active { color: var(--text-brand); }
+.nav-cta {
+  display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+}
+.code-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--color-brand-glow);
+  border: 0.5px solid var(--border-brand);
+  color: var(--text-brand);
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 500;
+  padding: 4px 10px; border-radius: var(--radius-sm);
+}
+
+/* ── HERO ──────────────────────────────────────────────────── */
+.hero {
+  max-width: 1280px; margin: 0 auto;
+  padding: 48px 24px 32px;
+}
+.hero h1 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700; line-height: 1.25;
+  color: var(--text-primary);
+  max-width: 640px;
+  margin-bottom: 12px;
+}
+.hero-sub {
+  font-size: 14px; color: var(--text-secondary);
+  max-width: 680px; line-height: 1.7;
+  margin-bottom: 24px;
+}
+.promo-banner {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--surface-card);
+  border: 0.5px solid var(--border-brand);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  margin-bottom: 24px;
+}
+.promo-banner-label { font-size: 12px; color: var(--text-secondary); }
+.promo-banner-code {
+  font-family: var(--font-mono); font-size: 13px; font-weight: 500;
+  color: var(--text-brand); letter-spacing: .06em;
+}
+.stats-bar {
+  display: flex; gap: 24px; flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.stat-item {
+  display: flex; flex-direction: column; gap: 2px;
+}
+.stat-num {
+  font-size: 20px; font-weight: 700; color: var(--text-primary);
+}
+.stat-label { font-size: 11px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: .06em; }
+
+/* ── FILTERS ───────────────────────────────────────────────── */
+.filters-wrap {
+  max-width: 1280px; margin: 0 auto;
+  padding: 0 24px 20px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+}
+.filter-label { font-size: 12px; color: var(--text-tertiary); font-weight: 500; }
+.filter-select {
+  appearance: none;
+  background: var(--surface-input);
+  border: 0.5px solid var(--border-default);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  padding: 7px 32px 7px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: border-color .15s;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%236b7280' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+.filter-select:hover, .filter-select:focus { border-color: var(--border-strong); outline: none; }
+.filter-select.active { border-color: var(--color-brand); color: var(--text-brand); }
+
+.active-filters {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-left: 4px;
+}
+.active-filter-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: var(--color-brand-glow);
+  border: 0.5px solid var(--border-brand);
+  color: var(--text-brand);
+  font-size: 11px; font-weight: 500;
+  padding: 3px 8px 3px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.active-filter-pill:hover { background: rgba(34,197,94,.2); }
+.active-filter-pill .pill-x { font-size: 13px; line-height: 1; color: var(--color-brand); }
+
+.btn-reset {
+  background: transparent;
+  border: 0.5px solid var(--border-default);
+  color: var(--text-tertiary);
+  font-family: var(--font-sans);
+  font-size: 12px; font-weight: 500;
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: border-color .15s, color .15s;
+}
+.btn-reset:hover { border-color: var(--border-strong); color: var(--text-secondary); }
+
+.filter-count {
+  font-size: 12px; color: var(--text-tertiary);
+  margin-left: auto;
+}
+
+/* ── TABLE WRAPPER ─────────────────────────────────────────── */
+.table-wrap {
+  max-width: 1280px; margin: 0 auto;
+  padding: 0 24px 48px;
+}
+.table-scroller {
+  overflow-x: auto;
+  border: 0.5px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  background: var(--surface-card);
+}
+
+/* ── TABLE ─────────────────────────────────────────────────── */
+.cmp-table {
+  width: 100%; border-collapse: collapse;
+  font-size: 13px;
+  min-width: 960px;
+}
+.cmp-table thead {
+  position: sticky; top: 56px; z-index: 10;
+  background: var(--surface-card);
+}
+.cmp-table thead::after {
+  content: '';
+  position: absolute; left: 0; right: 0; bottom: 0;
+  height: 0.5px; background: var(--border-strong);
+}
+.cmp-table th {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 11px; font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase; letter-spacing: .06em;
+  white-space: nowrap;
+  border-bottom: 0.5px solid var(--border-default);
+}
+.cmp-table th.sortable { cursor: pointer; user-select: none; }
+.cmp-table th.sortable:hover { color: var(--text-secondary); }
+.cmp-table th .sort-icon { margin-left: 4px; opacity: .5; font-size: 10px; }
+.cmp-table th.sort-asc .sort-icon::after  { content: '↑'; opacity: 1; }
+.cmp-table th.sort-desc .sort-icon::after { content: '↓'; opacity: 1; }
+.cmp-table th .sort-icon::after { content: '↕'; }
+
+.cmp-table td {
+  padding: 10px 12px;
+  border-bottom: 0.5px solid var(--border-default);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.cmp-table tr:last-child td { border-bottom: none; }
+.cmp-table tbody tr { transition: background .1s; }
+.cmp-table tbody tr:hover { background: var(--surface-hover); }
+
+/* firm cell */
+.firm-cell { display: flex; align-items: center; gap: 10px; }
+.firm-logo {
+  width: 32px; height: 32px; border-radius: 6px;
+  object-fit: contain; background: #fff;
+  padding: 3px; flex-shrink: 0;
+  border: 0.5px solid var(--border-default);
+}
+.firm-logo-fallback {
+  width: 32px; height: 32px; border-radius: 6px;
+  background: var(--surface-input);
+  border: 0.5px solid var(--border-default);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 700; color: var(--text-tertiary);
+  flex-shrink: 0;
+}
+.firm-name { font-weight: 600; color: var(--text-primary); font-size: 13px; }
+.firm-acct { font-size: 11px; color: var(--text-tertiary); }
+
+/* price */
+.price-orig { font-size: 11px; color: var(--text-tertiary); text-decoration: line-through; }
+.price-final { font-size: 14px; font-weight: 700; color: var(--text-brand); }
+
+/* promo badges */
+.badge-off {
+  display: inline-block;
+  background: var(--color-discount-bg);
+  border: 0.5px solid rgba(124,58,237,.35);
+  color: var(--text-discount);
+  font-size: 10px; font-weight: 700;
+  padding: 2px 6px; border-radius: var(--radius-sm);
+  letter-spacing: .03em;
+}
+.badge-code {
+  display: inline-block;
+  background: var(--color-brand-glow);
+  border: 0.5px solid var(--border-brand);
+  color: var(--text-brand);
+  font-family: var(--font-mono);
+  font-size: 10px; font-weight: 500;
+  padding: 2px 6px; border-radius: var(--radius-sm);
+}
+.badge-expiry { font-size: 10px; color: var(--text-tertiary); }
+
+/* drawdown type */
+.dd-eod   { color: var(--text-secondary); }
+.dd-intra { color: var(--color-warning); }
+.dd-static{ color: var(--color-info); }
+
+/* pd ratio color coding */
+.pd-easy   { color: var(--color-brand); }
+.pd-medium { color: var(--text-secondary); }
+.pd-hard   { color: var(--color-warning); }
+
+/* action buttons */
+.btn-row { display: flex; gap: 6px; }
+.btn-details {
+  display: inline-flex; align-items: center;
+  background: transparent;
+  border: 0.5px solid var(--border-default);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 12px; font-weight: 500;
+  padding: 5px 10px; border-radius: var(--radius-sm);
+  cursor: pointer; text-decoration: none;
+  transition: border-color .15s, color .15s, background .15s;
+  white-space: nowrap;
+}
+.btn-details:hover { border-color: var(--border-strong); color: var(--text-primary); background: var(--surface-hover); }
+.btn-buy {
+  display: inline-flex; align-items: center;
+  background: var(--color-brand);
+  border: none;
+  color: #000;
+  font-family: var(--font-sans);
+  font-size: 12px; font-weight: 700;
+  padding: 5px 12px; border-radius: var(--radius-sm);
+  cursor: pointer; text-decoration: none;
+  transition: background .15s, transform .1s;
+  white-space: nowrap;
+}
+.btn-buy:hover { background: var(--color-brand-dim); }
+.btn-buy:active { transform: scale(.97); }
+
+/* tooltip */
+.th-tip { position: relative; display: inline-flex; align-items: center; gap: 4px; }
+.tip-icon {
+  width: 13px; height: 13px; border-radius: 50%;
+  background: var(--surface-input);
+  border: 0.5px solid var(--border-strong);
+  color: var(--text-tertiary);
+  font-size: 9px; font-weight: 700;
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: help; flex-shrink: 0;
+}
+.tip-box {
+  display: none;
+  position: absolute; bottom: calc(100% + 8px); left: 0;
+  background: #1f2937;
+  border: 0.5px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  font-size: 12px; font-weight: 400; color: var(--text-secondary);
+  line-height: 1.5;
+  width: 220px;
+  z-index: 200;
+  white-space: normal;
+  box-shadow: 0 8px 24px rgba(0,0,0,.5);
+  text-transform: none; letter-spacing: 0;
+}
+.th-tip:hover .tip-box { display: block; }
+
+/* empty state */
+.empty-state {
+  text-align: center; padding: 48px 24px;
+  color: var(--text-tertiary);
+}
+.empty-state h3 { font-size: 15px; color: var(--text-secondary); margin-bottom: 6px; }
+.empty-state p  { font-size: 13px; }
+
+/* ── GLOSSARY ──────────────────────────────────────────────── */
+.glossary {
+  max-width: 1280px; margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.glossary h2 {
+  font-size: 18px; font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 0.5px solid var(--border-default);
+}
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+.glossary-item {
+  background: var(--surface-card);
+  border: 0.5px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+.glossary-item h3 { font-size: 13px; font-weight: 600; color: var(--text-brand); margin-bottom: 6px; }
+.glossary-item p  { font-size: 12px; color: var(--text-secondary); line-height: 1.6; }
+
+/* ── DISCLAIMER ────────────────────────────────────────────── */
+.disclaimer {
+  max-width: 1280px; margin: 0 auto;
+  padding: 0 24px 32px;
+}
+.disclaimer-inner {
+  background: var(--surface-card);
+  border: 0.5px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  font-size: 12px; color: var(--text-tertiary); line-height: 1.6;
+}
+
+/* ── FOOTER ────────────────────────────────────────────────── */
+.footer {
+  border-top: 0.5px solid var(--border-default);
+  background: var(--surface-card);
+}
+.footer-inner {
+  max-width: 1280px; margin: 0 auto;
+  padding: 40px 24px 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+.footer-brand-name { font-weight: 700; font-size: 14px; margin-bottom: 8px; }
+.footer-brand-desc { font-size: 12px; color: var(--text-tertiary); line-height: 1.7; max-width: 260px; }
+.footer-col h4 { font-size: 11px; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 12px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col ul a { font-size: 13px; color: var(--text-secondary); transition: color .15s; }
+.footer-col ul a:hover { color: var(--text-primary); }
+.footer-bottom {
+  max-width: 1280px; margin: 0 auto;
+  padding: 16px 24px;
+  border-top: 0.5px solid var(--border-default);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11px; color: var(--text-tertiary);
+}
+
+/* ── RESPONSIVE ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .nav-links { display: none; }
+  .hero h1 { font-size: 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-dot"></span>
+      Save On Prop Firms
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Compare</a></li>
+      <li><a href="https://saveonpropfirms.com/promos" target="_blank">Promos</a></li>
+      <li><a href="https://saveonpropfirms.com/prop-firms" target="_blank">Firms</a></li>
+      <li><a href="https://saveonpropfirms.com/trading-tools" target="_blank">Tools</a></li>
+      <li><a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a></li>
+    </ul>
+    <div class="nav-cta">
+      <span class="code-pill">Code: SOPF</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="promo-banner">
+    <span class="promo-banner-label">Featured June Promos — use code</span>
+    <span class="promo-banner-code">SOPF</span>
+  </div>
+  <h1>Futures Prop Firm Comparison Built for Real Traders</h1>
+  <p class="hero-sub">Side-by-side comparison of top futures prop trading accounts. Compare all-in pricing, profit targets, drawdown rules, P/D ratios, and payout timelines. Updated weekly with real data and SOPF exclusive discounts.</p>
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num">18</span><span class="stat-label">Prop Firms</span></div>
+    <div class="stat-item"><span class="stat-num">167</span><span class="stat-label">Accounts</span></div>
+    <div class="stat-item"><span class="stat-num" style="color:var(--color-brand)">SOPF</span><span class="stat-label">Discount Code</span></div>
+  </div>
+</div>
+
+<!-- FILTERS -->
+<div class="filters-wrap" id="filters-wrap">
+  <span class="filter-label">Filter</span>
+
+  <select class="filter-select" id="f-type" onchange="applyFilters()">
+    <option value="">All Account Types</option>
+    <option value="Eval">Evaluation</option>
+    <option value="Instant">Instant Funded</option>
+  </select>
+
+  <select class="filter-select" id="f-dd" onchange="applyFilters()">
+    <option value="">All Drawdown Types</option>
+    <option value="End-of-Day">End-of-Day</option>
+    <option value="Intraday">Intraday</option>
+    <option value="Static">Static</option>
+  </select>
+
+  <select class="filter-select" id="f-size" onchange="applyFilters()">
+    <option value="">All Account Sizes</option>
+    <option value="25000">$25K</option>
+    <option value="50000">$50K</option>
+    <option value="100000">$100K</option>
+    <option value="150000">$150K</option>
+  </select>
+
+  <div class="active-filters" id="active-pills"></div>
+
+  <button class="btn-reset" onclick="resetFilters()">Reset</button>
+  <span class="filter-count" id="filter-count"></span>
+</div>
+
+<!-- TABLE -->
+<div class="table-wrap">
+  <div class="table-scroller">
+    <table class="cmp-table" id="cmp-table">
+      <thead>
+        <tr>
+          <th>Prop Firm</th>
+          <th>Account Info</th>
+          <th class="sortable" data-col="price" onclick="sortBy('price')">All-In Price <span class="sort-icon"></span></th>
+          <th>Promo</th>
+          <th class="sortable" data-col="target" onclick="sortBy('target')">Profit Target <span class="sort-icon"></span></th>
+          <th>
+            <span class="th-tip">
+              Drawdown
+              <span class="tip-icon">?</span>
+              <span class="tip-box"><strong>End-of-Day</strong> — resets after close. <strong>Intraday</strong> — tracks unrealized P&amp;L live, most aggressive. <strong>Static</strong> — fixed, never moves.</span>
+            </span>
+          </th>
+          <th class="sortable" data-col="pd" onclick="sortBy('pd')">
+            <span class="th-tip">
+              P/D Ratio <span class="sort-icon"></span>
+              <span class="tip-icon">?</span>
+              <span class="tip-box">Profit Target ÷ Drawdown. Lower = easier to pass. 1.0 means target equals drawdown. Higher means you earn more to risk less — harder eval.</span>
+            </span>
+          </th>
+          <th>
+            <span class="th-tip">
+              Daily Loss
+              <span class="tip-icon">?</span>
+              <span class="tip-box">Max loss allowed in a single session. $0 = no daily limit. Soft breach = locks account for the day. Hard breach = account failed.</span>
+            </span>
+          </th>
+          <th class="sortable" data-col="dtp" onclick="sortBy('dtp')">Days to Pass <span class="sort-icon"></span></th>
+          <th class="sortable" data-col="dtm" onclick="sortBy('dtm')">Days to $ <span class="sort-icon"></span></th>
+          <th>Profit Split</th>
+          <th>Max Funded</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- GLOSSARY -->
+<div class="glossary">
+  <h2>Understanding the Comparison Table</h2>
+  <div class="glossary-grid">
+    <div class="glossary-item"><h3>All-In Price</h3><p>Total cost to get started — evaluation fee plus any activation fee. Reflects the discounted price when using code SOPF.</p></div>
+    <div class="glossary-item"><h3>Profit Target</h3><p>Amount of profit you must reach during evaluation to qualify for a funded account.</p></div>
+    <div class="glossary-item"><h3>Drawdown</h3><p>How far your account can fall before breaching. End-of-Day updates after close. Intraday tracks unrealized P&L live. Static never moves.</p></div>
+    <div class="glossary-item"><h3>P/D Ratio</h3><p>Profit Target ÷ Drawdown. A lower ratio (closer to 1.0) means an easier eval. Higher means you need more profit with less room to lose.</p></div>
+    <div class="glossary-item"><h3>Daily Loss Limit</h3><p>Max you can lose in one trading session. Some firms have no limit. Soft breach = locked for the day. Hard breach = account failed.</p></div>
+    <div class="glossary-item"><h3>Days to Pass</h3><p>Minimum trading days required before your eval can be approved, even if you hit the profit target earlier.</p></div>
+    <div class="glossary-item"><h3>Days to $</h3><p>How quickly you can request your first payout after passing. Ranges from 1 day to 10+ trading days depending on the firm.</p></div>
+    <div class="glossary-item"><h3>Profit Split</h3><p>Your percentage of profits on each payout. Most firms offer 80–90%. Some give 100% on the first payout tier.</p></div>
+    <div class="glossary-item"><h3>Max Funded</h3><p>How many simultaneous funded accounts you can hold. Higher = more scaling potential.</p></div>
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <div class="disclaimer-inner">
+    <strong>Disclaimer:</strong> We do our best to keep account prices, activation fees, and promo codes accurate and up to date. Prop firms can change their offers at any time. Always double-check the firm's website before purchasing to confirm current pricing and terms.
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">Save On Prop Firms</div>
+      <p class="footer-brand-desc">The independent comparison tool for futures prop traders. No fluff — just real data, real discounts, and decisions you can trust.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="https://saveonpropfirms.com/" target="_blank">Compare</a></li>
+        <li><a href="https://saveonpropfirms.com/promos" target="_blank">Promos</a></li>
+        <li><a href="https://saveonpropfirms.com/prop-firms" target="_blank">Prop Firms</a></li>
+        <li><a href="https://saveonpropfirms.com/trading-tools" target="_blank">Trading Tools</a></li>
+        <li><a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a></li>
+        <li><a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Prop Firms</h4>
+      <ul>
+        <li><a href="https://saveonpropfirms.com/prop-firms/alpha-futures" target="_blank">Alpha Futures</a></li>
+        <li><a href="https://saveonpropfirms.com/prop-firms/apex-trader-funding" target="_blank">Apex Trader Funding</a></li>
+        <li><a href="https://saveonpropfirms.com/prop-firms/bulenox" target="_blank">Bulenox</a></li>
+        <li><a href="https://saveonpropfirms.com/prop-firms/e8-markets" target="_blank">E8 Markets</a></li>
+        <li><a href="https://saveonpropfirms.com/prop-firms/tradeify" target="_blank">Tradeify</a></li>
+        <li><a href="https://saveonpropfirms.com/prop-firms/lucid-trading" target="_blank">Lucid Trading</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://twitter.com/saveonpropfirms" target="_blank">Twitter / X</a></li>
+        <li><a href="https://www.instagram.com/saveonpropfirms" target="_blank">Instagram</a></li>
+        <li><a href="https://sopf.link/joindiscord" target="_blank">Discord</a></li>
+        <li><a href="https://www.trustpilot.com/review/saveonpropfirms.com" target="_blank">Trustpilot</a></li>
+        <li><a href="https://saveonpropfirms.com/newsletter" target="_blank">Newsletter</a></li>
+        <li><a href="https://saveonpropfirms.com/contact" target="_blank">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Save On Prop Firms. All rights reserved.</span>
+    <span>Local prototype — not connected to live data</span>
+  </div>
+</footer>
+
+<script>
+const FIRMS = [
+  {
+    firm: 'Lucid Trading', acct: '25K LucidFlex', size: 25000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif',
+    initials: 'LT',
+    priceOrig: 100, priceFinal: 50, activation: 0,
+    promoOff: '50% OFF', promoExpiry: 'Ends Jul 2',
+    target: 1250, drawdown: 1000, ddType: 'End-of-Day',
+    pd: 1.25, dailyLoss: 0, dtp: 2, dtm: 5, split: 90, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/lucid-trading',
+    buyUrl: 'https://sopf.link/lucid'
+  },
+  {
+    firm: 'Lucid Trading', acct: '50K LucidFlex', size: 50000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif',
+    initials: 'LT',
+    priceOrig: 130, priceFinal: 65, activation: 0,
+    promoOff: '50% OFF', promoExpiry: 'Ends Jul 2',
+    target: 3000, drawdown: 2000, ddType: 'End-of-Day',
+    pd: 1.50, dailyLoss: 0, dtp: 2, dtm: 5, split: 90, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/lucid-trading',
+    buyUrl: 'https://sopf.link/lucid'
+  },
+  {
+    firm: 'Lucid Trading', acct: '25K LucidPro', size: 25000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif',
+    initials: 'LT',
+    priceOrig: 135, priceFinal: 68, activation: 0,
+    promoOff: '50% OFF', promoExpiry: 'Ends Jul 2',
+    target: 1250, drawdown: 1000, ddType: 'End-of-Day',
+    pd: 1.25, dailyLoss: 0, dtp: 1, dtm: 3, split: 90, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/lucid-trading',
+    buyUrl: 'https://sopf.link/lucid'
+  },
+  {
+    firm: 'Tradeify', acct: '25K Growth', size: 25000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif',
+    initials: 'TF',
+    priceOrig: 99, priceFinal: 69, activation: 0,
+    promoOff: '30% OFF', promoExpiry: 'Ends Soon',
+    target: 1500, drawdown: 1000, ddType: 'End-of-Day',
+    pd: 1.50, dailyLoss: 600, dtp: 1, dtm: 5, split: 90, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/tradeify',
+    buyUrl: 'https://sopf.link/tradeify'
+  },
+  {
+    firm: 'Alpha Futures', acct: '25K Zero', size: 25000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/TrQTeszKtHAMTMp8HaHxe/b2b03e769d42d2a7d58d38d0838c50a8/alpha-futures-logo.avif',
+    initials: 'AF',
+    priceOrig: 79, priceFinal: 71, activation: 0,
+    promoOff: '10% OFF', promoExpiry: 'Ends Soon',
+    target: 1500, drawdown: 1000, ddType: 'End-of-Day',
+    pd: 1.50, dailyLoss: 500, dtp: 1, dtm: 5, split: 90, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/alpha-futures',
+    buyUrl: 'https://sopf.link/alpha'
+  },
+  {
+    firm: 'Tradeify', acct: '25K Select Daily', size: 50000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif',
+    initials: 'TF',
+    priceOrig: 109, priceFinal: 76, activation: 0,
+    promoOff: '30% OFF', promoExpiry: 'Ends Soon',
+    target: 1500, drawdown: 1000, ddType: 'End-of-Day',
+    pd: 1.50, dailyLoss: 0, dtp: 3, dtm: 1, split: 90, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/tradeify',
+    buyUrl: 'https://sopf.link/tradeify'
+  },
+  {
+    firm: 'FundedNext Futures', acct: '25K Legacy', size: 25000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/5FBtTkN85IReua872uFkVB/e0af07c58f778dd24c8da298585abdb4/fundednext-futures-logo.avif',
+    initials: 'FN',
+    priceOrig: 80, priceFinal: 76, activation: 0,
+    promoOff: '5% OFF', promoExpiry: 'Ends Soon',
+    target: 1250, drawdown: 1250, ddType: 'End-of-Day',
+    pd: 1.00, dailyLoss: 0, dtp: 3, dtm: 5, split: 80, maxFunded: 12,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/fundednext-futures',
+    buyUrl: 'https://sopf.link/fundednext'
+  },
+  {
+    firm: 'MyFundedFutures', acct: '25K Flex', size: 25000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/5qO8FWJDkwByOmKRNFinRG/e3e22b1bca47010594fa602a43f25579/myfundedfutures-logo.avif',
+    initials: 'MF',
+    priceOrig: 95, priceFinal: 90, activation: 0,
+    promoOff: '5% OFF', promoExpiry: 'Ends Soon',
+    target: 1500, drawdown: 1000, ddType: 'End-of-Day',
+    pd: 1.50, dailyLoss: 0, dtp: 2, dtm: 5, split: 80, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/myfundedfutures',
+    buyUrl: 'https://sopf.link/myfundedfutures'
+  },
+  {
+    firm: 'Lucid Trading', acct: '50K LucidPro', size: 50000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif',
+    initials: 'LT',
+    priceOrig: 185, priceFinal: 93, activation: 0,
+    promoOff: '50% OFF', promoExpiry: 'Ends Jul 2',
+    target: 3000, drawdown: 2000, ddType: 'End-of-Day',
+    pd: 1.50, dailyLoss: 1200, dtp: 1, dtm: 3, split: 90, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/lucid-trading',
+    buyUrl: 'https://sopf.link/lucid'
+  },
+  {
+    firm: 'Funded Futures Network', acct: '25K Standard', size: 25000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/7pwQjL53uKN7Il8PUcuon7/79d308bbc5ce7fd9e455304fe0c39b35/funded-futures-network-logo.avif',
+    initials: 'FF',
+    priceOrig: 125, priceFinal: 94, activation: 0,
+    promoOff: '25% OFF', promoExpiry: 'Ends Soon',
+    target: 2000, drawdown: 1500, ddType: 'Intraday',
+    pd: 1.33, dailyLoss: 0, dtp: 7, dtm: 3, split: 80, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/funded-futures-network',
+    buyUrl: 'https://sopf.link/ffn'
+  },
+  {
+    firm: 'Apex Trader Funding', acct: '50K Full', size: 50000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/2RlRzLJNqPjZ3HiCpLiQxI/e083e2f51028ab7ba85a1b6e39cc1ff8/apex-trader-funding-logo.avif',
+    initials: 'AP',
+    priceOrig: 167, priceFinal: 97, activation: 0,
+    promoOff: '40% OFF', promoExpiry: 'Ends Soon',
+    target: 3000, drawdown: 2500, ddType: 'End-of-Day',
+    pd: 1.20, dailyLoss: 0, dtp: 7, dtm: 8, split: 90, maxFunded: 20,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/apex-trader-funding',
+    buyUrl: 'https://sopf.link/apex'
+  },
+  {
+    firm: 'Bulenox', acct: '25K Starter', size: 25000, type: 'Eval',
+    logo: 'https://images.ctfassets.net/nzj71to26bbi/5FBtTkN85IReua872uFkVB/e0af07c58f778dd24c8da298585abdb4/fundednext-futures-logo.avif',
+    initials: 'BX',
+    priceOrig: 119, priceFinal: 99, activation: 0,
+    promoOff: '17% OFF', promoExpiry: 'Ends Soon',
+    target: 1500, drawdown: 1500, ddType: 'Static',
+    pd: 1.00, dailyLoss: 500, dtp: 5, dtm: 7, split: 80, maxFunded: 5,
+    detailUrl: 'https://saveonpropfirms.com/prop-firms/bulenox',
+    buyUrl: 'https://sopf.link/bulenox'
+  }
+];
+
+let sortCol = null, sortDir = 1;
+let filtered = [...FIRMS];
+
+function pdClass(pd) {
+  if (pd <= 1.0) return 'pd-easy';
+  if (pd <= 1.5) return 'pd-medium';
+  return 'pd-hard';
+}
+function ddClass(t) {
+  if (t === 'Intraday') return 'dd-intra';
+  if (t === 'Static')   return 'dd-static';
+  return 'dd-eod';
+}
+function fmtDL(v) { return v === 0 ? '<span style="color:var(--text-tertiary)">None</span>' : '$'+v.toLocaleString(); }
+function logoHtml(f) {
+  return `<img class="firm-logo" src="${f.logo}" alt="${f.firm}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="firm-logo-fallback" style="display:none">${f.initials}</div>`;
+}
+
+function renderTable() {
+  const tbody = document.getElementById('table-body');
+  if (!filtered.length) {
+    tbody.innerHTML = `<tr><td colspan="13"><div class="empty-state"><h3>No accounts match your filters</h3><p>Try removing a filter or clicking Reset.</p></div></td></tr>`;
+    return;
+  }
+  tbody.innerHTML = filtered.map(f => `
+    <tr>
+      <td>
+        <div class="firm-cell">
+          ${logoHtml(f)}
+          <div>
+            <div class="firm-name">${f.firm}</div>
+            <div class="firm-acct">${f.acct}</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div style="color:var(--text-primary);font-weight:500">$${f.size.toLocaleString()}</div>
+        <div style="font-size:11px;color:var(--text-tertiary)">${f.type}</div>
+      </td>
+      <td>
+        <div class="price-orig">$${f.priceOrig}</div>
+        <div class="price-final">$${f.priceFinal}</div>
+        <div style="font-size:10px;color:var(--text-tertiary)">+$0 Activation</div>
+      </td>
+      <td>
+        <div style="display:flex;flex-direction:column;gap:3px">
+          <span class="badge-off">${f.promoOff}</span>
+          <span class="badge-expiry">${f.promoExpiry}</span>
+          <span class="badge-code">SOPF</span>
+        </div>
+      </td>
+      <td style="font-weight:500;color:var(--text-primary)">$${f.target.toLocaleString()}</td>
+      <td>
+        <div>$${f.drawdown.toLocaleString()}</div>
+        <div class="${ddClass(f.ddType)}" style="font-size:11px">${f.ddType}</div>
+      </td>
+      <td class="${pdClass(f.pd)}" style="font-weight:600">${f.pd.toFixed(2)}</td>
+      <td>${fmtDL(f.dailyLoss)}</td>
+      <td style="color:var(--text-primary)">${f.dtp} day${f.dtp!==1?'s':''}</td>
+      <td style="color:var(--text-primary)">${f.dtm} day${f.dtm!==1?'s':''}</td>
+      <td style="color:var(--text-primary);font-weight:500">${f.split}%</td>
+      <td style="color:var(--text-secondary)">Max ${f.maxFunded}</td>
+      <td>
+        <div class="btn-row">
+          <a class="btn-details" href="${f.detailUrl}" target="_blank">Details</a>
+          <a class="btn-buy"    href="${f.buyUrl}"    target="_blank">Buy ↗</a>
+        </div>
+      </td>
+    </tr>`).join('');
+}
+
+function applyFilters() {
+  const t = document.getElementById('f-type').value;
+  const d = document.getElementById('f-dd').value;
+  const s = document.getElementById('f-size').value;
+
+  ['f-type','f-dd','f-size'].forEach(id => {
+    const el = document.getElementById(id);
+    el.classList.toggle('active', el.value !== '');
+  });
+
+  filtered = FIRMS.filter(f => {
+    if (t && f.type !== t) return false;
+    if (d && f.ddType !== d) return false;
+    if (s && f.size !== parseInt(s)) return false;
+    return true;
+  });
+
+  if (sortCol) doSort();
+  updatePills();
+  renderTable();
+  document.getElementById('filter-count').textContent =
+    filtered.length < FIRMS.length ? `Showing ${filtered.length} of ${FIRMS.length} accounts` : '';
+}
+
+function updatePills() {
+  const pills = document.getElementById('active-pills');
+  const labels = {
+    'f-type': document.getElementById('f-type').options[document.getElementById('f-type').selectedIndex].text,
+    'f-dd':   document.getElementById('f-dd').options[document.getElementById('f-dd').selectedIndex].text,
+    'f-size': document.getElementById('f-size').options[document.getElementById('f-size').selectedIndex].text
+  };
+  pills.innerHTML = ['f-type','f-dd','f-size']
+    .filter(id => document.getElementById(id).value !== '')
+    .map(id => `<span class="active-filter-pill" onclick="clearFilter('${id}')">
+      ${labels[id]} <span class="pill-x">×</span>
+    </span>`).join('');
+}
+
+function clearFilter(id) {
+  document.getElementById(id).value = '';
+  applyFilters();
+}
+
+function resetFilters() {
+  ['f-type','f-dd','f-size'].forEach(id => {
+    document.getElementById(id).value = '';
+    document.getElementById(id).classList.remove('active');
+  });
+  filtered = [...FIRMS];
+  sortCol = null; sortDir = 1;
+  document.querySelectorAll('.cmp-table th').forEach(th => {
+    th.classList.remove('sort-asc','sort-desc');
+  });
+  document.getElementById('active-pills').innerHTML = '';
+  document.getElementById('filter-count').textContent = '';
+  renderTable();
+}
+
+function sortBy(col) {
+  const th = document.querySelector(`th[data-col="${col}"]`);
+  if (sortCol === col) { sortDir *= -1; }
+  else { sortCol = col; sortDir = 1; }
+
+  document.querySelectorAll('.cmp-table th').forEach(el => el.classList.remove('sort-asc','sort-desc'));
+  th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');
+
+  doSort();
+  renderTable();
+}
+
+function doSort() {
+  const map = { price:'priceFinal', target:'target', pd:'pd', dtp:'dtp', dtm:'dtm' };
+  const key = map[sortCol];
+  filtered.sort((a,b) => (a[key] - b[key]) * sortDir);
+}
+
+renderTable();
+</script>
+</body>
+</html>

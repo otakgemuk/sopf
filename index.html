@@ -1,1 +1,465 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij48bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLGluaXRpYWwtc2NhbGU9MSI+Cjx0aXRsZT5Db21wYXJlIFRvcCBGdXR1cmVzIFByb3AgRmlybXMgZm9yIDIwMjYgfCBTYXZlIE9uIFByb3AgRmlybXM8L3RpdGxlPgo8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD0iU2lkZS1ieS1zaWRlIGNvbXBhcmlzb24gb2YgdG9wIGZ1dHVyZXMgcHJvcCB0cmFkaW5nIGFjY291bnRzLiBDb21wYXJlIGFsbC1pbiBwcmljaW5nLCBwcm9maXQgdGFyZ2V0cywgZHJhd2Rvd24gcnVsZXMsIFAvRCByYXRpb3MsIGFuZCBwYXlvdXQgdGltZWxpbmVzLiI+CjxsaW5rIHJlbD0icHJlY29ubmVjdCIgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbSI+CjxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEA0MDA7NTAwOzYwMDs3MDA7ODAwOzkwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+CjxzdHlsZT4KKiwqOjpiZWZvcmUsCio6OmFmdGVye2JveC1zaXppbmc6Ym9yZGVyLWJveDttYXJnaW46MDtwYWRkaW5nOjB9Cmh0bWx7c2Nyb2xsLWJlaGF2aW9yOnNtb290aH0KYm9keXtmb250LWZhbWlseTonSW50ZXInLHN5c3RlbS11aSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6IzA5MDkwYjtjb2xvcjojZjRmNGY1O2ZvbnQtc2l6ZToxNHB4O2xpbmUtaGVpZ2h0OjEuNTstd2Via2l0LWZvbnQtc21vb3RoaW5nOmFudGlhbGlhc2VkfQpheyhjb2xvcjppbmhlcml0O3RleHQtZGVjb3JhdGlvbjpub25lfWltZ3tkaXNwbGF5OmJsb2NrfWJ1dHRvbntjdXJzb3I6cG9pbnRlcjtmb250LWZhbWlseTppbmhlcml0fQoKLyogTkFWICovCi5uYXZ7cG9zaXRpb246c3RpY2t5O3RvcDowO3otaW5kZXg6MTAwO2JhY2tncm91bmQ6cmdiYSg5LDksMTEsLjk2KTtiYWNrZHJvcC1maWx0ZXI6Ymx1cigxMnB4KTtib3JkZXItYm90dG9tOjFweCBzb2xpZCAjMjcyNzJhfQoubmF2LWlubmVye21heC13aWR0aDoxNDAwcHg7bWFyZ2luOjAgYXV0bztkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuO3BhZGRpbmc6MCAyNHB4O2hlaWdodDo1NnB4fQoubmF2LWxvZ297ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6OHB4O2ZvbnQtd2VpZ2h0OjcwMDtmb250LXNpemU6MTVweDtjb2xvcjojZjRmNGY1fQoubmF2LWxvZ28gaW1ne3dpZHRoOjMycHg7aGVpZ2h0OjMycHg7Ym9yZGVyLXJhZGl1czo4cHh9CiSuYXYtbGlua3N7ZGlzcGxheTpmbGV4O2dhcDo0cHg7bGlzdC1zdHlsZTpub25lfQoubmF2LWxpbmtzIGF7ZGlzcGxheTpibG9jaztwYWRkaW5nOjZweCAxMnB4O2ZvbnQtc2l6ZToxM3B4O2ZvbnQtd2VpZ2h0OjUwMDtjb2xvcjojYTFhMWFhO2JvcmRlci1yYWRpdXM6NnB4O3RyYW5zaXRpb246Y29sb3IgLjE1cyxiYWNrZ3JvdW5kIC4xNXN9CiSuYXYtbGlua3MgYTpob3Zlcntjb2xvcjojZjRmNGY1O2JhY2tncm91bmQ6IzE4MTgxYn0KLm5hdi1saW5rcyBhLmFjdGl2ZXtjb2xvcjojZjRmNGY1fQoubmF2LWhhbWJ1cmdlcntkaXNwbGF5Om5vbmU7ZmxleC1kaXJlY3Rpb246Y29sdW1uO2dhcDo1cHg7YmFja2dyb3VuZDpub25lO2JvcmRlcjpub25lO3BhZGRpbmc6NnB4O2N1cnNvcjpwb2ludGVyfQoubmF2LWhhbWJ1cmdlciBzcGFue2Rpc3BsYXk6YmxvY2s7d2lkdGg6MjJweDtoZWlnaHQ6MnB4O2JhY2tncm91bmQ6I2ExYTFhYTtib3JkZXItcmFkaXVzOjJweH0KLm5hdi1tb2JpbGV7ZGlzcGxheTpub25lO3Bvc2l0aW9uOmZpeGVkO3RvcDo1NnB4O2xlZnQ6MDtyaWdodDowO2JhY2tncm91bmQ6IzA5MDkwYjtib3JkZXItYm90dG9tOjFweCBzb2xpZCAjMjcyNzJhO3otaW5kZXg6OTk7cGFkZGluZzoxMnB4IDIwcHggMTZweDtmbGV4LWRpcmVjdGlvbjpjb2x1bW47Z2FwOjJweH0KLm5hdi1tb2JpbGUub3BlbntkaXNwbGF5OmZsZXh9Ci5uYXYtbW9iaWxlIGF7ZGlzcGxheTpibG9jaztwYWRkaW5nOjEwcHggMTJweDtmb250LXNpemU6MTRweDtjb2xvcjojYTFhMWFhO2JvcmRlci1yYWRpdXM6NnB4fQoubmF2LW1vYmlsZSBhOmhvdmVyLC5uYXYtbW9iaWxlIGEuYWN0aXZle2NvbG9yOiMyMmM1NWU7YmFja2dyb3VuZDojMTgxODFifQpAbWVkaWEobWF4LXdpZHRoOjc2OHB4KXsubmF2LWxpbmtzZGlzcGxheTpub25lfS5uYXYtaGFtYnVyZ2Vye2Rpc3BsYXk6ZmxleH19CgovKiBIRVJPICovCi5oZXJve2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDE4MGRlZywjMGExZjBhIDAlLCMwZDE2MGQgNTAlLCMwOTA5MGIgMTAwJSk7cGFkZGluZzoyOHB4IDIwcHggMjBweDt0ZXh0LWFsaWduOmNlbnRlcjtwb3NpdGlvbjpyZWxhdGl2ZTtvdmVyZmxvdzpoaWRkZW59CiSuZXJvOjpiZWZvcmV7Y29udGVudDonJztwb3NpdGlvbjphYnNvbHV0ZTt0b3A6MDtsZWZ0OjUwJTt0cmFuc2Zvcm06dHJhbnNsYXRlWCgtNTAlKTt3aWR0aDo5MDBweDtoZWlnaHQ6MzAwcHg7YmFja2dyb3VuZDpyYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCA1MCUgMCUscmdiYSgzNCwxOTcsOTQsLjE1KSAwJSx0cmFuc3BhcmVudCA2NSUpO3BvaW50ZXItZXZlbnRzOm5vbmV9Ci5oZXJvIGgxe2ZvbnQtc2l6ZTpjbGFtcCgyMnB4LDV2dyw0OHB4KTtmb250LXdlaWdodDo4MDA7bGluZS1oZWlnaHQ6MS4xO2NvbG9yOiNmNGY0ZjU7bWF4LXdpZHRoOjgyMHB4O21hcmdpbjowIGF1dG8gMTJweDtsZXR0ZXItc3BhY2luZzotMC4wMjVlbTtwb3NpdGlvbjpyZWxhdGl2ZX0KLmhlcm8gaDF2LmdyZWVue2NvbG9yOiMyMmM1NWV9Ci5zdGF0LXBpbGxze2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlcjtnYXA6OHB4O2ZsZXgtd3JhcDp3cmFwO21hcmdpbi1ib3R0b206MTRweH0KLnN0YXQtcGlsbHtkaXNwbGF5OmlubGluZS1mbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6NXB4O2JhY2tncm91bmQ6IzE4MTgxYjtib3JkZXI6MXB4IHNvbGlkICMyNzI3MmE7Y29sb3I6I2Q0ZDRkODtmb250LXNpemU6MTJweDtmb250LXdlaWdodDo1MDA7cGFkZGluZzo1cHggMTJweDtib3JkZXItcmFkaXVzOjIwcHh9Ci5zdGF0LXBpbGwgLnZhbHtjb2xvcjojMjJjNTVlO2ZvbnQtd2VpZ2h0OjcwMH0KLmhlcm8tZGVzY3tmb250LXNpemU6MTNweDtjb2xvcjojNzE3MTdhO21heC13aWR0aDo1ODBweDttYXJnaW46MCBhdXRvIDE0cHg7bGluZS1oZWlnaHQ6MS42O3RleHQtYWxpZ246Y2VudGVyfQouY29kZS13cmFwe21heC13aWR0aDo1MDBweDttYXJnaW46MCBhdXRvO2JhY2tncm91bmQ6cmdiYSg5LDMwLDksLjcpO2JvcmRlcjoxcHggc29saWQgIzFhM2QxYTtib3JkZXItcmFkaXVzOjEwcHg7cGFkZGluZzoxMHB4IDE0cHg7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6c3BhY2UtYmV0d2Vlbgtnb3A6MTBweH0KLmNvZGUtd3JhcC1sYWJlbHtmb250LXNpemU6MTFweDtjb2xvcjojNzE3MTdhO2ZvbnQtd2VpZ2h0OjUwMDt3aGl0ZS1zcGFjZTpub3dyYXB9Ci5jb2RlLWJ0bntkaXNwbGF5OmlubGluZS1mbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6OHB4O2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDkwZGVnLCMxNTgwM2QsIzIyYzU1ZSwjNGFkZTgwLCMyMmM1NWUsIzE1ODAzZCk7YmFja2dyb3VuZC1zaXplOjMwMCUgMTAwJTthbmltYXRpb246c2hpbmUgNHMgbGluZWFyIGluZmluaXRlO2JvcmRlcjpub25lO2JvcmRlci1yYWRpdXM6OHB4O3BhZGRpbmc6OXB4IDE4cHg7Zm9udC1zaXplOjE0cHg7Zm9udC13ZWlnaHQ6ODAwO2NvbG9yOiMwMDA7bGV0dGVyLXNwYWNpbmc6LjA1ZW07Y3Vyc29yOnBvaW50ZXI7dHJhbnNpdGlvbjpmaWx0ZXIgLjE1czt3aGl0ZS1zcGFjZTpub3dyYXB9Ci5jb2RlLWJ0bjpob3Zlcntk aWx0ZXI6YnJpZ2h0bmVzcygxLjA4KX0KQGtleWZyYW1lcyBzaGluZXswJXtiYWNrZ3JvdW5kLXBvc2l0aW9uOjEwMCUgMH0xMDAle2JhY2tncm91bmQtcG9zaXRpb246LTIwMCUgMH19CiSjb3B5LWljb257Zm9udC1zaXplOjE0cHg7b3BhY2l0eTouN30KCi8qIEZJTFRFUlMgZGVza3RvcCAqLwouZmlsdGVyc3ttYXgtd2lkdGg6MTQwMHB4O21hcmdpbjowIGF1dG87cGFkZGluZzoxNnB4IDI0cHggMTBweDtkaXNwbGF5OmZsZXg7ZmxleC13cmFwOndyYXA7YWxpZ24taXRlbXM6Y2VudGVyO2dhcDo4cHh9Ci5mLXNlbHthcHBlYXJhbmNlOm5vbmU7YmFja2dyb3VuZDojMTgxODFiO2JvcmRlcjoxcHggc29saWQgIzI3MjcyYTtjb2xvcjojZjRmNGY1O2ZvbnQtZmFtaWx5OmluaGVyaXQ7Zm9udC1zaXplOjEzcHg7Zm9udC13ZWlnaHQ6NTAwO3BhZGRpbmc6OHB4IDMycHggOHB4IDEycHg7Ym9yZGVyLXJhZGl1czo4cHg7Y3Vyc29yOnBvaW50ZXI7dHJhbnNpdGlvbjpib3JkZXItY29sb3IgLjE1cjtiYWNrZ3JvdW5kLWltYWdlOnVybCgiZGF0YTppbWFnZS9zdmcreG1sLCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMicgaGVpZ2h0PScxMicgdmlld0JveD0nMCAwIDEyIDEyJyUzRSUzQ3BhdGggZD0nTTIgNGw0IDQgNC00JyBzdHJva2U9JyUyMzcxNzE3YScgc3Ryb2tlLXdpZHRoPScxLjUnIGZpbGw9J25vbmUnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvJTNFJTNDL3N2ZyUzRSIpO2JhY2tncm91bmQtcmVwZWF0Om5vLXJlcGVhdDtiYWNrZ3JvdW5kLXBvc2l0aW9uOnJpZ2h0IDEwcHggY2VudGVyfQouZi1zZWw6aG92ZXIsLmYtc2VsOmZvY3Vze2JvcmRlci1jb2xvcjojM2YzZjQ2O291dGxpbmU6bm9uZX0KLmYtc2VsLm9ue2JvcmRlci1jb2xvcjojMjJjNTVlO2NvbG9yOiMyMmM1NWV9Ci5idG4tcnN0e2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7Z2FwOjVweDtiYWNrZ3JvdW5kOiMxODE4MWI7Ym9yZGVyOjFweCBzb2xpZCAjMjcyNzJhO2NvbG9yOiNhMWExYWE7Zm9udC1mYW1pbHk6aW5oZXJpdDtmb250LXNpemU6MTNweDtmb250LXdlaWdodDo1MDA7cGFkZGluZzo4cHggMTRweDtib3JkZXItcmFkaXVzOjhweDt0cmFuc2l0aW9uOi4xNXM7Y3Vyc29yOnBvaW50ZXJ9Ci5idG4tcnN0OmhvdmVye2JvcmRlci1jb2xvcjojM2YzZjQ2O2NvbG9yOiNmNGY0ZjV9Ci5waWxsc3tkaXNwbGF5OmZsZXg7ZmxleC13cmFwOndyYXA7Z2FwOjVweH0KLnBpbGx7ZGlzcGxheTppbmxpbmUtZmxleDthbGlnbi1pdGVtczpjZW50ZXI7Z2FwOjRweDtiYWNrZ3JvdW5kOnJnYmEoMzQsMTk3LDk0LC4xKTtib3JkZXI6MXB4IHNvbGlkIHJnYmEoMzQsMTk3LDk0LC4zKTtjb2xvcjojMjJjNTVlO2ZvbnQtc2l6ZToxMXB4O2ZvbnQtd2VpZ2h0OjUwMDtwYWRkaW5nOjNweCA4cHggM3B4IDEwcHg7Ym9yZGVyLXJhZGl1czoyMHB4O2N1cnNvcjpwb2ludGVyfQoucGlsbDpob3Zlcntgt YWNrZ3JvdW5kOnJnYmEoMzQsMTk3LDk0LC4yKX0KLmYtY250e2ZvbnQtc2l6ZToxMnB4O2NvbG9yOiM1MjUyNWI7bWFyZ2luLWxlZnQ6YXV0b30KCi8qIERFU0tUT1AgVEFCTEUgKi8KLnRibC13cmFwe21heC13aWR0aDoxNDAwcHg7bWFyZ2luOjAgYXV0bztwYWRkaW5nOjAgMjRweCA2NHB4fQoudGJsLXNjcm9sbHtib3JkZXI6MXB4IHNvbGlkICMyNzI3MmE7Ym9yZGVyLXJhZGl1czoxMnB4O3Bvc2l0aW9uOnJlbGF0aXZlO292ZXJmbG93OmhpZGRlbn0udGJsLWlubmVye292ZXJmbG93LXg6YXV0b30KLnNjcm9sbC1oaW50e2Rpc3BsYXk6bm9uZTtwb3NpdGlvbjphYnNvbHV0ZTtyaWdodDowO3RvcDowO2JvdHRvbTowO3dpZHRoOjQ4cHg7YmFja2dyb3VuZDpsaW5lYXItZ3JhZGllbnQoOTBkZWcsdHJhbnNwYXJlbnQscmdiYSg5LDksMTEsLjg1KSk7cG9pbnRlci1ldmVudHM6bm9uZTt6LWluZGV4OjU7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpmbGV4LWVuZDtwYWRkaW5nLXJpZ2h0OjEwcHh9Ci5zY3JvbGwtaGludCBzcGFue2NvbG9yOiM1MjUyNWI7Zm9udC1zaXplOjE4cHg7YW5pbWF0aW9uOm51ZGdlIDEuOHMgZWFzZS1pbi1vdXQgaW5maW5pdGV9CkBrZXlmcmFtZXMgbnVkZ2V7MCUsMTAwJXt0cmFuc2Zvcm06dHJhbnNsYXRlWCgwKX01MCVe3RyYW5zZm9ybTp0cmFuc2xhdGVYKDRweCl9fQp0YWJsZXt3aWR0aDoxMDAlO2JvcmRlci1jb2xsYXBzZTpjb2xsYXBzZTtmb250LXNpemU6MTNweDttaW4td2lkdGg6MTA2MHB4fQp0aGVhZHtwb3NpdGlvbjpzdGlja3k7dG9wOjA7ei1pbmRleDoxMDtiYWNrZ3JvdW5kOiMwOTA5MGJ9CnRoZWFkOjphZnRlcntjb250ZW50OicnO3Bvc2l0aW9uOmFic29sdXRlO2xlZnQ6MDtyaWdodDowO2JvdHRvbTowO2hlaWdodDoxcHg7YmFja2dyb3VuZDojMjcyNzJhfQp0aHtwYWRkaW5nOjExcHggMTRweDt0ZXh0LWFsaWduOmxlZnQ7Zm9udC1zaXplOjExcHg7Zm9udC13ZWlnaHQ6NjAwO2NvbG9yOiM3MTcxN2E7dGV4dC10cmFuc2Zvcm06dXBwZXJjYXNlO2xldHRlci1zcGFjaW5nOi4wNmVtO3doaXRlLXNwYWNlOm5vd3JhcDtiYWNrZ3JvdW5kOiMwOTA5MGJ9CnRoLnN7Y3Vyc29yOnBvaW50ZXI7dXNlci1zZWxlY3Q6bm9uZX0KdGgucz5ob3Zlcntjb2xvcjojYTFhMWFhfQp0aCsuc2l7bWFyZ2luLWxlZnQ6M3B4O29wYWNpdHk6LjQ7Zm9udC1zaXplOjEwcHh9CnRoIC5zaTo6YWZ0ZXJ7Y29udGVudDonXHUyMTk1J30KdGguYXNjIC5zaXtvcGFjaXR5OjF9dGguYXNjIC5zaTo6YWZ0ZXJ7Y29udGVudDonXHUyMTkxJ30KdGguZGVzYyAuc2l7b3BhY2l0eToxfXRoLmRlc2MgLnNpOjphZnRlcntjb250ZW50OidcdTIxOTMnfQp0ZHtwYWRkaW5nOjAgMTRweDtib3JkZXItYm90dG9tOjFweCBzb2xpZCAjMjcyNzJhO3ZlcnRpY2FsLWFsaWduOm1pZGRsZTtoZWlnaHQ6ODhweDt3aGl0ZS1zcGFjZTpub3dyYXB9CnRyOmxhc3QtY2hpbGQgdGR7Ym9yZGVyLWJvdHRvbTpub25lfQp0Ym9keSB0cnt0cmFuc2l0aW9uOmJhY2tncm91bmQgLjFzfQp0Ym9keSB0cjpob3Zlcnti YWNrZ3JvdW5kOiMxODE4MWJ9Ci5maXJtLWNlbGx7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6MTBweH0KLmZpcm0tbG9nb3t3aWR0aDo0MHB4O2hlaWdodDo0MHB4O2JvcmRlci1yYWRpdXM6OHB4O29iamVjdC1maXQ6Y29udGFpbjtiYWNrZ3JvdW5kOiNmZmY7cGFkZGluZzozcHg7ZmxleC1zaHJpbms6MDtib3JkZXI6MXB4IHNvbGlkICMzZjNmNDZ9Ci5maXJtLWxvZ28tZmJ7d2lkdGg6NDBweDtoZWlnaHQ6NDBweDtib3JkZXItcmFkaXVzOjhweDtiYWNrZ3JvdW5kOiMyNzI3MmE7ZGlzcGxheTpub25lO2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO2ZvbnQtc2l6ZToxMXB4O2ZvbnQtd2VpZ2h0OjcwMDtjb2xvcjojNzE3MTdhO2ZsZXgtc2hyaW5rOjB9Ci5maXJtLW5hbWV7Zm9udC13ZWlnaHQ6NzAwO2ZvbnQtc2l6ZToxM3B4O2NvbG9yOiNmNGY0ZjV9Ci5maXJtLXN1Yntmb250LXNpemU6MTFweDtjb2xvcjojNzE3MTdhO21hcmdpbi10b3A6MXB4fQouYmVzdC1iYWRnZXtkaXNwbGF5OmlubGluZS1mbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6M3B4O2JhY2tncm91bmQ6cmdiYSgzNCwxOTcsOTQsLjE1KTtib3JkZXI6MXB4IHNvbGlkIHJnYmEoMzQsMTk3LDk0LC40KTtjb2xvcjojMjJjNTVlO2ZvbnQtc2l6ZToxMHB4O2ZvbnQtd2VpZ2h0OjcwMDtwYWRkaW5nOjJweCA2cHg7Ym9yZGVyLXJhZGl1czo0cHg7bWFyZ2luLXRvcDozcHg7bGV0dGVyLXNwYWNpbmc6LjAyZW19CiSubGVlbi1mb250e30KLmFpLXNpemV7Zm9udC13ZWlnaHQ6NzAwO2ZvbnQtc2l6ZToxM3B4O2NvbG9yOiNmNGY0ZjV9CiSubGktdHlwZXtmb250LXNpemU6MTFweDtjb2xvcjojNzE3MTdhO2ZvbnQtd2VpZ2h0OjQwMH0KLmFpLWJhZGdlLXdyYXB7cG9zaXRpb246cmVsYXRpdmU7ZGlzcGxheTppbmxpbmUtYmxvY2s7bWFyZ2luLXRvcDozcHh9Ci5haS1iYWRnZXtkaXNwbGF5OmlubGluZS1ibG9jaztiYWNrZ3JvdW5kOiMyNzI3MmE7Y29sb3I6I2ExYTFhYTtmb250LXNpemU6MTBweDtmb250LXdlaWdodDo1MDA7cGFkZGluZzoycHggN3B4O2JvcmRlci1yYWRpdXM6NHB4O2N1cnNvcjpoZWxwfQouYWktYmFkZ2UtdGlwe2Rpc3BsYXk6bm9uZTtwb3NpdGlvbjphYnNvbHV0ZTtib3R0b206Y2FsYygxMDAlICsgNnB4KTtsZWZ0OjA7YmFja2dyb3VuZDojMTgxODFiO2JvcmRlcjoxcHggc29saWQgIzNmM2Y0Ntib3JkZXItcmFkaXVzOjhweDtwYWRkaW5nOjhweCAxMnB4O2ZvbnQtc2l6ZToxMnB4O2ZvbnQtd2VpZ2h0OjQwMDtjb2xvcjojYTFhMWFhO2xpbmUtaGVpZ2h0OjEuNjt3aWR0aDoyMDBweDt6LWluZGV4OjIwMDt3aGl0ZS1zcGFjZTpub3JtYWw7Ym94LXNoYWRvdzowIDhweCAyNHB4IHJnYmEoMCwwLDAsLjYpfQouYWktYmFkZ2Utd3JhcDpob3ZlciAuYWktYmFkZ2UtdGlwe2Rpc3BsYXk6YmxvY2t9Ci5haS1jb250cmFjdHN7Zm9udC1zaXplOjExcHg7Y29sb3I6IzUyNTI1YjttYXJnaW4tdG9wOjJweH0KLnAtb3JpZ3tmb250LXNpemU6MTFweDtjb2xvcjojNTI1MjViO3RleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2h9Ci5wLWRpc2N7Zm9udC1zaXplOjE1cHg7Zm9udC13ZWlnaHQ6NzAwO2NvbG9yOiMyMmM1NWU7bWFyZ2luOjFweCAwfQoucC1hY3R7Zm9udC1zaXplOjExcHg7Y29sb3I6IzcxNzE3YX0KLnAtdG90YWx7ZGlzcGxheTppbmxpbmUtYmxvY2s7YmFja2dyb3VuZDojMTY2NTM0O2NvbG9yOiNkY2ZjZTc7Zm9udC1zaXplOjExcHg7Zm9udC13ZWlnaHQ6NzAwO3BhZGRpbmc6MnB4IDhweDtib3JkZXItcmFkaXVzOjRweDttYXJnaW4tdG9wOjNweH0KLnByb21vLWNhcmR7YmFja2dyb3VuZDojMTQ1MzJkO2JvcmRlcjoxcHggc29saWQgIzE2NjUzNDtib3JkZXItcmFkaXVzOjhweDtwYWRkaW5nOjdweCAxMHB4O21pbi13aWR0aDoxMjBweH0KLnByb21vLW9mZntkaXNwbGF5OmJsb2NrO2ZvbnQtc2l6ZToxNHB4O2ZvbnQtd2VpZ2h0OjgwMDtjb2xvcjojNGFkZTgwO2xpbmUtaGVpZ2h0OjEuMn0KLnByb21vLWV4cHtkaXNwbGF5OmJsb2NrO2ZvbnQtc2l6ZToxMHB4O2NvbG9yOiM4NmVmYWM7bWFyZ2luOjJweCAwIDVweH0KLnByb21vLWJvdHRvbXtkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuO2dhcDo2cHh9Ci5wcm9tby1jb2RlLXR4dHtmb250LXNpemU6MTJweDtmb250LXdlaWdodDo3MDA7Y29sb3I6I2Y0ZjRmNTtsZXR0ZXItc3BhY2luZzouMDRlbX0KLnByb21vLWNvcHktYnRue2JhY2tncm91bmQ6cmdiYSgxMzQsMjM5LDE3MiwuMSk7Ym9yZGVyOjFweCBzb2xpZCByZ2JhKDEzNCwyMzksMTcyLC4yNSk7Y29sb3I6Izg2ZWZhYztmb250LXNpemU6MTNweDtwYWRkaW5nOjRweCA5cHg7Ym9yZGVyLXJhZGl1czo1cHg7Y3Vyc29yOnBvaW50ZXI7dHJhbnNpdGlvbjpiYWNrZ3JvdW5kIC4xNXM7bWluLXdpZHRoOjMwcHg7bWluLWhlaWdodDozMHB4O2Rpc3BsYXk6aW5saW5lLWZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpjZW50ZXJ9Ci5wcm9tby1jb3B5LWJ0bjpob3Zlcntb YWNrZ3JvdW5kOnJnYmEoMTM0LDIzOSwxNzIsLjIpfQoucGQtY2VsbHtkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpjZW50ZXJ9Ci5wZC1zdmd7d2lkdGg6NDJweDtoZWlnaHQ6NDJweH0KLmRkLWFtb3VudHtmb250LXNpemU6MTNweDtmb250LXdlaWdodDo2MDA7Y29sb3I6I2Y0ZjRmNX0KLmRkLXR5cGV7Zm9udC1zaXplOjEwcHg7bWFyZ2luLXRvcDoycHh9Ci5lb2R7Y29sb3I6I2ExYTFhYX0uaW50cmF7Y29sb3I6I2Y1OWUwYn0uc3RhdGlje2NvbG9yOiMzYjgyZjZ9Ci5kbHtmb250LXNpemU6MTNweDtjb2xvcjojYTFhMWFhfQouZGwtbm9uZXtmb250LXNpemU6MTNweDtjb2xvcjojNTI1MjVifQouZHBpbGx7ZGlzcGxheTppbmxpbmUtZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlcjtiYWNrZ3JvdW5kOiMyNzI3MmE7Y29sb3I6I2Y0ZjRmNTtmb250LXNpemU6MTFweDtmb250LXdlaWdodDo2MDA7cGFkZGluZzo0cHggMTBweDtib3JkZXItcmFkaXVzOjVweH0KLmJ0bnN7ZGlzcGxheTpmbGV4O2dhcDo1cHh9Ci5idG4tZHtkaXNwbGF5OmlubGluZS1mbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO2hlaWdodDozMHB4O3BhZGRpbmc6MCAxMHB4O2JhY2tncm91bmQ6dHJhbnNwYXJlbnQ7Ym9yZGVyOjFweCBzb2xpZCAjM2YzZjQ2O2NvbG9yOiNhMWExYWE7Zm9udC1mYW1pbHk6aW5oZXJpdDtmb250LXNpemU6MTFweDtmb250LXdlaWdodDo1MDA7Ym9yZGVyLXJhZGl1czo2cHg7dGV4dC1kZWNvcmF0aW9uOm5vbmU7dHJhbnNpdGlvbjouMTVzO3doaXRlLXNwYWNlOm5vd3JhcH0KLmJ0bi1kOmhvdmVye2JvcmRlci1jb2xvcjojNzE3MTdhO2NvbG9yOiNmNGY0ZjV9Ci5idG4tYntkaXNwbGF5OmlubGluZS1mbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO2hlaWdodDozMHB4O3BhZGRpbmc6MCA8cHg7YmFja2dyb3VuZDojMjJjNTVlO2JvcmRlcjpub25lO2NvbG9yOiMwMDA7Zm9udC1mYW1pbHk6aW5oZXJpdDtmb250LXNpemU6MTFweDtmb250LXdlaWdodDo3MDA7Ym9yZGVyLXJhZGl1czo2cHg7dGV4dC1kZWNvcmF0aW9uOm5vbmU7dHJhbnNpdGlvbjouMTVzO3doaXRlLXNwYWNlOm5vd3JhcH0KLmJ0bi1iOmhvdmVye2JhY2tncm91bmQ6IzE2YTM0YX0KLnRoLXRpcHtwb3NpdGlvbjpyZWxhdGl2ZTtkaXNwbGF5OmlubGluZS1mbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6NHB4fQoudGlwLWl7d2lkdGg6MTNweDtoZWlnaHQ6MTNweDtib3JkZXItcmFkaXVzOjUwJTtiYWNrZ3JvdW5kOiMyNzI3MmE7Ym9yZGVyOjFweCBzb2xpZCAjM2YzZjQ2O2NvbG9yOiM3MTcxN2E7Zm9udC1zaXplOjhweDtmb250LXdlaWdodDo3MDA7ZGlzcGxheTppbmxpbmUtZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlcjtjdXJzb3I6aGVscDtmbGV4LXNocmluazowfQoudGlwLWJ7ZGlzcGxheTpub25lO3Bvc2l0aW9uOmFic29sdXRlO2JvdHRvbTpjYWxjKDEwMCUgKyA4cHgpO2xlZnQ6MDtiYWNrZ3JvdW5kOiMxODE4MWI7Ym9yZGVyOjFweCBzb2xpZCAjM2YzZjQ2O2JvcmRlci1yYWRpdXM6OHB4O3BhZGRpbmc6MTBweCAxMnB4O2ZvbnQtc2l6ZToxMnB4O2ZvbnQtd2VpZ2h0OjQwMDtjb2xvcjojYTFhMWFhO2xpbmUtaGVpZ2h0OjEuNjt3aWR0aDoyMjBweDt6LWluZGV4OjIwMDt3aGl0ZS1zcGFjZTpub3JtYWw7Ym94LXNoYWRvdzowIDhweCAyNHB4IHJnYmEoMCwwLDAsLjYpO3RleHQtdHJhbnNmb3JtOm5vbmU7bGV0dGVyLXNwYWNpbmc6MH0KLnRoLXRpcDpob3ZlciAudGlwLWJ7ZGlzcGxheTpibG9ja30KLmVtcHR5e3RleHQtYWxpZ246Y2VudGVyO3BhZGRpbmc6NjRweCAyNHB4O2NvbG9yOiM1MjUyNWJ9CiSuZW1wdHkgaDN7Zm9udC1zaXplOjE2cHg7Y29sb3I6IzcxNzE3YTttYXJnaW4tYm90dG9tOjhweH0KLnRvYXN0e2Rpc3BsYXk6bm9uZTtwb3NpdGlvbjpmaXhlZDtib3R0b206MjRweDtyaWdodDoyNHB4O2JhY2tncm91bmQ6IzIyYzU1ZTtjb2xvcjojMDAwO2ZvbnQtd2VpZ2h0OjcwMDtmb250LXNpemU6MTNweDtwYWRkaW5nOjEwcHggMThweDtib3JkZXItcmFkaXVzOjhweDt6LWluZGV4Ojk5OTtib3gtc2hhZG93OjAgNHB4IDE2cHggcmdiYSgwLDAsMCwuNCl9CiS0b2FzdC5zaG93e2Rpc3BsYXk6YmxvY2t9
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compare Top Futures Prop Firms for 2026 | Save On Prop Firms</title>
+<meta name="description" content="Side-by-side comparison of top futures prop trading accounts. Compare all-in pricing, profit targets, drawdown rules, P/D ratios, and payout timelines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#09090b;color:#f4f4f5;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{display:block}button{cursor:pointer;font-family:inherit}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(9,9,11,.96);backdrop-filter:blur(12px);border-bottom:1px solid #27272a}
+.nav-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:56px}
+.nav-logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:#f4f4f5}
+.nav-logo img{width:32px;height:32px;border-radius:8px}
+.nav-links{display:flex;gap:4px;list-style:none}
+.nav-links a{display:block;padding:6px 12px;font-size:13px;font-weight:500;color:#a1a1aa;border-radius:6px;transition:color .15s,background .15s}
+.nav-links a:hover{color:#f4f4f5;background:#18181b}
+.nav-links a.active{color:#f4f4f5}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px;cursor:pointer}
+.nav-hamburger span{display:block;width:22px;height:2px;background:#a1a1aa;border-radius:2px}
+.nav-mobile{display:none;position:fixed;top:56px;left:0;right:0;background:#09090b;border-bottom:1px solid #27272a;z-index:99;padding:12px 20px 16px;flex-direction:column;gap:2px}
+.nav-mobile.open{display:flex}
+.nav-mobile a{display:block;padding:10px 12px;font-size:14px;color:#a1a1aa;border-radius:6px}
+.nav-mobile a:hover,.nav-mobile a.active{color:#22c55e;background:#18181b}
+@media(max-width:768px){.nav-links{display:none}.nav-hamburger{display:flex}}
+
+/* HERO */
+.hero{background:linear-gradient(180deg,#0a1f0a 0%,#0d160d 50%,#09090b 100%);padding:28px 20px 20px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:900px;height:300px;background:radial-gradient(ellipse at 50% 0%,rgba(34,197,94,.15) 0%,transparent 65%);pointer-events:none}
+.hero h1{font-size:clamp(22px,5vw,48px);font-weight:800;line-height:1.1;color:#f4f4f5;max-width:820px;margin:0 auto 12px;letter-spacing:-0.025em;position:relative}
+.hero h1 .green{color:#22c55e}
+.stat-pills{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.stat-pill{display:inline-flex;align-items:center;gap:5px;background:#18181b;border:1px solid #27272a;color:#d4d4d8;font-size:12px;font-weight:500;padding:5px 12px;border-radius:20px}
+.stat-pill .val{color:#22c55e;font-weight:700}
+.hero-desc{font-size:13px;color:#71717a;max-width:580px;margin:0 auto 14px;line-height:1.6;text-align:center}
+.code-wrap{max-width:500px;margin:0 auto;background:rgba(9,30,9,.7);border:1px solid #1a3d1a;border-radius:10px;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.code-wrap-label{font-size:11px;color:#71717a;font-weight:500;white-space:nowrap}
+.code-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(90deg,#15803d,#22c55e,#4ade80,#22c55e,#15803d);background-size:300% 100%;animation:shine 4s linear infinite;border:none;border-radius:8px;padding:9px 18px;font-size:14px;font-weight:800;color:#000;letter-spacing:.05em;cursor:pointer;transition:filter .15s;white-space:nowrap}
+.code-btn:hover{filter:brightness(1.08)}
+@keyframes shine{0%{background-position:100% 0}100%{background-position:-200% 0}}
+.copy-icon{font-size:14px;opacity:.7}
+
+/* FILTERS desktop */
+.filters{max-width:1400px;margin:0 auto;padding:16px 24px 10px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.f-sel{appearance:none;background:#18181b;border:1px solid #27272a;color:#f4f4f5;font-family:inherit;font-size:13px;font-weight:500;padding:8px 32px 8px 12px;border-radius:8px;cursor:pointer;transition:border-color .15s;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%2371717a' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center}
+.f-sel:hover,.f-sel:focus{border-color:#3f3f46;outline:none}
+.f-sel.on{border-color:#22c55e;color:#22c55e}
+.btn-rst{display:flex;align-items:center;gap:5px;background:#18181b;border:1px solid #27272a;color:#a1a1aa;font-family:inherit;font-size:13px;font-weight:500;padding:8px 14px;border-radius:8px;transition:.15s;cursor:pointer}
+.btn-rst:hover{border-color:#3f3f46;color:#f4f4f5}
+.pills{display:flex;flex-wrap:wrap;gap:5px}
+.pill{display:inline-flex;align-items:center;gap:4px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);color:#22c55e;font-size:11px;font-weight:500;padding:3px 8px 3px 10px;border-radius:20px;cursor:pointer}
+.pill:hover{background:rgba(34,197,94,.2)}
+.f-cnt{font-size:12px;color:#52525b;margin-left:auto}
+
+/* DESKTOP TABLE */
+.tbl-wrap{max-width:1400px;margin:0 auto;padding:0 24px 64px}
+/* tbl-scroll: border+radius container, overflow:hidden clips corners cleanly */
+/* tbl-inner: the actual scroll container — keeps thead sticky relative to itself */
+.tbl-scroll{border:1px solid #27272a;border-radius:12px;position:relative;overflow:hidden}
+.tbl-inner{overflow-x:auto}
+.scroll-hint{display:none;position:absolute;right:0;top:0;bottom:0;width:48px;background:linear-gradient(90deg,transparent,rgba(9,9,11,.85));pointer-events:none;z-index:5;align-items:center;justify-content:flex-end;padding-right:10px}
+.scroll-hint span{color:#52525b;font-size:18px;animation:nudge 1.8s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:1060px}
+/* thead sticky top:0 — sticks to top of .tbl-inner scroll container, not viewport */
+thead{position:sticky;top:0;z-index:10;background:#09090b}
+thead::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:#27272a}
+th{padding:11px 14px;text-align:left;font-size:11px;font-weight:600;color:#71717a;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;background:#09090b}
+th.s{cursor:pointer;user-select:none}
+th.s:hover{color:#a1a1aa}
+th .si{margin-left:3px;opacity:.4;font-size:10px}
+th .si::after{content:'\2195'}
+th.asc .si{opacity:1}th.asc .si::after{content:'\2191'}
+th.desc .si{opacity:1}th.desc .si::after{content:'\2193'}
+td{padding:0 14px;border-bottom:1px solid #27272a;vertical-align:middle;height:88px;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tbody tr{transition:background .1s}
+tbody tr:hover{background:#18181b}
+.firm-cell{display:flex;align-items:center;gap:10px}
+.firm-logo{width:40px;height:40px;border-radius:8px;object-fit:contain;background:#fff;padding:3px;flex-shrink:0;border:1px solid #3f3f46}
+.firm-logo-fb{width:40px;height:40px;border-radius:8px;background:#27272a;display:none;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#71717a;flex-shrink:0}
+.firm-name{font-weight:700;font-size:13px;color:#f4f4f5}
+.firm-sub{font-size:11px;color:#71717a;margin-top:1px}
+.best-badge{display:inline-flex;align-items:center;gap:3px;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.4);color:#22c55e;font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;margin-top:3px;letter-spacing:.02em}
+.ai-size{font-weight:700;font-size:13px;color:#f4f4f5}
+.ai-type{font-size:11px;color:#71717a;font-weight:400}
+.ai-badge-wrap{position:relative;display:inline-block;margin-top:3px}
+.ai-badge{display:inline-block;background:#27272a;color:#a1a1aa;font-size:10px;font-weight:500;padding:2px 7px;border-radius:4px;cursor:help}
+.ai-badge-tip{display:none;position:absolute;bottom:calc(100% + 6px);left:0;background:#18181b;border:1px solid #3f3f46;border-radius:8px;padding:8px 12px;font-size:12px;font-weight:400;color:#a1a1aa;line-height:1.6;width:200px;z-index:200;white-space:normal;box-shadow:0 8px 24px rgba(0,0,0,.6)}
+.ai-badge-wrap:hover .ai-badge-tip{display:block}
+.ai-contracts{font-size:11px;color:#52525b;margin-top:2px}
+.p-orig{font-size:11px;color:#52525b;text-decoration:line-through}
+.p-disc{font-size:15px;font-weight:700;color:#22c55e;margin:1px 0}
+.p-act{font-size:11px;color:#71717a}
+.p-total{display:inline-block;background:#166534;color:#dcfce7;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;margin-top:3px}
+.promo-card{background:#14532d;border:1px solid #166534;border-radius:8px;padding:7px 10px;min-width:120px}
+.promo-off{display:block;font-size:14px;font-weight:800;color:#4ade80;line-height:1.2}
+.promo-exp{display:block;font-size:10px;color:#86efac;margin:2px 0 5px}
+.promo-bottom{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.promo-code-txt{font-size:12px;font-weight:700;color:#f4f4f5;letter-spacing:.04em}
+.promo-copy-btn{background:rgba(134,239,172,.1);border:1px solid rgba(134,239,172,.25);color:#86efac;font-size:13px;padding:4px 9px;border-radius:5px;cursor:pointer;transition:background .15s;min-width:30px;min-height:30px;display:inline-flex;align-items:center;justify-content:center}
+.promo-copy-btn:hover{background:rgba(134,239,172,.2)}
+.pd-cell{display:flex;align-items:center;justify-content:center}
+.pd-svg{width:42px;height:42px}
+.dd-amount{font-size:13px;font-weight:600;color:#f4f4f5}
+.dd-type{font-size:10px;margin-top:2px}
+.eod{color:#a1a1aa}.intra{color:#f59e0b}.static{color:#3b82f6}
+.dl{font-size:13px;color:#a1a1aa}
+.dl-none{font-size:13px;color:#52525b}
+.dpill{display:inline-flex;align-items:center;justify-content:center;background:#27272a;color:#f4f4f5;font-size:11px;font-weight:600;padding:4px 10px;border-radius:5px}
+.btns{display:flex;gap:5px}
+.btn-d{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 10px;background:transparent;border:1px solid #3f3f46;color:#a1a1aa;font-family:inherit;font-size:11px;font-weight:500;border-radius:6px;text-decoration:none;transition:.15s;white-space:nowrap}
+.btn-d:hover{border-color:#71717a;color:#f4f4f5}
+.btn-b{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 12px;background:#22c55e;border:none;color:#000;font-family:inherit;font-size:11px;font-weight:700;border-radius:6px;text-decoration:none;transition:.15s;white-space:nowrap}
+.btn-b:hover{background:#16a34a}
+.th-tip{position:relative;display:inline-flex;align-items:center;gap:4px}
+.tip-i{width:13px;height:13px;border-radius:50%;background:#27272a;border:1px solid #3f3f46;color:#71717a;font-size:8px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:help;flex-shrink:0}
+.tip-b{display:none;position:absolute;bottom:calc(100% + 8px);left:0;background:#18181b;border:1px solid #3f3f46;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:400;color:#a1a1aa;line-height:1.6;width:220px;z-index:200;white-space:normal;box-shadow:0 8px 24px rgba(0,0,0,.6);text-transform:none;letter-spacing:0}
+.th-tip:hover .tip-b{display:block}
+.empty{text-align:center;padding:64px 24px;color:#52525b}
+.empty h3{font-size:16px;color:#71717a;margin-bottom:8px}
+.toast{display:none;position:fixed;bottom:24px;right:24px;background:#22c55e;color:#000;font-weight:700;font-size:13px;padding:10px 18px;border-radius:8px;z-index:999;box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.toast.show{display:block}
+
+/* FOOTER */
+.footer{border-top:1px solid #27272a;background:#09090b}
+.footer-inner{max-width:1400px;margin:0 auto;padding:40px 24px 28px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+.footer-brand p{font-size:12px;color:#52525b;line-height:1.7;max-width:260px;margin-top:8px}
+.footer-brand strong{font-size:14px;font-weight:700}
+.footer-col h4{font-size:11px;font-weight:600;color:#52525b;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-col a{font-size:13px;color:#71717a;transition:color .15s}
+.footer-col a:hover{color:#f4f4f5}
+.footer-bottom{max-width:1400px;margin:0 auto;padding:16px 24px;border-top:1px solid #27272a;font-size:12px;color:#52525b}
+.disclaimer{max-width:1400px;margin:0 auto;padding:0 24px 28px}
+.disclaimer-inner{background:#18181b;border:1px solid #27272a;border-radius:8px;padding:12px 16px;font-size:12px;color:#52525b;line-height:1.6}
+
+/* MOBILE */
+@media(max-width:767px){
+  .hero-desc{display:none}
+  .code-wrap{display:none}
+  .filters{display:none}
+  .tbl-wrap{display:none}
+  .hero{padding:20px 16px 16px}
+  .hero h1{font-size:24px;margin-bottom:10px}
+  .stat-pills{gap:6px;margin-bottom:0}
+  .stat-pill{font-size:11px;padding:4px 10px}
+  .m-filter-bar{display:flex;align-items:center;gap:8px;padding:12px 16px 8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .m-filter-bar::-webkit-scrollbar{display:none}
+  .m-filter-btn{display:inline-flex;align-items:center;gap:5px;background:#18181b;border:1px solid #27272a;color:#a1a1aa;font-family:inherit;font-size:12px;font-weight:500;padding:7px 12px;border-radius:20px;white-space:nowrap;cursor:pointer;flex-shrink:0;transition:.15s}
+  .m-filter-btn.active{border-color:#22c55e;color:#22c55e;background:rgba(34,197,94,.08)}
+  .m-filter-sep{width:1px;height:20px;background:#27272a;flex-shrink:0}
+  .m-results-count{font-size:11px;color:#52525b;padding:0 16px 6px}
+  .m-sheet-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;align-items:flex-end}
+  .m-sheet-overlay.open{display:flex}
+  .m-sheet{background:#18181b;border-radius:16px 16px 0 0;padding:20px 20px 32px;width:100%;max-height:85vh;overflow-y:auto}
+  .m-sheet-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+  .m-sheet-header h3{font-size:16px;font-weight:700}
+  .m-sheet-close{background:none;border:none;color:#71717a;font-size:22px;line-height:1;padding:4px}
+  .m-sheet-section{margin-bottom:16px}
+  .m-sheet-section label{display:block;font-size:11px;font-weight:600;color:#71717a;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+  .m-sheet-options{display:flex;flex-wrap:wrap;gap:6px}
+  .m-opt{background:#27272a;border:1px solid #3f3f46;color:#a1a1aa;font-family:inherit;font-size:13px;font-weight:500;padding:7px 14px;border-radius:20px;cursor:pointer;transition:.15s}
+  .m-opt.sel{background:rgba(34,197,94,.15);border-color:rgba(34,197,94,.5);color:#22c55e}
+  .m-sheet-actions{display:flex;gap:10px;margin-top:20px}
+  .m-sheet-reset{flex:1;padding:12px;background:#27272a;border:1px solid #3f3f46;color:#a1a1aa;font-family:inherit;font-size:14px;font-weight:600;border-radius:8px;cursor:pointer}
+  .m-sheet-apply{flex:2;padding:12px;background:#22c55e;border:none;color:#000;font-family:inherit;font-size:14px;font-weight:700;border-radius:8px;cursor:pointer}
+  .m-cards{padding:0 16px 100px}
+  .m-card{background:#18181b;border:1px solid #27272a;border-radius:12px;padding:14px;margin-bottom:10px;position:relative}
+  .m-card-top{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+  .m-card-logo{width:40px;height:40px;border-radius:8px;object-fit:contain;background:#fff;padding:3px;flex-shrink:0;border:1px solid #3f3f46}
+  .m-card-logo-fb{width:40px;height:40px;border-radius:8px;background:#27272a;display:none;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#71717a;flex-shrink:0}
+  .m-card-firm{font-weight:700;font-size:14px;color:#f4f4f5}
+  .m-card-acct{font-size:12px;color:#71717a;margin-top:1px}
+  .m-card-best{display:inline-flex;align-items:center;gap:3px;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.4);color:#22c55e;font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;margin-top:3px}
+  .m-card-promo{position:absolute;top:14px;right:14px;background:#14532d;border:1px solid #166534;border-radius:6px;padding:5px 8px;text-align:right}
+  .m-card-promo-off{display:block;font-size:13px;font-weight:800;color:#4ade80}
+  .m-card-promo-exp{display:block;font-size:10px;color:#86efac;margin-top:1px}
+  .m-card-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px}
+  .m-card-stat{background:#27272a;border-radius:8px;padding:8px 10px}
+  .m-card-stat-label{font-size:10px;font-weight:600;color:#52525b;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+  .m-card-stat-val{font-size:14px;font-weight:700;color:#f4f4f5}
+  .m-card-stat-sub{font-size:10px;color:#71717a;margin-top:1px}
+  .m-card-stat-val.green{color:#22c55e}
+  .m-card-price-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;background:#0f1f0f;border:1px solid #1a3d1a;border-radius:8px;padding:8px 12px}
+  .m-card-price-orig{font-size:11px;color:#52525b;text-decoration:line-through}
+  .m-card-price-disc{font-size:20px;font-weight:800;color:#22c55e;line-height:1}
+  .m-card-price-label{font-size:10px;color:#71717a;margin-top:2px}
+  .m-card-price-badge{background:#166534;color:#dcfce7;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px}
+  .m-card-actions{display:flex;gap:8px}
+  .m-card-copy{flex:0 0 auto;display:flex;align-items:center;gap:6px;background:rgba(134,239,172,.1);border:1px solid rgba(134,239,172,.3);color:#86efac;font-family:inherit;font-size:12px;font-weight:600;padding:10px 12px;border-radius:8px;cursor:pointer;transition:.15s}
+  .m-card-copy:hover{background:rgba(134,239,172,.2)}
+  .m-card-details{flex:1;display:flex;align-items:center;justify-content:center;height:40px;background:transparent;border:1px solid #3f3f46;color:#a1a1aa;font-family:inherit;font-size:12px;font-weight:500;border-radius:8px;text-decoration:none;transition:.15s}
+  .m-card-details:hover{border-color:#71717a;color:#f4f4f5}
+  .m-card-buy{flex:2;display:flex;align-items:center;justify-content:center;height:40px;background:#22c55e;border:none;color:#000;font-family:inherit;font-size:13px;font-weight:700;border-radius:8px;text-decoration:none;transition:.15s}
+  .m-card-buy:hover{background:#16a34a}
+  .m-card-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+  .m-tag{font-size:10px;font-weight:500;padding:2px 8px;border-radius:4px;background:#27272a;color:#a1a1aa}
+  .m-tag.eod{color:#a1a1aa}.m-tag.intra{color:#f59e0b;background:rgba(245,158,11,.1)}.m-tag.static{color:#3b82f6;background:rgba(59,130,246,.1)}
+  .m-promo-bar{position:fixed;bottom:0;left:0;right:0;z-index:150;background:rgba(9,9,11,.97);border-top:1px solid #1a3d1a;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;backdrop-filter:blur(12px)}
+  .m-promo-bar-label{font-size:11px;color:#71717a;white-space:nowrap}
+  .m-promo-bar-btn{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(90deg,#15803d,#22c55e,#4ade80,#22c55e,#15803d);background-size:300% 100%;animation:shine 4s linear infinite;border:none;border-radius:8px;padding:9px 18px;font-size:14px;font-weight:800;color:#000;letter-spacing:.04em;cursor:pointer;white-space:nowrap}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:24px;padding:28px 16px 20px}
+  .footer-brand{grid-column:1/-1}
+  .footer-bottom{padding:14px 16px}
+  .disclaimer{padding:0 16px 16px}
+}
+@media(min-width:768px) and (max-width:1100px){.scroll-hint{display:flex}}
+@media(min-width:768px){.m-filter-bar,.m-sheet-overlay,.m-cards,.m-promo-bar{display:none!important}}
+@media(max-width:1024px){.footer-inner{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://saveonpropfirms.com/_next/image?url=%2Fmainlogo.png&w=128&q=75" alt="SOPF" onerror="this.style.display='none'">
+      Save On Prop Firms
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Compare</a></li>
+      <li><a href="promos/index.html">Promos</a></li>
+      <li><a href="prop-firms/index.html">Firms</a></li>
+      <li><a href="trading-tools/index.html">Tools</a></li>
+      <li><a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a></li>
+      <li><a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a></li>
+    </ul>
+    <button class="nav-hamburger" onclick="document.getElementById('nm').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nm">
+    <a href="index.html" class="active">Compare</a>
+    <a href="promos/index.html">Promos</a>
+    <a href="prop-firms/index.html">Firms</a>
+    <a href="trading-tools/index.html">Tools</a>
+    <a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a>
+    <a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Futures Prop Firm <span class="green">Comparison</span> Built for <span class="green">Real Traders</span></h1>
+  <div class="stat-pills">
+    <div class="stat-pill"><span class="val">18</span> Prop Firms</div>
+    <div class="stat-pill"><span class="val">167</span> Accounts</div>
+    <div class="stat-pill">Code: <span class="val">SOPF</span></div>
+  </div>
+  <p class="hero-desc">Every metric that matters &mdash; pricing, drawdown rules, P/D ratios, payout timelines &mdash; in one table. Updated weekly with real discounts you can actually use.</p>
+  <div class="code-wrap">
+    <span class="code-wrap-label">Featured June Promos</span>
+    <button class="code-btn" onclick="copyCode()">USE CODE &nbsp;<span style="letter-spacing:.06em">SOPF</span><span class="copy-icon">&#8955;</span></button>
+  </div>
+</div>
+
+<div class="toast" id="toast">&#10003; Copied: SOPF</div>
+
+<div class="filters">
+  <select class="f-sel" id="ff" onchange="applyFilters()">
+    <option value="">All Firms</option>
+    <option>Lucid Trading</option><option>Tradeify</option>
+    <option>Apex Trader Funding</option><option>Alpha Futures</option>
+    <option>FundedNext Futures</option><option>MyFundedFutures</option>
+    <option>Funded Futures Network</option><option>TradeDay</option>
+    <option>Bulenox</option><option>BluSky Trading</option>
+    <option>DayTraders</option><option>E8 Markets</option>
+    <option>Legends Trading</option><option>Purdia Capital</option>
+  </select>
+  <select class="f-sel" id="ft" onchange="applyFilters()">
+    <option value="">All Account Types</option>
+    <option value="Eval">Evaluation</option>
+    <option value="Instant">Instant Funded</option>
+  </select>
+  <select class="f-sel" id="fd" onchange="applyFilters()">
+    <option value="">All Drawdown Types</option>
+    <option value="End-of-Day">End-of-Day</option>
+    <option value="Intraday">Intraday</option>
+    <option value="Static">Static</option>
+  </select>
+  <select class="f-sel" id="fs" onchange="applyFilters()">
+    <option value="">All Account Sizes</option>
+    <option value="25000">$25K</option>
+    <option value="30000">$30K</option>
+    <option value="50000">$50K</option>
+    <option value="100000">$100K</option>
+    <option value="150000">$150K</option>
+  </select>
+  <button class="btn-rst" onclick="resetFilters()">&#8635; Reset</button>
+  <div class="pills" id="pills"></div>
+  <span class="f-cnt" id="fcnt"></span>
+</div>
+
+<div class="tbl-wrap"><div class="tbl-scroll">
+  <div class="scroll-hint"><span>&#8250;</span></div>
+  <div class="tbl-inner"><table>
+  <thead><tr>
+    <th class="s" data-col="firm" onclick="sortBy('firm')">PROP FIRM <span class="si"></span></th>
+    <th class="s" data-col="size" onclick="sortBy('size')">ACCOUNT INFO <span class="si"></span></th>
+    <th class="s" data-col="price" onclick="sortBy('price')">ALL-IN PRICE <span class="si"></span></th>
+    <th>PROMO</th>
+    <th class="s" data-col="target" onclick="sortBy('target')">PROFIT TARGET <span class="si"></span></th>
+    <th class="s" data-col="dd" onclick="sortBy('dd')">
+      <span class="th-tip">DRAWDOWN <span class="si"></span><span class="tip-i">?</span>
+        <span class="tip-b"><strong>End-of-Day</strong> &mdash; resets after market close.<br><strong>Intraday</strong> &mdash; trails unrealized P&amp;L live.<br><strong>Static</strong> &mdash; fixed, never moves.</span>
+      </span>
+    </th>
+    <th class="s" data-col="pd" onclick="sortBy('pd')">
+      <span class="th-tip">P/D RATIO <span class="si"></span><span class="tip-i">?</span>
+        <span class="tip-b">Profit Target &divide; Drawdown. &le;1.0 (green) easiest. 1.0&ndash;1.5 (gray) moderate. Above 1.5 (amber) harder.</span>
+      </span>
+    </th>
+    <th><span class="th-tip">DAILY LOSS<span class="tip-i">?</span>
+        <span class="tip-b">Max loss per session. &ldquo;&mdash;&rdquo; = no daily limit.</span>
+    </span></th>
+    <th class="s" data-col="dtp" onclick="sortBy('dtp')">DAYS TO PASS <span class="si"></span></th>
+    <th class="s" data-col="dtm" onclick="sortBy('dtm')">DAYS TO $ <span class="si"></span></th>
+    <th>SPLIT</th>
+    <th>ACTION</th>
+  </tr></thead>
+  <tbody id="tbody"></tbody>
+</table></div>
+</div></div>
+
+<div class="m-filter-bar" id="mFilterBar">
+  <button class="m-filter-btn" onclick="openSheet()">&#9776; Filters</button>
+  <div class="m-filter-sep"></div>
+  <button class="m-filter-btn" id="mSortPrice" onclick="mSort('price')">Price &#8597;</button>
+  <button class="m-filter-btn" id="mSortPd" onclick="mSort('pd')">P/D Ratio &#8597;</button>
+  <button class="m-filter-btn" id="mSortTarget" onclick="mSort('target')">Target &#8597;</button>
+</div>
+<div class="m-results-count" id="mCount"></div>
+<div class="m-cards" id="mCards"></div>
+
+<div class="m-sheet-overlay" id="mSheet" onclick="closeSheetOutside(event)">
+  <div class="m-sheet">
+    <div class="m-sheet-header"><h3>Filter &amp; Sort</h3><button class="m-sheet-close" onclick="closeSheet()">&#10005;</button></div>
+    <div class="m-sheet-section"><label>Drawdown Type</label><div class="m-sheet-options">
+      <button class="m-opt" data-f="dd" data-v="">All</button>
+      <button class="m-opt" data-f="dd" data-v="End-of-Day">End-of-Day</button>
+      <button class="m-opt" data-f="dd" data-v="Intraday">Intraday</button>
+      <button class="m-opt" data-f="dd" data-v="Static">Static</button>
+    </div></div>
+    <div class="m-sheet-section"><label>Account Size</label><div class="m-sheet-options">
+      <button class="m-opt" data-f="size" data-v="">All</button>
+      <button class="m-opt" data-f="size" data-v="25000">$25K</button>
+      <button class="m-opt" data-f="size" data-v="30000">$30K</button>
+      <button class="m-opt" data-f="size" data-v="50000">$50K</button>
+    </div></div>
+    <div class="m-sheet-section"><label>Firm</label><div class="m-sheet-options">
+      <button class="m-opt" data-f="firm" data-v="">All</button>
+      <button class="m-opt" data-f="firm" data-v="Lucid Trading">Lucid</button>
+      <button class="m-opt" data-f="firm" data-v="Tradeify">Tradeify</button>
+      <button class="m-opt" data-f="firm" data-v="Apex Trader Funding">Apex</button>
+      <button class="m-opt" data-f="firm" data-v="TradeDay">TradeDay</button>
+      <button class="m-opt" data-f="firm" data-v="Bulenox">Bulenox</button>
+      <button class="m-opt" data-f="firm" data-v="Alpha Futures">Alpha</button>
+      <button class="m-opt" data-f="firm" data-v="FundedNext Futures">FundedNext</button>
+      <button class="m-opt" data-f="firm" data-v="MyFundedFutures">MFF</button>
+      <button class="m-opt" data-f="firm" data-v="Funded Futures Network">FFN</button>
+      <button class="m-opt" data-f="firm" data-v="BluSky Trading">BluSky</button>
+      <button class="m-opt" data-f="firm" data-v="DayTraders">DayTraders</button>
+      <button class="m-opt" data-f="firm" data-v="E8 Markets">E8</button>
+      <button class="m-opt" data-f="firm" data-v="Legends Trading">Legends</button>
+      <button class="m-opt" data-f="firm" data-v="Purdia Capital">Purdia</button>
+    </div></div>
+    <div class="m-sheet-actions">
+      <button class="m-sheet-reset" onclick="mResetFilters()">Reset</button>
+      <button class="m-sheet-apply" onclick="closeSheet()">Show Results</button>
+    </div>
+  </div>
+</div>
+
+<div class="m-promo-bar">
+  <span class="m-promo-bar-label">June Promo</span>
+  <button class="m-promo-bar-btn" onclick="copyCode()">USE CODE &nbsp;SOPF &nbsp;&#8955;</button>
+</div>
+
+<div class="disclaimer"><div class="disclaimer-inner"><strong>Disclaimer:</strong> We do our best to keep account prices, activation fees, and promo codes accurate and up to date. Prop firms can change their offers at any time. Always double-check before purchasing.</div></div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><strong>Save On Prop Firms</strong><p>The independent comparison tool for futures prop traders. No fluff &mdash; just real data, real discounts, and decisions you can trust.</p></div>
+    <div class="footer-col"><h4>Explore</h4><ul>
+      <li><a href="index.html">Compare</a></li><li><a href="promos/index.html">Promos</a></li>
+      <li><a href="prop-firms/index.html">Prop Firms</a></li><li><a href="trading-tools/index.html">Tools</a></li>
+      <li><a href="https://saveonpropfirms.com/blog" target="_blank">Blog</a></li>
+      <li><a href="https://saveonpropfirms.com/giveaways" target="_blank">Giveaways</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Prop Firms</h4><ul>
+      <li><a href="prop-firms/lucid-trading.html">Lucid Trading</a></li>
+      <li><a href="prop-firms/tradeify.html">Tradeify</a></li>
+      <li><a href="prop-firms/apex-trader-funding.html">Apex Trader Funding</a></li>
+      <li><a href="prop-firms/tradeday.html">TradeDay</a></li>
+      <li><a href="prop-firms/bulenox.html">Bulenox</a></li>
+      <li><a href="prop-firms/e8-markets.html">E8 Markets</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul>
+      <li><a href="https://twitter.com/saveonpropfirms" target="_blank">Twitter / X</a></li>
+      <li><a href="https://www.instagram.com/saveonpropfirms" target="_blank">Instagram</a></li>
+      <li><a href="https://sopf.link/joindiscord" target="_blank">Discord</a></li>
+      <li><a href="https://www.trustpilot.com/review/saveonpropfirms.com" target="_blank">Trustpilot</a></li>
+      <li><a href="https://saveonpropfirms.com/newsletter" target="_blank">Newsletter</a></li>
+      <li><a href="https://saveonpropfirms.com/contact" target="_blank">Contact</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 Save On Prop Firms. All rights reserved.</span></div>
+</footer>
+
+<script>
+var FIRMS=[
+  {firm:"Lucid Trading",acct:"25K LucidFlex",size:25000,type:"Eval",aname:"LucidFlex",con:"2 Minis / 20 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:100,pf:50,act:0,off:"50% OFF",exp:"Ends Jul 2",target:1250,dd:1000,ddt:"End-of-Day",pd:1.25,dl:0,dtp:2,dtm:5,split:90,det:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
+  {firm:"Lucid Trading",acct:"50K LucidFlex",size:50000,type:"Eval",aname:"LucidFlex",con:"4 Minis / 40 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:130,pf:65,act:0,off:"50% OFF",exp:"Ends Jul 2",target:3000,dd:2000,ddt:"End-of-Day",pd:1.50,dl:0,dtp:2,dtm:5,split:90,det:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
+  {firm:"Lucid Trading",acct:"25K LucidPro",size:25000,type:"Eval",aname:"LucidPro",con:"2 Minis / 20 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:135,pf:68,act:0,off:"50% OFF",exp:"Ends Jul 2",target:1250,dd:1000,ddt:"End-of-Day",pd:1.25,dl:0,dtp:1,dtm:3,split:90,det:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
+  {firm:"Lucid Trading",acct:"50K LucidPro",size:50000,type:"Eval",aname:"LucidPro",con:"4 Minis / 40 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/3hv8VxRWmZKCormsCOLz0d/ffa15081f2c407350e222fa35aa26c12/lucid-trading-logo.avif",init:"LT",po:185,pf:93,act:0,off:"50% OFF",exp:"Ends Jul 2",target:3000,dd:2000,ddt:"End-of-Day",pd:1.50,dl:1200,dtp:1,dtm:3,split:90,det:"prop-firms/lucid-trading.html",buy:"https://sopf.link/lucid"},
+  {firm:"Tradeify",acct:"25K Growth",size:25000,type:"Eval",aname:"Growth",con:"1 Mini / 10 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif",init:"TF",po:99,pf:69,act:0,off:"30% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:600,dtp:1,dtm:5,split:90,det:"prop-firms/tradeify.html",buy:"https://sopf.link/tradeify"},
+  {firm:"Tradeify",acct:"25K Select",size:25000,type:"Eval",aname:"Select",con:"1 Mini / 10 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/1KIG1HFdRUcFNsJr0tq2EH/088dee507dd777a7e6d90f0b05bbab0d/tradeify-logo.avif",init:"TF",po:109,pf:76,act:0,off:"30% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:0,dtp:3,dtm:1,split:90,det:"prop-firms/tradeify.html",buy:"https://sopf.link/tradeify"},
+  {firm:"Alpha Futures",acct:"25K Zero",size:25000,type:"Eval",aname:"Zero",con:"1 Mini / 10 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/TrQTeszKtHAMTMp8HaHxe/b2b03e769d42d2a7d58d38d0838c50a8/alpha-futures-logo.avif",init:"AF",po:79,pf:71,act:0,off:"10% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:500,dtp:1,dtm:5,split:90,det:"prop-firms/alpha-futures.html",buy:"https://sopf.link/alpha"},
+  {firm:"FundedNext Futures",acct:"25K Legacy",size:25000,type:"Eval",aname:"Legacy",con:"2 Minis / 20 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/5FBtTkN85IReua872uFkVB/e0af07c58f778dd24c8da298585abdb4/fundednext-futures-logo.avif",init:"FN",po:80,pf:76,act:0,off:"5% OFF",exp:"Ends Soon",target:1250,dd:1250,ddt:"End-of-Day",pd:1.00,dl:0,dtp:3,dtm:5,split:80,det:"prop-firms/fundednext-futures.html",buy:"https://sopf.link/fundednext"},
+  {firm:"MyFundedFutures",acct:"25K Flex",size:25000,type:"Eval",aname:"Flex",con:"2 Minis / 20 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/5qO8FWJDkwByOmKRNFinRG/e3e22b1bca47010594fa602a43f25579/myfundedfutures-logo.avif",init:"MF",po:95,pf:90,act:0,off:"5% OFF",exp:"Ends Soon",target:1500,dd:1000,ddt:"End-of-Day",pd:1.50,dl:0,dtp:2,dtm:5,split:80,det:"prop-firms/myfundedfutures.html",buy:"https://sopf.link/myfundedfutures"},
+  {firm:"Funded Futures Network",acct:"25K Standard",size:25000,type:"Eval",aname:"Standard",con:"3 Minis / 30 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/7pwQjL53uKN7Il8PUcuon7/79d308bbc5ce7fd9e455304fe0c39b35/funded-futures-network-logo.avif",init:"FF",po:125,pf:94,act:0,off:"25% OFF",exp:"Ends Soon",target:2000,dd:1500,ddt:"Intraday",pd:1.33,dl:0,dtp:7,dtm:3,split:80,det:"prop-firms/funded-futures-network.html",buy:"https://sopf.link/ffn"},
+  {firm:"Apex Trader Funding",acct:"25K Full",size:25000,type:"Eval",aname:"Full",con:"2 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/7FrNm7EQLmGs73nemVn6cW/cfb8c5617fbbfb2006f8ed632d286b25/apex-trading-funding-logo.avif",init:"AP",po:97,pf:56,act:0,off:"40% OFF",exp:"Ends Soon",target:1500,dd:1500,ddt:"End-of-Day",pd:1.00,dl:0,dtp:7,dtm:8,split:90,det:"prop-firms/apex-trader-funding.html",buy:"https://sopf.link/apex"},
+  {firm:"Apex Trader Funding",acct:"50K Full",size:50000,type:"Eval",aname:"Full",con:"10 Micros",logo:"https://images.ctfassets.net/nzj71to26bbi/7FrNm7EQLmGs73nemVn6cW/cfb8c5617fbbfb2006f8ed632d286b25/apex-trading-funding-logo.avif",init:"AP",po:167,pf:97,act:0,off:"40% OFF",exp:"Ends Soon",target:3000,dd:2500,ddt:"End-of-Day",pd:1.20,dl:0,dtp:7,dtm:8,split:90,det:"prop-firms/apex-trader-funding.html",buy:"https://sopf.link/apex"},
+  {firm:"TradeDay",acct:"30K Standard",size:30000,type:"Eval",aname:"Standard",con:"3 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/6nKMLA6edQFsthxUeMSvto/88fbfa2a8a6551ae5e796cc7dd9dff53/tradeday-logo.avif",init:"TD",po:150,pf:120,act:0,off:"20% OFF",exp:"Ends Soon",target:1800,dd:1500,ddt:"End-of-Day",pd:1.20,dl:0,dtp:1,dtm:1,split:90,det:"prop-firms/tradeday.html",buy:"https://sopf.link/tradeday"},
+  {firm:"Bulenox",acct:"25K Option 1",size:25000,type:"Eval",aname:"Option 1",con:"2 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/7tlRNVLI5nVeg0edvDPVbd/0cf36c71eccc01a70152f42ad505c7f5/bulenox-logo.avif",init:"BX",po:119,pf:65,act:0,off:"45% OFF",exp:"Ends Soon",target:1500,dd:1500,ddt:"Static",pd:1.00,dl:500,dtp:5,dtm:7,split:80,det:"prop-firms/bulenox.html",buy:"https://sopf.link/bulenox"},
+  {firm:"BluSky Trading",acct:"25K Launch",size:25000,type:"Eval",aname:"Launch",con:"2 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/2Vxyskg85GKFerpmDWapgZ/d4711a12e7529532701b451f92335486/blusky-trading-company-logo.avif",init:"BS",po:199,pf:139,act:0,off:"30% OFF",exp:"Ends Soon",target:2000,dd:2000,ddt:"End-of-Day",pd:1.00,dl:0,dtp:5,dtm:1,split:90,det:"prop-firms/blusky-trading-company.html",buy:"https://sopf.link/blusky"},
+  {firm:"DayTraders",acct:"50K CORE",size:50000,type:"Eval",aname:"CORE",con:"5 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/1UmmELUWgCucYgAb328apK/9a88884f1020563974496cf4322cd867/daytraders-logo.avif",init:"DT",po:369,pf:185,act:0,off:"50% OFF",exp:"Ends Soon",target:3000,dd:2000,ddt:"Intraday",pd:1.50,dl:1000,dtp:8,dtm:5,split:80,det:"prop-firms/daytraders.html",buy:"https://sopf.link/daytraders"},
+  {firm:"E8 Markets",acct:"50K Signature",size:50000,type:"Eval",aname:"Signature",con:"5 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/6GUfpKZ5JoudaBLNhzcvHG/c62386f63236fbe88cc25a0b86fd368b/e8-markets-logo.avif",init:"E8",po:228,pf:205,act:0,off:"10% OFF",exp:"Ends Soon",target:4000,dd:4000,ddt:"End-of-Day",pd:1.00,dl:0,dtp:4,dtm:3,split:80,det:"prop-firms/e8-markets.html",buy:"https://sopf.link/e8"},
+  {firm:"Legends Trading",acct:"25K Apprentice",size:25000,type:"Eval",aname:"Apprentice",con:"2 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/6MVyyXE6UMIkBQEQ6RNuhr/543ee8bb962555a76be895fa3c13f1cf/legends-trading-logo.avif",init:"LG",po:199,pf:159,act:0,off:"20% OFF",exp:"Ends Soon",target:2000,dd:2000,ddt:"End-of-Day",pd:1.00,dl:0,dtp:5,dtm:7,split:90,det:"prop-firms/legends-trading.html",buy:"https://sopf.link/legends"},
+  {firm:"Purdia Capital",acct:"25K Standard",size:25000,type:"Eval",aname:"Standard",con:"2 Minis",logo:"https://images.ctfassets.net/nzj71to26bbi/45soFOEoUGtNNiHu8nBavj/4b6fbb51514593513933c86cadd385d6/purdia-logo.avif",init:"PC",po:149,pf:104,act:0,off:"30% OFF",exp:"Ends Soon",target:1500,dd:1500,ddt:"End-of-Day",pd:1.00,dl:0,dtp:1,dtm:1,split:90,det:"prop-firms/purdia-capital.html",buy:"https://sopf.link/purdia"}
+];
+var BEST_VALUE=(function(){var bySize={};FIRMS.forEach(function(f){if(!bySize[f.size]||f.pf<bySize[f.size].pf)bySize[f.size]=f;});var s=new Set();Object.values(bySize).forEach(function(f){s.add(f.firm+'|'+f.acct);});return s;})();
+var BADGE_TIPS={'LucidFlex':'Flexible eval designed for active traders','LucidPro':'Pro tier with faster payout track','Growth':'Entry-level growth-focused account','Select':'For disciplined, consistent traders','Zero':'Zero activation fee','Legacy':'Classic eval structure','Flex':'Flexible end-of-day drawdown','Standard':'Balanced for most trading styles','Full':'Full-size, all contracts available','Option 1':'First-tier competitive pricing','Launch':'Ideal for new-to-prop traders','CORE':'Institutional-style risk parameters','Signature':'Premium account, tighter metrics','Apprentice':'Beginner-friendly with coaching'};
+var sc=null,sd=1,filt=[].concat(FIRMS);
+var mFilters={dd:'',size:'',firm:''},mSc=null,mSd=1,mFilt=[].concat(FIRMS);
+function ddCls(t){return t==='Intraday'?'intra':t==='Static'?'static':'eod';}
+function fmtDL(v){return v===0?'<span class="dl-none">&mdash;</span>':'<span class="dl">$'+v.toLocaleString()+'</span>';}
+function logoH(f){return'<img class="firm-logo" src="'+f.logo+'" alt="'+f.firm+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="firm-logo-fb">'+f.init+'</div>';}
+function badgeHtml(a){return'<div class="ai-badge-wrap"><span class="ai-badge">'+a+'</span><span class="ai-badge-tip">'+(BADGE_TIPS[a]||'Account type')+'</span></div>';}
+function donut(pd){var r=14,cx=18,cy=18,circ=2*Math.PI*r,pct=Math.min(pd/2,1),d=pct*circ,g=circ-d,col=pd<=1?'#22c55e':pd<=1.5?'#a1a1aa':'#f59e0b';return'<svg class="pd-svg" viewBox="0 0 36 36"><circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="#27272a" stroke-width="4.5"/><circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="'+col+'" stroke-width="4.5" stroke-dasharray="'+d+' '+g+'" stroke-linecap="round" transform="rotate(-90 '+cx+' '+cy+')"/><text x="'+cx+'" y="'+cy+'" text-anchor="middle" dominant-baseline="central" font-size="7.5" font-weight="700" fill="'+col+'" font-family="Inter,system-ui,sans-serif">'+pd.toFixed(2)+'</text></svg>';}
+function render(){var tb=document.getElementById('tbody');if(!filt.length){tb.innerHTML='<tr><td colspan="12"><div class="empty"><h3>No accounts match</h3><p>Try removing a filter.</p></div></td></tr>';return;}tb.innerHTML=filt.map(function(f){var isBest=BEST_VALUE.has(f.firm+'|'+f.acct);return'<tr><td><div class="firm-cell">'+logoH(f)+'<div><div class="firm-name">'+f.firm+'</div><div class="firm-sub">'+f.acct+'</div>'+(isBest?'<div class="best-badge">&#9733; Best Value</div>':'')+'</div></div></td><td><div class="ai-size">$'+f.size.toLocaleString()+' <span class="ai-type">'+f.type+'</span></div>'+badgeHtml(f.aname)+'<div class="ai-contracts">'+f.con+'</div></td><td><div class="p-orig">$'+f.po+'</div><div class="p-disc">$'+f.pf+'</div><div class="p-act">+$'+f.act+' Activation</div><div class="p-total">$'+f.pf+' Total</div></td><td><div class="promo-card"><span class="promo-off">'+f.off+'</span><span class="promo-exp">'+f.exp+'</span><div class="promo-bottom"><span class="promo-code-txt">SOPF</span><button class="promo-copy-btn" onclick="copyCode()">&#8955;</button></div></div></td><td><strong style="font-size:14px">$'+f.target.toLocaleString()+'</strong></td><td><div class="dd-amount">$'+f.dd.toLocaleString()+'</div><div class="dd-type '+ddCls(f.ddt)+'">'+f.ddt+'</div></td><td><div class="pd-cell">'+donut(f.pd)+'</div></td><td>'+fmtDL(f.dl)+'</td><td><div class="dpill">'+f.dtp+' day'+(f.dtp!==1?'s':'')+'</div></td><td><div class="dpill">'+f.dtm+' day'+(f.dtm!==1?'s':'')+'</div></td><td><strong>'+f.split+'%</strong></td><td><div class="btns"><a class="btn-d" href="'+f.det+'">Details</a><a class="btn-b" href="'+f.buy+'" target="_blank">Buy &#8599;</a></div></td></tr>';}).join('');}
+function renderCards(){var el=document.getElementById('mCards'),cnt=document.getElementById('mCount');if(!mFilt.length){el.innerHTML='<div style="text-align:center;padding:48px 16px;color:#52525b"><h3 style="color:#71717a;margin-bottom:8px">No accounts match</h3><p>Try removing a filter.</p></div>';cnt.textContent='';return;}cnt.textContent=mFilt.length<FIRMS.length?'Showing '+mFilt.length+' of '+FIRMS.length+' accounts':'';el.innerHTML=mFilt.map(function(f){var isBest=BEST_VALUE.has(f.firm+'|'+f.acct),pdCol=f.pd<=1?'#22c55e':f.pd<=1.5?'#a1a1aa':'#f59e0b',ddCl=ddCls(f.ddt);return'<div class="m-card"><div class="m-card-top"><img class="m-card-logo" src="'+f.logo+'" alt="'+f.firm+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="m-card-logo-fb">'+f.init+'</div><div><div class="m-card-firm">'+f.firm+'</div><div class="m-card-acct">'+f.acct+'</div>'+(isBest?'<div class="m-card-best">&#9733; Best Value</div>':'')+'</div></div><div class="m-card-promo"><span class="m-card-promo-off">'+f.off+'</span><span class="m-card-promo-exp">'+f.exp+'</span></div><div class="m-card-meta"><span class="m-tag '+ddCl+'">'+f.ddt+'</span><span class="m-tag">'+f.aname+'</span><span class="m-tag">$'+f.size.toLocaleString()+'</span><span class="m-tag">'+f.con+'</span></div><div class="m-card-price-row"><div><div class="m-card-price-orig">$'+f.po+'</div><div class="m-card-price-disc">$'+f.pf+'</div><div class="m-card-price-label">All-in price</div></div><div class="m-card-price-badge">$'+f.pf+' Total</div></div><div class="m-card-grid"><div class="m-card-stat"><div class="m-card-stat-label">Profit Target</div><div class="m-card-stat-val green">$'+f.target.toLocaleString()+'</div></div><div class="m-card-stat"><div class="m-card-stat-label">Drawdown</div><div class="m-card-stat-val">$'+f.dd.toLocaleString()+'</div></div><div class="m-card-stat"><div class="m-card-stat-label">P/D Ratio</div><div class="m-card-stat-val" style="color:'+pdCol+'">'+f.pd.toFixed(2)+'</div></div><div class="m-card-stat"><div class="m-card-stat-label">Days to Pass</div><div class="m-card-stat-val">'+f.dtp+'</div><div class="m-card-stat-sub">min days</div></div><div class="m-card-stat"><div class="m-card-stat-label">Days to $</div><div class="m-card-stat-val">'+f.dtm+'</div><div class="m-card-stat-sub">min days</div></div><div class="m-card-stat"><div class="m-card-stat-label">Profit Split</div><div class="m-card-stat-val green">'+f.split+'%</div></div></div><div class="m-card-actions"><button class="m-card-copy" onclick="copyCode()">&#8955; SOPF</button><a class="m-card-details" href="'+f.det+'">Details</a><a class="m-card-buy" href="'+f.buy+'" target="_blank">Buy &#8599;</a></div></div>';}).join('');}
+function applyFilters(){var firm=document.getElementById('ff').value,t=document.getElementById('ft').value,d=document.getElementById('fd').value,s=document.getElementById('fs').value;['ff','ft','fd','fs'].forEach(function(id){document.getElementById(id).classList.toggle('on',document.getElementById(id).value!=='');});filt=FIRMS.filter(function(f){return(!firm||f.firm===firm)&&(!t||f.type===t)&&(!d||f.ddt===d)&&(!s||f.size===parseInt(s));});if(sc)doSort();updatePills();render();document.getElementById('fcnt').textContent=filt.length<FIRMS.length?'Showing '+filt.length+' of '+FIRMS.length+' accounts':'';}
+function updatePills(){document.getElementById('pills').innerHTML=['ff','ft','fd','fs'].filter(function(id){return document.getElementById(id).value!=='';}).map(function(id){var e=document.getElementById(id);return'<span class="pill" onclick="clrF(\''+id+'\')">' +e.options[e.selectedIndex].text+' &times;</span>';}).join('');}
+function clrF(id){document.getElementById(id).value='';applyFilters();}
+function resetFilters(){['ff','ft','fd','fs'].forEach(function(id){document.getElementById(id).value='';document.getElementById(id).classList.remove('on');});filt=[].concat(FIRMS);sc=null;sd=1;document.querySelectorAll('th').forEach(function(t){t.classList.remove('asc','desc');});document.getElementById('pills').innerHTML='';document.getElementById('fcnt').textContent='';render();}
+function sortBy(col){var th=document.querySelector('th[data-col="'+col+'"]');sc===col?sd*=-1:(sc=col,sd=1);document.querySelectorAll('th').forEach(function(t){t.classList.remove('asc','desc');});th.classList.add(sd===1?'asc':'desc');doSort();render();}
+function doSort(){var m={firm:'firm',size:'size',price:'pf',target:'target',dd:'dd',pd:'pd',dtp:'dtp',dtm:'dtm'};filt.sort(function(a,b){var av=a[m[sc]],bv=b[m[sc]];return(typeof av==='string'?av.localeCompare(bv):av-bv)*sd;});}
+function applyMFilters(){mFilt=FIRMS.filter(function(f){return(!mFilters.dd||f.ddt===mFilters.dd)&&(!mFilters.size||f.size===parseInt(mFilters.size))&&(!mFilters.firm||f.firm===mFilters.firm);});if(mSc)mDoSort();updateMFilterBar();renderCards();}
+function mDoSort(){var m={price:'pf',pd:'pd',target:'target'};mFilt.sort(function(a,b){return(a[m[mSc]]-b[m[mSc]])*mSd;});}
+function mSort(col){if(mSc===col){mSd*=-1;}else{mSc=col;mSd=1;}var labels={price:'Price',pd:'P/D Ratio',target:'Target'};['price','pd','target'].forEach(function(k){var b=document.getElementById('mSort'+k.charAt(0).toUpperCase()+k.slice(1).replace('/',''));if(!b)return;b.classList.remove('active');b.textContent=labels[k]+' \u2195';});var ids={price:'mSortPrice',pd:'mSortPd',target:'mSortTarget'};var b=document.getElementById(ids[col]);if(b){b.classList.add('active');b.textContent=labels[col]+' '+(mSd===1?'\u2191':'\u2193');}applyMFilters();}
+function updateMFilterBar(){var filterBtn=document.querySelector('#mFilterBar .m-filter-btn');if(filterBtn)filterBtn.classList.toggle('active',!!(mFilters.dd||mFilters.size||mFilters.firm));}
+function openSheet(){document.getElementById('mSheet').classList.add('open');document.body.style.overflow='hidden';document.querySelectorAll('.m-opt').forEach(function(btn){btn.classList.toggle('sel',mFilters[btn.dataset.f]===btn.dataset.v||(btn.dataset.v===''&&!mFilters[btn.dataset.f]));});}
+function closeSheet(){document.querySelectorAll('.m-opt').forEach(function(btn){if(btn.classList.contains('sel'))mFilters[btn.dataset.f]=btn.dataset.v;});document.getElementById('mSheet').classList.remove('open');document.body.style.overflow='';applyMFilters();}
+function closeSheetOutside(e){if(e.target===document.getElementById('mSheet'))closeSheet();}
+function mResetFilters(){mFilters={dd:'',size:'',firm:''};mSc=null;mSd=1;mFilt=[].concat(FIRMS);document.querySelectorAll('.m-opt').forEach(function(btn){btn.classList.toggle('sel',btn.dataset.v==='');});document.getElementById('mSheet').classList.remove('open');document.body.style.overflow='';['mSortPrice','mSortPd','mSortTarget'].forEach(function(id){var b=document.getElementById(id);if(b){b.classList.remove('active');b.textContent=({mSortPrice:'Price',mSortPd:'P/D Ratio',mSortTarget:'Target'})[id]+' \u2195';}});renderCards();}
+document.querySelectorAll('.m-opt').forEach(function(btn){btn.addEventListener('click',function(){var f=this.dataset.f;document.querySelectorAll('.m-opt[data-f="'+f+'"]').forEach(function(b){b.classList.remove('sel');});this.classList.add('sel');});});
+function copyCode(){navigator.clipboard.writeText('SOPF').catch(function(){});var t=document.getElementById('toast');t.classList.add('show');setTimeout(function(){t.classList.remove('show');},2000);}
+render();renderCards();
+</script>
+</body></html>
